@@ -3,13 +3,14 @@ import re
 import streamlit as st
 from pathlib import Path
 from .config import AUDIO_DIR
+from urllib.parse import quote
 
 def safe_fn(word: str) -> str:
     return re.sub(r'[^\w]', '_', word)
 
 def r2_url(filename: str) -> str:
     base = st.secrets.get("R2_BASE_URL", "")
-    return f"{base}/{filename}" if base else ""
+    return f"{base}/{quote(filename)}" if base else ""
 
 def read_audio(path) -> bytes | None:
     p = Path(path)
