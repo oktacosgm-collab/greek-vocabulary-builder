@@ -2,3 +2,4 @@ streamlit
 pandas
 boto3          # for Cloudflare R2 (S3-compatible)
 requests
+python-docx
