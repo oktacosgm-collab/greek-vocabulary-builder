@@ -20,6 +20,7 @@ def read_audio(path) -> bytes | None:
 
 def play_sequence(data: dict, word: str):
     safe  = safe_fn(word)
+    st.write(f"DEBUG URL: {r2_url(f'{safe}_word.mp3')}")
     defn  = data.get("definition", data.get("translation", ""))
     ex    = data.get("example_greek", "")
     ex_en = data.get("example_english", "")
