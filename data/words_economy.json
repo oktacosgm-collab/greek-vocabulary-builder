@@ -1,0 +1,17 @@
+[
+  {"word": "οικονομία", "transliteration": "ikonomía", "translation": "economy", "example": "Η οικονομία αναπτύσσεται φέτος.", "example_translation": "The economy is growing this year.", "part_of_speech": "noun"},
+  {"word": "ανάπτυξη", "transliteration": "anáptiksi", "translation": "development / growth", "example": "Η ανάπτυξη του ΑΕΠ είναι θετική.", "example_translation": "GDP growth is positive.", "part_of_speech": "noun"},
+  {"word": "πληθωρισμός", "transliteration": "plithorismós", "translation": "inflation", "example": "Ο πληθωρισμός αυξάνεται.", "example_translation": "Inflation is increasing.", "part_of_speech": "noun"},
+  {"word": "ανεργία", "transliteration": "anergía", "translation": "unemployment", "example": "Η ανεργία μειώθηκε το τελευταίο τρίμηνο.", "example_translation": "Unemployment decreased last quarter.", "part_of_speech": "noun"},
+  {"word": "επενδύσεις", "transliteration": "ependíseis", "translation": "investments", "example": "Οι ξένες επενδύσεις αυξάνονται.", "example_translation": "Foreign investments are increasing.", "part_of_speech": "noun"},
+  {"word": "χρέος", "transliteration": "chréos", "translation": "debt", "example": "Το δημόσιο χρέος παραμένει υψηλό.", "example_translation": "Public debt remains high.", "part_of_speech": "noun"},
+  {"word": "φόρος", "transliteration": "fóros", "translation": "tax", "example": "Οι φόροι αυξήθηκαν φέτος.", "example_translation": "Taxes increased this year.", "part_of_speech": "noun"},
+  {"word": "προϋπολογισμός", "transliteration": "proipoligismós", "translation": "budget", "example": "Ο κρατικός προϋπολογισμός εγκρίθηκε.", "example_translation": "The state budget was approved.", "part_of_speech": "noun"},
+  {"word": "αγορά", "transliteration": "agorá", "translation": "market", "example": "Η αγορά ανταποκρίθηκε θετικά.", "example_translation": "The market responded positively.", "part_of_speech": "noun"},
+  {"word": "τράπεζα", "transliteration": "trápeza", "translation": "bank", "example": "Η τράπεζα μείωσε τα επιτόκια.", "example_translation": "The bank reduced interest rates.", "part_of_speech": "noun"},
+  {"word": "επιτόκιο", "transliteration": "epitókio", "translation": "interest rate", "example": "Το επιτόκιο παραμένει σταθερό.", "example_translation": "The interest rate remains stable.", "part_of_speech": "noun"},
+  {"word": "εξαγωγές", "transliteration": "exagogés", "translation": "exports", "example": "Οι εξαγωγές αυξήθηκαν σημαντικά.", "example_translation": "Exports increased significantly.", "part_of_speech": "noun"},
+  {"word": "εισαγωγές", "transliteration": "eisagogés", "translation": "imports", "example": "Οι εισαγωγές μειώθηκαν.", "example_translation": "Imports decreased.", "part_of_speech": "noun"},
+  {"word": "μισθός", "transliteration": "mischós", "translation": "salary / wage", "example": "Ο κατώτατος μισθός αυξήθηκε.", "example_translation": "The minimum wage increased.", "part_of_speech": "noun"},
+  {"word": "ΑΕΠ", "transliteration": "AEP", "translation": "GDP (Gross Domestic Product)", "example": "Το ΑΕΠ αυξήθηκε κατά 2%.", "example_translation": "GDP increased by 2%.", "part_of_speech": "noun"}
+]

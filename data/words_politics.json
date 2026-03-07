@@ -1,0 +1,17 @@
+[
+  {"word": "δημοκρατία", "transliteration": "dimokratía", "translation": "democracy", "example": "Η δημοκρατία είναι θεμέλιο της Ελλάδας.", "example_translation": "Democracy is the foundation of Greece.", "part_of_speech": "noun"},
+  {"word": "κυβέρνηση", "transliteration": "kivérnisi", "translation": "government", "example": "Η κυβέρνηση ανακοίνωσε νέα μέτρα.", "example_translation": "The government announced new measures.", "part_of_speech": "noun"},
+  {"word": "βουλή", "transliteration": "voulí", "translation": "parliament", "example": "Η Βουλή ψήφισε τον νόμο.", "example_translation": "The parliament voted the law.", "part_of_speech": "noun"},
+  {"word": "πρωθυπουργός", "transliteration": "prothipurgós", "translation": "prime minister", "example": "Ο πρωθυπουργός μίλησε στη Βουλή.", "example_translation": "The prime minister spoke in parliament.", "part_of_speech": "noun"},
+  {"word": "εκλογές", "transliteration": "eklogés", "translation": "elections", "example": "Οι εκλογές θα γίνουν τον Μάιο.", "example_translation": "The elections will take place in May.", "part_of_speech": "noun"},
+  {"word": "ψηφίζω", "transliteration": "psifízo", "translation": "to vote", "example": "Θα ψηφίσω για την αντιπολίτευση.", "example_translation": "I will vote for the opposition.", "part_of_speech": "verb"},
+  {"word": "αντιπολίτευση", "transliteration": "andipolitefsi", "translation": "opposition", "example": "Η αντιπολίτευση άσκησε κριτική.", "example_translation": "The opposition criticized.", "part_of_speech": "noun"},
+  {"word": "πολιτική", "transliteration": "politikí", "translation": "politics / policy", "example": "Η πολιτική επηρεάζει την καθημερινή ζωή.", "example_translation": "Politics affects daily life.", "part_of_speech": "noun"},
+  {"word": "νόμος", "transliteration": "nómos", "translation": "law", "example": "Ο νόμος ισχύει για όλους.", "example_translation": "The law applies to everyone.", "part_of_speech": "noun"},
+  {"word": "πρόεδρος", "transliteration": "próedros", "translation": "president / chairman", "example": "Ο πρόεδρος της δημοκρατίας υπέγραψε.", "example_translation": "The president of the republic signed.", "part_of_speech": "noun"},
+  {"word": "εμπιστοσύνη", "transliteration": "ebistosíni", "translation": "trust / confidence", "example": "Η εμπιστοσύνη στους θεσμούς μειώθηκε.", "example_translation": "Trust in institutions declined.", "part_of_speech": "noun"},
+  {"word": "διαφθορά", "transliteration": "diafthorá", "translation": "corruption", "example": "Η διαφθορά είναι σοβαρό πρόβλημα.", "example_translation": "Corruption is a serious problem.", "part_of_speech": "noun"},
+  {"word": "μεταρρύθμιση", "transliteration": "metaríthmisi", "translation": "reform", "example": "Χρειαζόμαστε μεταρρύθμιση στο σύστημα.", "example_translation": "We need reform in the system.", "part_of_speech": "noun"},
+  {"word": "θεσμός", "transliteration": "thesmós", "translation": "institution", "example": "Οι θεσμοί πρέπει να ενισχυθούν.", "example_translation": "Institutions must be strengthened.", "part_of_speech": "noun"},
+  {"word": "κρίση", "transliteration": "krísi", "translation": "crisis", "example": "Η κρίση επηρέασε όλους τους πολίτες.", "example_translation": "The crisis affected all citizens.", "part_of_speech": "noun"}
+]

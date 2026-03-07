@@ -1,0 +1,17 @@
+[
+  {"word": "γεια", "transliteration": "yia", "translation": "hello / goodbye", "example": "Γεια σου!", "example_translation": "Hello to you!", "part_of_speech": "interjection"},
+  {"word": "ευχαριστώ", "transliteration": "efcharistó", "translation": "thank you", "example": "Ευχαριστώ πολύ.", "example_translation": "Thank you very much.", "part_of_speech": "verb"},
+  {"word": "παρακαλώ", "transliteration": "parakaló", "translation": "please / you're welcome", "example": "Παρακαλώ, κάθισε.", "example_translation": "Please, sit down.", "part_of_speech": "verb"},
+  {"word": "ναι", "transliteration": "ne", "translation": "yes", "example": "Ναι, είμαι εδώ.", "example_translation": "Yes, I am here.", "part_of_speech": "adverb"},
+  {"word": "όχι", "transliteration": "óchi", "translation": "no", "example": "Όχι, δεν θέλω.", "example_translation": "No, I don't want.", "part_of_speech": "adverb"},
+  {"word": "νερό", "transliteration": "neró", "translation": "water", "example": "Θέλω νερό.", "example_translation": "I want water.", "part_of_speech": "noun"},
+  {"word": "φαγητό", "transliteration": "fagitó", "translation": "food", "example": "Το φαγητό είναι καλό.", "example_translation": "The food is good.", "part_of_speech": "noun"},
+  {"word": "σπίτι", "transliteration": "spíti", "translation": "house / home", "example": "Πάω σπίτι.", "example_translation": "I'm going home.", "part_of_speech": "noun"},
+  {"word": "αγαπώ", "transliteration": "agapó", "translation": "I love", "example": "Αγαπώ την Ελλάδα.", "example_translation": "I love Greece.", "part_of_speech": "verb"},
+  {"word": "καλημέρα", "transliteration": "kaliméra", "translation": "good morning", "example": "Καλημέρα, πώς είσαι;", "example_translation": "Good morning, how are you?", "part_of_speech": "interjection"},
+  {"word": "καληνύχτα", "transliteration": "kaliníchta", "translation": "good night", "example": "Καληνύχτα σε όλους.", "example_translation": "Good night to everyone.", "part_of_speech": "interjection"},
+  {"word": "φίλος", "transliteration": "fílos", "translation": "friend (male)", "example": "Είναι καλός φίλος.", "example_translation": "He is a good friend.", "part_of_speech": "noun"},
+  {"word": "οικογένεια", "transliteration": "ikogénia", "translation": "family", "example": "Η οικογένειά μου είναι μεγάλη.", "example_translation": "My family is big.", "part_of_speech": "noun"},
+  {"word": "δουλειά", "transliteration": "douliá", "translation": "work / job", "example": "Πάω στη δουλειά.", "example_translation": "I'm going to work.", "part_of_speech": "noun"},
+  {"word": "χρόνος", "transliteration": "chrónos", "translation": "time / year", "example": "Δεν έχω χρόνο.", "example_translation": "I don't have time.", "part_of_speech": "noun"}
+]

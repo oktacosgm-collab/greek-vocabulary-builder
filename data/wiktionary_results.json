@@ -1,0 +1,6621 @@
+{
+  "πάσης φύσεως": {
+    "word": "πάσης φύσεως",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "πάσης φύσεως",
+    "el_title": "πάσης φύσεως",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "not_found",
+    "recommendation": null
+  },
+  "τόσο καίρο": {
+    "word": "τόσο καίρο",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "τόσο καίρο",
+    "el_title": "τόσο καίρο",
+    "suggestions_en": [],
+    "suggestions_el": [
+      "τσόκαρο",
+      "Τσοκαρόπουλος",
+      "τσόκαρου",
+      "Τσοκαροπούλου"
+    ],
+    "status": "close_match",
+    "recommendation": "τσόκαρο"
+  },
+  "γάιτάνι": {
+    "word": "γάιτάνι",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "γάιτάνι",
+    "el_title": "γάιτάνι",
+    "suggestions_en": [
+      "γαϊτάνι",
+      "γειτονιά",
+      "γειτονικός",
+      "γειτόνισσα",
+      "γειτονιές"
+    ],
+    "suggestions_el": [
+      "γαϊτάνι",
+      "Γαϊτανίδης",
+      "Γαϊτανίδου",
+      "Γαϊτανίδη",
+      "Γαϊτανίου"
+    ],
+    "status": "close_match",
+    "recommendation": "γαϊτάνι"
+  },
+  "αθώνος": {
+    "word": "αθώνος",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αθώνος",
+    "el_title": "αθώνος",
+    "suggestions_en": [
+      "αἰώνιος",
+      "αἶνος",
+      "αιώνας",
+      "αγώνας",
+      "Αθανάσιος"
+    ],
+    "suggestions_el": [
+      "αγώνας",
+      "αθώος",
+      "αίνος",
+      "αιώνας",
+      "ανοσολογία"
+    ],
+    "status": "close_match",
+    "recommendation": "αἰώνιος"
+  },
+  "αμυνίτες": {
+    "word": "αμυνίτες",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αμυνίτες",
+    "el_title": "αμυνίτες",
+    "suggestions_en": [
+      "Αθωνίτες",
+      "αθωνίτες",
+      "ἀμανίτης",
+      "Ἀμύντας",
+      "ἀμύνεσθαι"
+    ],
+    "suggestions_el": [
+      "αμανίτης",
+      "Αμανίτης",
+      "αμήνυτες",
+      "Αμπντεσαλάμ",
+      "Αμυνίας"
+    ],
+    "status": "close_match",
+    "recommendation": "Αθωνίτες"
+  },
+  "αναζωογονιτικός": {
+    "word": "αναζωογονιτικός",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αναζωογονιτικός",
+    "el_title": "αναζωογονιτικός",
+    "suggestions_en": [
+      "αναζωογονητικός"
+    ],
+    "suggestions_el": [
+      "αναζωογονητικός",
+      "αναζωογονητικό",
+      "αναζωογονητικές",
+      "αναζωογονητικής",
+      "αναζωογονητικούς"
+    ],
+    "status": "close_match",
+    "recommendation": "αναζωογονητικός"
+  },
+  "ανακατάληφη": {
+    "word": "ανακατάληφη",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "ανακατάληφη",
+    "el_title": "ανακατάληφη",
+    "suggestions_en": [
+      "ανακατάληψη",
+      "ανακατάληψης",
+      "ανακαταλήφθηκα",
+      "ανακαταλήψεως",
+      "ανακαταλήψεις"
+    ],
+    "suggestions_el": [
+      "ανακατάληψη",
+      "ανακατάληψης",
+      "ανακαταλήψεως",
+      "ανακαταλήψεις",
+      "ανακαταλήψεων"
+    ],
+    "status": "close_match",
+    "recommendation": "ανακατάληψη"
+  },
+  "αναλημματιλκός": {
+    "word": "αναλημματιλκός",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αναλημματιλκός",
+    "el_title": "αναλημματιλκός",
+    "suggestions_en": [],
+    "suggestions_el": [
+      "αναλημματικός",
+      "αναλημματικό",
+      "αναλημματικής",
+      "αναλημματικές",
+      "αναλημματικοί"
+    ],
+    "status": "close_match",
+    "recommendation": "αναλημματικός"
+  },
+  "αναπλητώνω": {
+    "word": "αναπλητώνω",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αναπλητώνω",
+    "el_title": "αναπλητώνω",
+    "suggestions_en": [
+      "αναπληρώνω",
+      "αναπληρώνομαι"
+    ],
+    "suggestions_el": [
+      "αναπληρώνω",
+      "ανακλητών",
+      "αναπληρώσω",
+      "αναπληρωτών"
+    ],
+    "status": "close_match",
+    "recommendation": "αναπληρώνω"
+  },
+  "ανρηθώ": {
+    "word": "ανρηθώ",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "ανρηθώ",
+    "el_title": "ανρηθώ",
+    "suggestions_en": [
+      "αληθώς",
+      "αληθώς ανέστη",
+      "ανορθώνω",
+      "αντηχώ",
+      "ανθώ"
+    ],
+    "suggestions_el": [
+      "αντηχώ",
+      "ανθώ",
+      "ανορθώνω",
+      "ανθών",
+      "ανηθικότητα"
+    ],
+    "status": "close_match",
+    "recommendation": "αληθώς"
+  },
+  "αντίτισμο": {
+    "word": "αντίτισμο",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αντίτισμο",
+    "el_title": "αντίτισμο",
+    "suggestions_en": [
+      "αντίτιμο",
+      "αντίτιμα",
+      "αντίτιμου",
+      "αντίτιμων",
+      "ἀττικισμός"
+    ],
+    "suggestions_el": [
+      "αντίτιμο",
+      "Αντίσιμος",
+      "αντρισμούς",
+      "αντρισμοί",
+      "αντρισμού"
+    ],
+    "status": "close_match",
+    "recommendation": "αντίτιμο"
+  },
+  "απαπόσπαστος": {
+    "word": "απαπόσπαστος",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "απαπόσπαστος",
+    "el_title": "απαπόσπαστος",
+    "suggestions_en": [
+      "αναπόσπαστος"
+    ],
+    "suggestions_el": [
+      "αναπόσπαστος"
+    ],
+    "status": "close_match",
+    "recommendation": "αναπόσπαστος"
+  },
+  "απάταλα": {
+    "word": "απάταλα",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "απάταλα",
+    "el_title": "απάταλα",
+    "suggestions_en": [
+      "ακαταλαβίστικος",
+      "απέταλος",
+      "αταλαιπώρητος",
+      "απογαλακτίζω",
+      "απογαλακτίζομαι"
+    ],
+    "suggestions_el": [
+      "απογαλακτίζω",
+      "απαλαίνω",
+      "απογαλακτισμός",
+      "αποθαλασσώνω",
+      "αποθαλασσιά"
+    ],
+    "status": "close_match",
+    "recommendation": "ακαταλαβίστικος"
+  },
+  "αποποηπή": {
+    "word": "αποποηπή",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αποποηπή",
+    "el_title": "αποποηπή",
+    "suggestions_en": [
+      "αποκοπή",
+      "αποπομπή",
+      "αποπομπές",
+      "αποπομπών",
+      "αποποιήσεις"
+    ],
+    "suggestions_el": [
+      "αποπομπή",
+      "αποκοπή",
+      "αποποιηθήκαμε",
+      "αποκοπήκατε",
+      "αποποιήθηκα"
+    ],
+    "status": "close_match",
+    "recommendation": "αποκοπή"
+  },
+  "βαθαίνω": {
+    "word": "βαθαίνω",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "βαθαίνω",
+    "el_title": "βαθαίνω",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "βαθαίνω"
+  },
+  "βαρίδι": {
+    "word": "βαρίδι",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "βαρίδι",
+    "el_title": "βαρίδι",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "βαρίδι"
+  },
+  "γαλαντομία": {
+    "word": "γαλαντομία",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "γαλαντομία",
+    "el_title": "γαλαντομία",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "γαλαντομία"
+  },
+  "δ/ντος": {
+    "word": "δ/ντος",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "δ/ντος",
+    "el_title": "δ/ντος",
+    "suggestions_en": [
+      "δέλτος",
+      "δαύτος",
+      "Δύστος",
+      "Δάντης",
+      "δόντες"
+    ],
+    "suggestions_el": [
+      "δάνος",
+      "δαύτος",
+      "δίωτος",
+      "δοντού",
+      "Δύστος"
+    ],
+    "status": "close_match",
+    "recommendation": "δέλτος"
+  },
+  "δεμράτινος": {
+    "word": "δεμράτινος",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "δεμράτινος",
+    "el_title": "δεμράτινος",
+    "suggestions_en": [
+      "δερμάτινος"
+    ],
+    "suggestions_el": [
+      "δερμάτινος",
+      "Δερμάτινος",
+      "δερματικός",
+      "Δερματίνου",
+      "Δεμαρτίνος"
+    ],
+    "status": "close_match",
+    "recommendation": "δερμάτινος"
+  },
+  "διαγραγή": {
+    "word": "διαγραγή",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "διαγραγή",
+    "el_title": "διαγραγή",
+    "suggestions_en": [
+      "διαγραφή",
+      "διαταγή",
+      "διαπραγμάτευση",
+      "διαπραγματεύομαι",
+      "διαπραγματευτής"
+    ],
+    "suggestions_el": [
+      "διαγωγή",
+      "διαπραγματεύομαι",
+      "διαταγή",
+      "διαγραφή",
+      "διαλλαγή"
+    ],
+    "status": "close_match",
+    "recommendation": "διαγραφή"
+  },
+  "διάδαση": {
+    "word": "διάδαση",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "διάδαση",
+    "el_title": "διάδαση",
+    "suggestions_en": [
+      "διδασκαλία",
+      "διάδημα",
+      "διάθεση",
+      "διάδοση",
+      "διάτασις"
+    ],
+    "suggestions_el": [
+      "διάσημος",
+      "διάταξη",
+      "διάσταση",
+      "διάβαση",
+      "διάθεση"
+    ],
+    "status": "close_match",
+    "recommendation": "διδασκαλία"
+  },
+  "διάλου": {
+    "word": "διάλου",
+    "en_exists": true,
+    "el_exists": false,
+    "en_title": "διάλου",
+    "el_title": "διάλου",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "διάλου"
+  },
+  "διαφασμένος": {
+    "word": "διαφασμένος",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "διαφασμένος",
+    "el_title": "διαφασμένος",
+    "suggestions_en": [
+      "διψασμένος",
+      "διαθλασμένος"
+    ],
+    "suggestions_el": [
+      "διαβασμένος",
+      "διχασμένος",
+      "διαφθαρμένος",
+      "διψασμένος",
+      "διασπασμένος"
+    ],
+    "status": "close_match",
+    "recommendation": "διψασμένος"
+  },
+  "διόδιο": {
+    "word": "διόδιο",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "διόδιο",
+    "el_title": "διόδιο",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "διόδιο"
+  },
+  "διώχυω": {
+    "word": "διώχυω",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "διώχυω",
+    "el_title": "διώχυω",
+    "suggestions_en": [
+      "διώκω",
+      "διαχέω",
+      "διαχωρίζω",
+      "διώχνω",
+      "δικτυωτός"
+    ],
+    "suggestions_el": [
+      "διώκω",
+      "δικτυωτός",
+      "διαχυτικός",
+      "διαχέω",
+      "διάχυση"
+    ],
+    "status": "close_match",
+    "recommendation": "διώκω"
+  },
+  "δολαφονία": {
+    "word": "δολαφονία",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "δολαφονία",
+    "el_title": "δολαφονία",
+    "suggestions_en": [
+      "δολοφονία",
+      "δολοφονίες",
+      "δολοφονίας",
+      "δολοφόνισσα",
+      "δολοφονικός"
+    ],
+    "suggestions_el": [
+      "δολοφονία",
+      "δολοφονίας",
+      "δολοφονίες",
+      "δολοφόνισσα",
+      "δολοφονικός"
+    ],
+    "status": "close_match",
+    "recommendation": "δολοφονία"
+  },
+  "έδρανο": {
+    "word": "έδρανο",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "έδρανο",
+    "el_title": "έδρανο",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "έδρανο"
+  },
+  "ειδεχθής": {
+    "word": "ειδεχθής",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "ειδεχθής",
+    "el_title": "ειδεχθής",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "ειδεχθής"
+  },
+  "εμπεδώνω": {
+    "word": "εμπεδώνω",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "εμπεδώνω",
+    "el_title": "εμπεδώνω",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "εμπεδώνω"
+  },
+  "εμπιστοσάνη": {
+    "word": "εμπιστοσάνη",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "εμπιστοσάνη",
+    "el_title": "εμπιστοσάνη",
+    "suggestions_en": [
+      "εμπιστοσύνη",
+      "εμπιστοσύνης"
+    ],
+    "suggestions_el": [
+      "εμπιστοσύνη",
+      "εμπιστοσύνης"
+    ],
+    "status": "close_match",
+    "recommendation": "εμπιστοσύνη"
+  },
+  "εμπλουπιίζω": {
+    "word": "εμπλουπιίζω",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "εμπλουπιίζω",
+    "el_title": "εμπλουπιίζω",
+    "suggestions_en": [
+      "εμπλουτίζω"
+    ],
+    "suggestions_el": [
+      "εμπλουτίζω"
+    ],
+    "status": "close_match",
+    "recommendation": "εμπλουτίζω"
+  },
+  "ενεπήροφος": {
+    "word": "ενεπήροφος",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "ενεπήροφος",
+    "el_title": "ενεπήροφος",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "not_found",
+    "recommendation": null
+  },
+  "ένοταση": {
+    "word": "ένοταση",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "ένοταση",
+    "el_title": "ένοταση",
+    "suggestions_en": [
+      "έκταση",
+      "ένταξη",
+      "ένταση",
+      "ένσταση",
+      "ένστασις"
+    ],
+    "suggestions_el": [
+      "ένταση",
+      "έκσταση",
+      "έκταση",
+      "ένσταση",
+      "ένταξη"
+    ],
+    "status": "close_match",
+    "recommendation": "έκταση"
+  },
+  "εξίσσου": {
+    "word": "εξίσσου",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "εξίσσου",
+    "el_title": "εξίσσου",
+    "suggestions_en": [
+      "εξίσου",
+      "ἐπισσεύω",
+      "εξιστορώ",
+      "εἰς τοὺς αἰῶνας τῶν αἰώνων",
+      "ἐξισόω"
+    ],
+    "suggestions_el": [
+      "ελίσσομαι",
+      "εξίσου",
+      "εθίσουμε",
+      "Εξίδου",
+      "Ερίτσου"
+    ],
+    "status": "close_match",
+    "recommendation": "εξίσου"
+  },
+  "εξοθσία": {
+    "word": "εξοθσία",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "εξοθσία",
+    "el_title": "εξοθσία",
+    "suggestions_en": [
+      "εξουσία",
+      "εξορία",
+      "εξουσίας",
+      "εξορίας",
+      "εξουσίες"
+    ],
+    "suggestions_el": [
+      "εξουσία",
+      "εξορία",
+      "εξουσιαστής",
+      "Εὐοσία",
+      "εξουσιασμένος"
+    ],
+    "status": "close_match",
+    "recommendation": "εξουσία"
+  },
+  "επανειλημμένος": {
+    "word": "επανειλημμένος",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "επανειλημμένος",
+    "el_title": "επανειλημμένος",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "επανειλημμένος"
+  },
+  "επίνειο": {
+    "word": "επίνειο",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "επίνειο",
+    "el_title": "επίνειο",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "επίνειο"
+  },
+  "επισκεφαλης": {
+    "word": "επισκεφαλης",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "επισκεφαλης",
+    "el_title": "επισκεφαλης",
+    "suggestions_en": [
+      "επικεφαλής"
+    ],
+    "suggestions_el": [
+      "επικεφαλής",
+      "επισφαλής",
+      "ἐπί κεφαλῆς",
+      "επί κεφαλής",
+      "ἐπικεφαλῆς"
+    ],
+    "status": "close_match",
+    "recommendation": "επικεφαλής"
+  },
+  "επισυχάζω": {
+    "word": "επισυχάζω",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "επισυχάζω",
+    "el_title": "επισυχάζω",
+    "suggestions_en": [],
+    "suggestions_el": [
+      "επισκιάζω",
+      "εφησυχάζω",
+      "επισυνάψω",
+      "επιστάζω",
+      "Ἐπιτυχαρώ"
+    ],
+    "status": "close_match",
+    "recommendation": "επισκιάζω"
+  },
+  "επιτεγχάνω": {
+    "word": "επιτεγχάνω",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "επιτεγχάνω",
+    "el_title": "επιτεγχάνω",
+    "suggestions_en": [
+      "επιτυγχάνω",
+      "επιτυγχάνομαι",
+      "ἐπιτυγχάνω"
+    ],
+    "suggestions_el": [
+      "επιτυγχάνω",
+      "ἐπιτυγχάνω",
+      "Ἐπιτυγχάνων",
+      "Ἐπιτύγχανος",
+      "Ἐπιτυνχάνων"
+    ],
+    "status": "close_match",
+    "recommendation": "επιτυγχάνω"
+  },
+  "επμέρους": {
+    "word": "επμέρους",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "επμέρους",
+    "el_title": "επμέρους",
+    "suggestions_en": [
+      "εμπόρους",
+      "εκ μέρους",
+      "εμέτους",
+      "ἑτέρους",
+      "έμπορους"
+    ],
+    "suggestions_el": [
+      "επί μέρους",
+      "εκ μέρους",
+      "επίκρουση",
+      "επικρουστήρας",
+      "επομένους"
+    ],
+    "status": "close_match",
+    "recommendation": "εμπόρους"
+  },
+  "ιδοωτικοποιημένος": {
+    "word": "ιδοωτικοποιημένος",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "ιδοωτικοποιημένος",
+    "el_title": "ιδοωτικοποιημένος",
+    "suggestions_en": [],
+    "suggestions_el": [
+      "ιδιωτικοποιημένο",
+      "ιδιωτικοποιημένες",
+      "ιδιωτικοποιημένος",
+      "ιδιωτικοποιημένοι",
+      "ιδιωτικοποιημένης"
+    ],
+    "status": "close_match",
+    "recommendation": "ιδιωτικοποιημένο"
+  },
+  "καθαυτή": {
+    "word": "καθαυτή",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "καθαυτή",
+    "el_title": "καθαυτή",
+    "suggestions_en": [
+      "καθαρτικός",
+      "καθετήρ",
+      "καταπτήσσω",
+      "καταλυτήρ",
+      "καταλυτής"
+    ],
+    "suggestions_el": [
+      "καθαυτό",
+      "καθαυτόν",
+      "Καθαρή Δευτέρα",
+      "καθαρτικό",
+      "καθαρτήριο"
+    ],
+    "status": "close_match",
+    "recommendation": "καθαρτικός"
+  },
+  "καλαμανλικός": {
+    "word": "καλαμανλικός",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "καλαμανλικός",
+    "el_title": "καλαμανλικός",
+    "suggestions_en": [],
+    "suggestions_el": [
+      "καραμανλικής",
+      "καραμανλικός",
+      "καραμανλικές",
+      "καραμανλικό",
+      "καραμανλικοί"
+    ],
+    "status": "close_match",
+    "recommendation": "καραμανλικής"
+  },
+  "κασσελίστα": {
+    "word": "κασσελίστα",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "κασσελίστα",
+    "el_title": "κασσελίστα",
+    "suggestions_en": [],
+    "suggestions_el": [
+      "κασελίτσα"
+    ],
+    "status": "close_match",
+    "recommendation": "κασελίτσα"
+  },
+  "καταδικασμπένος": {
+    "word": "καταδικασμπένος",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "καταδικασμπένος",
+    "el_title": "καταδικασμπένος",
+    "suggestions_en": [],
+    "suggestions_el": [
+      "καταδικασμένος",
+      "καταδικασμένου",
+      "καταδικασμένοι",
+      "καταδικασμένες",
+      "καταδικασμένους"
+    ],
+    "status": "close_match",
+    "recommendation": "καταδικασμένος"
+  },
+  "καταλληλόλητα": {
+    "word": "καταλληλόλητα",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "καταλληλόλητα",
+    "el_title": "καταλληλόλητα",
+    "suggestions_en": [],
+    "suggestions_el": [
+      "καταλληλότητα",
+      "καταλληλότητας",
+      "καταλληλότητες"
+    ],
+    "status": "close_match",
+    "recommendation": "καταλληλότητα"
+  },
+  "καχυποψία": {
+    "word": "καχυποψία",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "καχυποψία",
+    "el_title": "καχυποψία",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "καχυποψία"
+  },
+  "ΚΕΜΕΔΙΑ": {
+    "word": "ΚΕΜΕΔΙΑ",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "ΚΕΜΕΔΙΑ",
+    "el_title": "ΚΕΜΕΔΙΑ",
+    "suggestions_en": [
+      "κεμεριού",
+      "κεμέρια",
+      "κεμεριών",
+      "κωμωδία",
+      "κεμέρι"
+    ],
+    "suggestions_el": [
+      "κιμαδιασμένε",
+      "κιμαδιασμένες",
+      "κεκεδισμός",
+      "Κεσεδαρόγλου",
+      "Καμενιανίτης"
+    ],
+    "status": "close_match",
+    "recommendation": "κεμεριού"
+  },
+  "κρυτότητα": {
+    "word": "κρυτότητα",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "κρυτότητα",
+    "el_title": "κρυτότητα",
+    "suggestions_en": [
+      "κυριότητα"
+    ],
+    "suggestions_el": [
+      "κυριότητα",
+      "κουφότητα",
+      "κυρτότητα",
+      "κυφότητα",
+      "κουφότητας"
+    ],
+    "status": "close_match",
+    "recommendation": "κυριότητα"
+  },
+  "κυανό": {
+    "word": "κυανό",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "κυανό",
+    "el_title": "κυανό",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "κυανό"
+  },
+  "λατύπη": {
+    "word": "λατύπη",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "λατύπη",
+    "el_title": "λατύπη",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "λατύπη"
+  },
+  "μιαταιώνω": {
+    "word": "μιαταιώνω",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "μιαταιώνω",
+    "el_title": "μιαταιώνω",
+    "suggestions_en": [
+      "ματαιώνω",
+      "ματαιώνομαι",
+      "μάταιων",
+      "ματαίων"
+    ],
+    "suggestions_el": [
+      "ματαιώνω",
+      "μιταρώνω",
+      "ματαιώσω",
+      "μάταιων"
+    ],
+    "status": "close_match",
+    "recommendation": "ματαιώνω"
+  },
+  "μιμίδιο": {
+    "word": "μιμίδιο",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "μιμίδιο",
+    "el_title": "μιμίδιο",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "μιμίδιο"
+  },
+  "μυτερός": {
+    "word": "μυτερός",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "μυτερός",
+    "el_title": "μυτερός",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "μυτερός"
+  },
+  "ξεφτίζω": {
+    "word": "ξεφτίζω",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "ξεφτίζω",
+    "el_title": "ξεφτίζω",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "ξεφτίζω"
+  },
+  "ΟΛΘ": {
+    "word": "ΟΛΘ",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "ΟΛΘ",
+    "el_title": "ΟΛΘ",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "ΟΛΘ"
+  },
+  "οπορτουνιστής": {
+    "word": "οπορτουνιστής",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "οπορτουνιστής",
+    "el_title": "οπορτουνιστής",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "οπορτουνιστής"
+  },
+  "οπορτουνιστικός": {
+    "word": "οπορτουνιστικός",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "οπορτουνιστικός",
+    "el_title": "οπορτουνιστικός",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "οπορτουνιστικός"
+  },
+  "όρομα": {
+    "word": "όρομα",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "όρομα",
+    "el_title": "όρομα",
+    "suggestions_en": [
+      "όνομα",
+      "όραμα",
+      "ὄνομα",
+      "οἴομαι",
+      "ὁρμάω"
+    ],
+    "suggestions_el": [
+      "Ὀρόμαχος",
+      "όνομα",
+      "όραμα",
+      "όψομαι",
+      "όνομα υπολογιστή"
+    ],
+    "status": "close_match",
+    "recommendation": "όνομα"
+  },
+  "παλλαπλάσιος": {
+    "word": "παλλαπλάσιος",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "παλλαπλάσιος",
+    "el_title": "παλλαπλάσιος",
+    "suggestions_en": [
+      "πολλαπλασιασμός",
+      "πολλαπλασίασα"
+    ],
+    "suggestions_el": [
+      "πολλαπλάσιος",
+      "πολλαπλάσιο",
+      "πολλαπλάσιον",
+      "πολλαπλασιαστικός",
+      "πολλαπλασιαστής"
+    ],
+    "status": "close_match",
+    "recommendation": "πολλαπλασιασμός"
+  },
+  "παραισία": {
+    "word": "παραισία",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "παραισία",
+    "el_title": "παραισία",
+    "suggestions_en": [
+      "παρουσία",
+      "παροιμία",
+      "παρρησία",
+      "παραλία",
+      "παροικία"
+    ],
+    "suggestions_el": [
+      "παρρησία",
+      "παροιμία",
+      "παρουσία",
+      "παραλία",
+      "πανδαισία"
+    ],
+    "status": "close_match",
+    "recommendation": "παρουσία"
+  },
+  "παραπαίω": {
+    "word": "παραπαίω",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "παραπαίω",
+    "el_title": "παραπαίω",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "παραπαίω"
+  },
+  "πευτικός": {
+    "word": "πευτικός",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "πευτικός",
+    "el_title": "πευτικός",
+    "suggestions_en": [
+      "ποντικός",
+      "πεντακόσιοι",
+      "Ποντικός",
+      "πεπτικός",
+      "πλεκτικός"
+    ],
+    "suggestions_el": [
+      "ποντικός",
+      "πειστικός",
+      "πτητικός",
+      "πεντακόσια",
+      "πιστικός"
+    ],
+    "status": "close_match",
+    "recommendation": "ποντικός"
+  },
+  "πιηούνι": {
+    "word": "πιηούνι",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "πιηούνι",
+    "el_title": "πιηούνι",
+    "suggestions_en": [
+      "πιρούνι",
+      "πιγούνι",
+      "πιτσούνι",
+      "πιρουνιά",
+      "πηγούνι"
+    ],
+    "suggestions_el": [
+      "πιρούνι",
+      "πηρούνι",
+      "πιγούνι",
+      "πιονιέρος",
+      "πετούνια"
+    ],
+    "status": "close_match",
+    "recommendation": "πιρούνι"
+  },
+  "πογκρόμ": {
+    "word": "πογκρόμ",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "πογκρόμ",
+    "el_title": "πογκρόμ",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "πογκρόμ"
+  },
+  "προανεφερώ": {
+    "word": "προανεφερώ",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "προανεφερώ",
+    "el_title": "προανεφερώ",
+    "suggestions_en": [
+      "προαναφερόμενος",
+      "προαναφέρω"
+    ],
+    "suggestions_el": [
+      "προαναφερόμενος",
+      "προαναφερόμενο",
+      "προαναφερόμενων",
+      "προαναφερόμενη",
+      "προαναφερόμενα"
+    ],
+    "status": "close_match",
+    "recommendation": "προαναφερόμενος"
+  },
+  "πρόοφατα": {
+    "word": "πρόοφατα",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "πρόοφατα",
+    "el_title": "πρόοφατα",
+    "suggestions_en": [
+      "προκαταβολή",
+      "προκαταλαμβάνω",
+      "πρόσφατος",
+      "προφταίνω",
+      "πρόβατα"
+    ],
+    "suggestions_el": [
+      "προκαταλαμβάνω",
+      "προκαταβάλλω",
+      "προκαταρκτικός",
+      "πρόσφατος",
+      "προκαταβολικός"
+    ],
+    "status": "close_match",
+    "recommendation": "προκαταβολή"
+  },
+  "πρόπερσι": {
+    "word": "πρόπερσι",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "πρόπερσι",
+    "el_title": "πρόπερσι",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "πρόπερσι"
+  },
+  "πρόταγμα": {
+    "word": "πρόταγμα",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "πρόταγμα",
+    "el_title": "πρόταγμα",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "πρόταγμα"
+  },
+  "προταγωνηστής": {
+    "word": "προταγωνηστής",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "προταγωνηστής",
+    "el_title": "προταγωνηστής",
+    "suggestions_en": [
+      "πρωταγωνιστής"
+    ],
+    "suggestions_el": [
+      "πρωταγωνιστής",
+      "πρωταγωνιστήσει",
+      "πρωταγωνιστήσω",
+      "πρωταγωνιστήσατε",
+      "πρωταγωνιστήσετε"
+    ],
+    "status": "close_match",
+    "recommendation": "πρωταγωνιστής"
+  },
+  "προφτεία": {
+    "word": "προφτεία",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "προφτεία",
+    "el_title": "προφτεία",
+    "suggestions_en": [
+      "προτείνω",
+      "προφητεία",
+      "προτεραῖος",
+      "προφταίνω",
+      "προτεραιότητα"
+    ],
+    "suggestions_el": [
+      "προτείνω",
+      "προτεραιότητα",
+      "προτεραιοποίηση",
+      "προφταίνω",
+      "προτεραιοποιώ"
+    ],
+    "status": "close_match",
+    "recommendation": "προτείνω"
+  },
+  "πρωτότηπος": {
+    "word": "πρωτότηπος",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "πρωτότηπος",
+    "el_title": "πρωτότηπος",
+    "suggestions_en": [
+      "πρωτότυπος",
+      "πρωτότοκος",
+      "πρωτότυπον",
+      "πρωτότυπο",
+      "πρωτότυποι"
+    ],
+    "suggestions_el": [
+      "πρωτότυπος",
+      "πρωτότοκος",
+      "πρωτότυπο",
+      "πρωτότυπου",
+      "πρωτότυποι"
+    ],
+    "status": "close_match",
+    "recommendation": "πρωτότυπος"
+  },
+  "ρεάμα": {
+    "word": "ρεάμα",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "ρεάμα",
+    "el_title": "ρεάμα",
+    "suggestions_en": [
+      "ρεύμα",
+      "ρευματοδότης",
+      "ρεύματα",
+      "ρεύματος",
+      "Ρεματιά"
+    ],
+    "suggestions_el": [
+      "ρεύμα",
+      "ρεματιά",
+      "ρευματοφόρος",
+      "ρευματοκλοπή",
+      "ρευματοδότης"
+    ],
+    "status": "close_match",
+    "recommendation": "ρεύμα"
+  },
+  "ριψοκίνδυνα": {
+    "word": "ριψοκίνδυνα",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "ριψοκίνδυνα",
+    "el_title": "ριψοκίνδυνα",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "ριψοκίνδυνα"
+  },
+  "σκάω": {
+    "word": "σκάω",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "σκάω",
+    "el_title": "σκάω",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "σκάω"
+  },
+  "σπολλύω": {
+    "word": "σπολλύω",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "σπολλύω",
+    "el_title": "σπολλύω",
+    "suggestions_en": [
+      "συλλύω",
+      "σπολεύς"
+    ],
+    "suggestions_el": [
+      "σπολλάτη",
+      "σπολλάτι",
+      "Σολλῦμις",
+      "Σόλλων",
+      "σκόλλυς"
+    ],
+    "status": "close_match",
+    "recommendation": "συλλύω"
+  },
+  "στορογή": {
+    "word": "στορογή",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "στορογή",
+    "el_title": "στορογή",
+    "suggestions_en": [
+      "στροφή",
+      "στοργή",
+      "στρογγύλος",
+      "στρογγυλός",
+      "Στρογγύλη"
+    ],
+    "suggestions_el": [
+      "στροφή",
+      "στρογγυλός",
+      "στοργή",
+      "στοργικός",
+      "στρογγυλοκάθομαι"
+    ],
+    "status": "close_match",
+    "recommendation": "στροφή"
+  },
+  "σύγκρια": {
+    "word": "σύγκρια",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "σύγκρια",
+    "el_title": "σύγκρια",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "σύγκρια"
+  },
+  "σύνεγγας": {
+    "word": "σύνεγγας",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "σύνεγγας",
+    "el_title": "σύνεγγας",
+    "suggestions_en": [
+      "συνεργασία",
+      "σύνεργα",
+      "συνεργασίες",
+      "συνεργασίας",
+      "συνεργός"
+    ],
+    "suggestions_el": [
+      "συνεργασία",
+      "σύνεγγυς",
+      "συνεργασιμότητα",
+      "σύνεργα",
+      "συνεργασμένος"
+    ],
+    "status": "close_match",
+    "recommendation": "συνεργασία"
+  },
+  "συνυποφήφιος": {
+    "word": "συνυποφήφιος",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "συνυποφήφιος",
+    "el_title": "συνυποφήφιος",
+    "suggestions_en": [],
+    "suggestions_el": [
+      "συνυποψήφιος",
+      "συνυποψηφιότητα"
+    ],
+    "status": "close_match",
+    "recommendation": "συνυποψήφιος"
+  },
+  "ΤΑΙΠΕΔ": {
+    "word": "ΤΑΙΠΕΔ",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "ΤΑΙΠΕΔ",
+    "el_title": "ΤΑΙΠΕΔ",
+    "suggestions_en": [
+      "ταπεινός",
+      "ταπεινώνω",
+      "ταπεινοφροσύνη",
+      "ταπεινότητα",
+      "ταπεινολογία"
+    ],
+    "suggestions_el": [
+      "ταπεινός",
+      "ταπεινότητα",
+      "ταπεινώνω",
+      "Τριποδίσκος",
+      "ταμπεραμέντο"
+    ],
+    "status": "close_match",
+    "recommendation": "ταπεινός"
+  },
+  "τεκταινόμενα": {
+    "word": "τεκταινόμενα",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "τεκταινόμενα",
+    "el_title": "τεκταινόμενα",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "τεκταινόμενα"
+  },
+  "τθλίγω": {
+    "word": "τθλίγω",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "τθλίγω",
+    "el_title": "τθλίγω",
+    "suggestions_en": [
+      "τρίγωνον",
+      "τυλίγω",
+      "τρίγωνος",
+      "τρίγωνο",
+      "Τρίγωνον"
+    ],
+    "suggestions_el": [
+      "τυλίγω",
+      "τρίγωνο",
+      "τυλίγομαι",
+      "τρίγωνο των Βερμούδων",
+      "τρίγωνα Πανοράματος"
+    ],
+    "status": "close_match",
+    "recommendation": "τρίγωνον"
+  },
+  "τρύπιος": {
+    "word": "τρύπιος",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "τρύπιος",
+    "el_title": "τρύπιος",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "τρύπιος"
+  },
+  "τυχάρπαστος": {
+    "word": "τυχάρπαστος",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "τυχάρπαστος",
+    "el_title": "τυχάρπαστος",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "τυχάρπαστος"
+  },
+  "υποστιρικτής": {
+    "word": "υποστιρικτής",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "υποστιρικτής",
+    "el_title": "υποστιρικτής",
+    "suggestions_en": [
+      "υποστηρικτής"
+    ],
+    "suggestions_el": [
+      "υποστηρικτής",
+      "υποστηριχτής",
+      "υποστηρικτές",
+      "υποστηρικτή"
+    ],
+    "status": "close_match",
+    "recommendation": "υποστηρικτής"
+  },
+  "ύφος": {
+    "word": "ύφος",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "ύφος",
+    "el_title": "ύφος",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "ύφος"
+  },
+  "φορεά": {
+    "word": "φορεά",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "φορεά",
+    "el_title": "φορεά",
+    "suggestions_en": [
+      "φορέας",
+      "φορέα",
+      "φορά",
+      "φοράω",
+      "φορεύς"
+    ],
+    "suggestions_el": [
+      "φορέας",
+      "φορέα",
+      "φορά",
+      "φοράω",
+      "φοράδα"
+    ],
+    "status": "close_match",
+    "recommendation": "φορέας"
+  },
+  "χάπι": {
+    "word": "χάπι",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "χάπι",
+    "el_title": "χάπι",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "χάπι"
+  },
+  "χαράτοι": {
+    "word": "χαράτοι",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "χαράτοι",
+    "el_title": "χαράτοι",
+    "suggestions_en": [
+      "χαράτσι",
+      "χαρτονόμισμα",
+      "χαρτογραφία",
+      "χαρτζιλίκι",
+      "χαρτοπετσέτα"
+    ],
+    "suggestions_el": [
+      "χαρτουλάριος",
+      "χαράμι",
+      "χαροποιός",
+      "χαράκι",
+      "χαρτοφύλακας"
+    ],
+    "status": "close_match",
+    "recommendation": "χαράτσι"
+  },
+  "χευδαίσθηση": {
+    "word": "χευδαίσθηση",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "χευδαίσθηση",
+    "el_title": "χευδαίσθηση",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "not_found",
+    "recommendation": null
+  },
+  "ως εκ του του": {
+    "word": "ως εκ του του",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "ως εκ του του",
+    "el_title": "ως εκ του του",
+    "suggestions_en": [],
+    "suggestions_el": [
+      "ως εκ τούτου"
+    ],
+    "status": "close_match",
+    "recommendation": "ως εκ τούτου"
+  },
+  "αυστιρός": {
+    "word": "αυστιρός",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αυστιρός",
+    "el_title": "αυστιρός",
+    "suggestions_en": [
+      "αὐστηρός",
+      "αυστηρός",
+      "αστικός",
+      "αυστηρότητα",
+      "αστρόσπαρτος"
+    ],
+    "suggestions_el": [
+      "αυστηρός",
+      "αστικός",
+      "αυστηρότητα",
+      "αστρόσπαρτος",
+      "Αυστηρόπουλος"
+    ],
+    "status": "close_match",
+    "recommendation": "αὐστηρός"
+  },
+  "τόθεμαι": {
+    "word": "τόθεμαι",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "τόθεμαι",
+    "el_title": "τόθεμαι",
+    "suggestions_en": [
+      "τίθεμαι",
+      "τίθεται",
+      "τιθέναι",
+      "Τορέται"
+    ],
+    "suggestions_el": [
+      "τίθεμαι",
+      "τίθεμαι γάμον",
+      "τίθεμαι μάχην",
+      "τίθεμαι θυσίαν",
+      "τίθεμαι τήν γνώμην"
+    ],
+    "status": "close_match",
+    "recommendation": "τίθεμαι"
+  },
+  "εκλαμβάνω": {
+    "word": "εκλαμβάνω",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "εκλαμβάνω",
+    "el_title": "εκλαμβάνω",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "εκλαμβάνω"
+  },
+  "σιμβίωση": {
+    "word": "σιμβίωση",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "σιμβίωση",
+    "el_title": "σιμβίωση",
+    "suggestions_en": [
+      "συμβίωσις",
+      "σημείωση"
+    ],
+    "suggestions_el": [
+      "συμβίωση",
+      "σημείωση",
+      "συμβίωσις",
+      "συμβίωσα",
+      "σημείωσης"
+    ],
+    "status": "close_match",
+    "recommendation": "συμβίωσις"
+  },
+  "εναντόον": {
+    "word": "εναντόον",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "εναντόον",
+    "el_title": "εναντόον",
+    "suggestions_en": [
+      "εναντίον",
+      "ἐναντίος",
+      "ἐναντιόομαι",
+      "ἐναντίον",
+      "ἐναντίων"
+    ],
+    "suggestions_el": [
+      "εναντίον",
+      "εναντιώνομαι",
+      "εναντιοδρομία",
+      "εναντιομορφισμός",
+      "εναντιοτροπία"
+    ],
+    "status": "close_match",
+    "recommendation": "εναντίον"
+  },
+  "ειδηλώνω": {
+    "word": "ειδηλώνω",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "ειδηλώνω",
+    "el_title": "ειδηλώνω",
+    "suggestions_en": [
+      "εκδηλώνω",
+      "εἰδώλων",
+      "ειδώλων"
+    ],
+    "suggestions_el": [
+      "εκδηλώνω",
+      "εκδηλώνομαι",
+      "ειδημόνως",
+      "εκδηλώνεται",
+      "εκδηλώνοντας"
+    ],
+    "status": "close_match",
+    "recommendation": "εκδηλώνω"
+  },
+  "προταφανής": {
+    "word": "προταφανής",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "προταφανής",
+    "el_title": "προταφανής",
+    "suggestions_en": [
+      "προφανής",
+      "πρωτοφανής"
+    ],
+    "suggestions_el": [
+      "πρωτοφανής",
+      "προφανής",
+      "πρωτοφανήσιμος",
+      "Προξεφανής",
+      "Προφάνης"
+    ],
+    "status": "close_match",
+    "recommendation": "προφανής"
+  },
+  "αναπόρευκτος": {
+    "word": "αναπόρευκτος",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αναπόρευκτος",
+    "el_title": "αναπόρευκτος",
+    "suggestions_en": [
+      "αναπόδεικτος",
+      "αναπόφευκτος"
+    ],
+    "suggestions_el": [
+      "αναπόφευκτος",
+      "αναπόφευκτο",
+      "αναπόδεικτος",
+      "αναπόφευκτου",
+      "αναπόφευκτης"
+    ],
+    "status": "close_match",
+    "recommendation": "αναπόδεικτος"
+  },
+  "αδερφός": {
+    "word": "αδερφός",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "αδερφός",
+    "el_title": "αδερφός",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "αδερφός"
+  },
+  "αλάδι": {
+    "word": "αλάδι",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αλάδι",
+    "el_title": "αλάδι",
+    "suggestions_en": [
+      "αλαδιά",
+      "αλαδιών",
+      "αλαδιάς",
+      "αλαδιές",
+      "αλάτι"
+    ],
+    "suggestions_el": [
+      "Αλάδιαστος",
+      "Αλαδινό",
+      "Αλαδίν",
+      "αλάνι",
+      "αλφάδι"
+    ],
+    "status": "close_match",
+    "recommendation": "αλαδιά"
+  },
+  "αμοντάρω": {
+    "word": "αμοντάρω",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αμοντάρω",
+    "el_title": "αμοντάρω",
+    "suggestions_en": [
+      "αγαντάρω",
+      "αβαντάρω",
+      "αμάντρωτος",
+      "αμαντάριστος",
+      "ακοστάρω"
+    ],
+    "suggestions_el": [
+      "αγαντάρω",
+      "αβαντάρω",
+      "αμολάρω",
+      "αμαντάλωτα",
+      "ακοστάρω"
+    ],
+    "status": "close_match",
+    "recommendation": "αγαντάρω"
+  },
+  "αμόνι": {
+    "word": "αμόνι",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "αμόνι",
+    "el_title": "αμόνι",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "αμόνι"
+  },
+  "ανάδυμος": {
+    "word": "ανάδυμος",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "ανάδυμος",
+    "el_title": "ανάδυμος",
+    "suggestions_en": [
+      "ανάδοχος",
+      "αράθυμος",
+      "ανώνυμος",
+      "ανάδρομος",
+      "ανάδυση"
+    ],
+    "suggestions_el": [
+      "ανάδυση",
+      "ανάδοχος",
+      "ανώνυμος",
+      "ανώδυνος",
+      "ανάρμοστος"
+    ],
+    "status": "close_match",
+    "recommendation": "ανάδοχος"
+  },
+  "ανεμώχελυδα": {
+    "word": "ανεμώχελυδα",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "ανεμώχελυδα",
+    "el_title": "ανεμώχελυδα",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "not_found",
+    "recommendation": null
+  },
+  "απάστολος": {
+    "word": "απάστολος",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "απάστολος",
+    "el_title": "απάστολος",
+    "suggestions_en": [
+      "απόστολος",
+      "Απόστολος",
+      "ασύστολος",
+      "απάστωτος",
+      "Απόστολου"
+    ],
+    "suggestions_el": [
+      "Απόστολος",
+      "απόστολος",
+      "ασύστολος",
+      "Απόστολου",
+      "Αποστολοπούλου"
+    ],
+    "status": "close_match",
+    "recommendation": "απόστολος"
+  },
+  "απαρτία": {
+    "word": "απαρτία",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "απαρτία",
+    "el_title": "απαρτία",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "απαρτία"
+  },
+  "αποβία": {
+    "word": "αποβία",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αποβία",
+    "el_title": "αποβία",
+    "suggestions_en": [
+      "αποφαίνομαι",
+      "απορία",
+      "απολαμβάνω",
+      "αποβλέπω",
+      "αποκαλύπτω"
+    ],
+    "suggestions_el": [
+      "αποβολή",
+      "αποχαυνώνω",
+      "απολαμβάνω",
+      "απόβρασμα",
+      "αποδίδω"
+    ],
+    "status": "close_match",
+    "recommendation": "αποφαίνομαι"
+  },
+  "αποβημοσίωση": {
+    "word": "αποβημοσίωση",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αποβημοσίωση",
+    "el_title": "αποβημοσίωση",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "not_found",
+    "recommendation": null
+  },
+  "αποβολιμαίον": {
+    "word": "αποβολιμαίον",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αποβολιμαίον",
+    "el_title": "αποβολιμαίον",
+    "suggestions_en": [
+      "αποβολιμαίος"
+    ],
+    "suggestions_el": [
+      "αποβολιμαίος",
+      "αποβολιμαίους",
+      "αποβολιμαίας",
+      "αποβολιμαίοι",
+      "αποβολιμαίε"
+    ],
+    "status": "close_match",
+    "recommendation": "αποβολιμαίος"
+  },
+  "αποβολιμαίως": {
+    "word": "αποβολιμαίως",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αποβολιμαίως",
+    "el_title": "αποβολιμαίως",
+    "suggestions_en": [
+      "αποβολιμαίος"
+    ],
+    "suggestions_el": [
+      "αποβολιμαίος",
+      "αποβολιμαίους",
+      "αποβολιμαίας",
+      "αποβολιμαίοι",
+      "αποβολιμαίε"
+    ],
+    "status": "close_match",
+    "recommendation": "αποβολιμαίος"
+  },
+  "αποβοφάω": {
+    "word": "αποβοφάω",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αποβοφάω",
+    "el_title": "αποβοφάω",
+    "suggestions_en": [
+      "απορροφάω",
+      "αποκοτάω",
+      "αποβολών"
+    ],
+    "suggestions_el": [
+      "αποκοτάω",
+      "αποφάω",
+      "απορροφάω",
+      "ἀποκομάω",
+      "Ἀπολοφάνης"
+    ],
+    "status": "close_match",
+    "recommendation": "απορροφάω"
+  },
+  "αποβοώ": {
+    "word": "αποβοώ",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αποβοώ",
+    "el_title": "αποβοώ",
+    "suggestions_en": [
+      "απολογούμαι",
+      "αποβλέπω",
+      "αποκτώ",
+      "αποδοχή",
+      "αποβάθρα"
+    ],
+    "suggestions_el": [
+      "αποβολή",
+      "αποβάλλω",
+      "αποκτώ",
+      "αποσώνω",
+      "αποσπώ"
+    ],
+    "status": "close_match",
+    "recommendation": "απολογούμαι"
+  },
+  "αποβρασμάτων": {
+    "word": "αποβρασμάτων",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "αποβρασμάτων",
+    "el_title": "αποβρασμάτων",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "αποβρασμάτων"
+  },
+  "αποβόχειρα": {
+    "word": "αποβόχειρα",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αποβόχειρα",
+    "el_title": "αποβόχειρα",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "not_found",
+    "recommendation": null
+  },
+  "αποσύρνω": {
+    "word": "αποσύρνω",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αποσύρνω",
+    "el_title": "αποσύρνω",
+    "suggestions_en": [
+      "αποσύνδεση",
+      "αποσβήνω",
+      "αποσύνθεση",
+      "αποσύρω",
+      "αποσύρομαι"
+    ],
+    "suggestions_el": [
+      "αποσώνω",
+      "αποσύνθεση",
+      "αποσύρομαι",
+      "αποσύρω",
+      "αποσύνδεση"
+    ],
+    "status": "close_match",
+    "recommendation": "αποσύνδεση"
+  },
+  "αποψε": {
+    "word": "αποψε",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αποψε",
+    "el_title": "αποψε",
+    "suggestions_en": [
+      "αποψεσινός",
+      "απόψε",
+      "απόψεως",
+      "απόψεις",
+      "απόψεων"
+    ],
+    "suggestions_el": [
+      "αποψεσινός",
+      "αποψεσινά",
+      "αποψεσινό",
+      "αποψεσινή",
+      "αποψεσινές"
+    ],
+    "status": "close_match",
+    "recommendation": "αποψεσινός"
+  },
+  "αριστο": {
+    "word": "αριστο",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αριστο",
+    "el_title": "αριστο",
+    "suggestions_en": [
+      "αριστοκρατικός",
+      "Αριστοτέλης",
+      "αριστοκρατία",
+      "αριστούργημα",
+      "Αριστοτέλη"
+    ],
+    "suggestions_el": [
+      "αριστοκρατία",
+      "αριστοκρατικός",
+      "αριστοκράτισσα",
+      "αριστοκράτης",
+      "αριστοτεχνία"
+    ],
+    "status": "close_match",
+    "recommendation": "αριστοκρατικός"
+  },
+  "αρμάς": {
+    "word": "αρμάς",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αρμάς",
+    "el_title": "αρμάς",
+    "suggestions_en": [
+      "ἅρμασιν",
+      "ἅρμασι",
+      "-αράς",
+      "αρμός",
+      "αιμάσσω"
+    ],
+    "suggestions_el": [
+      "Αρμάσης",
+      "αρμασιά",
+      "Ἁρμᾶσις",
+      "άρμας",
+      "Ἀρμᾶς"
+    ],
+    "status": "close_match",
+    "recommendation": "ἅρμασιν"
+  },
+  "αρμόνιουμ": {
+    "word": "αρμόνιουμ",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αρμόνιουμ",
+    "el_title": "αρμόνιουμ",
+    "suggestions_en": [
+      "αρμόνιο",
+      "αρμόδιους",
+      "αρμόνιου",
+      "αρμόδιου",
+      "αρνιούμαι"
+    ],
+    "suggestions_el": [
+      "αρμόνιο",
+      "αρμόνιος",
+      "Αρμόνιος",
+      "αρνιούμαι",
+      "Αρμοδίου"
+    ],
+    "status": "close_match",
+    "recommendation": "αρμόνιο"
+  },
+  "αρναία": {
+    "word": "αρναία",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αρναία",
+    "el_title": "αρναία",
+    "suggestions_en": [
+      "Αρναία",
+      "Αρναίας",
+      "Αἰνείας",
+      "ανακατεύω",
+      "-αρχία"
+    ],
+    "suggestions_el": [
+      "Αρναία",
+      "αρχαία ελληνικά",
+      "ανακαλύπτω",
+      "αναλαμβάνω",
+      "ανακατεύω"
+    ],
+    "status": "close_match",
+    "recommendation": "Αρναία"
+  },
+  "ασάντζ": {
+    "word": "ασάντζ",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "ασάντζ",
+    "el_title": "ασάντζ",
+    "suggestions_en": [
+      "απάντηση",
+      "αβαντζάρω",
+      "αντζούγια",
+      "αβάντα",
+      "ασυνίζητος"
+    ],
+    "suggestions_el": [
+      "ανάντη",
+      "αγάντα",
+      "απάντηση",
+      "αβάντα",
+      "ασύντυχος"
+    ],
+    "status": "close_match",
+    "recommendation": "απάντηση"
+  },
+  "αχός": {
+    "word": "αχός",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "αχός",
+    "el_title": "αχός",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "αχός"
+  },
+  "αψιθιά": {
+    "word": "αψιθιά",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "αψιθιά",
+    "el_title": "αψιθιά",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "αψιθιά"
+  },
+  "βέσπα": {
+    "word": "βέσπα",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "βέσπα",
+    "el_title": "βέσπα",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "βέσπα"
+  },
+  "βουστάσιο": {
+    "word": "βουστάσιο",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "βουστάσιο",
+    "el_title": "βουστάσιο",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "βουστάσιο"
+  },
+  "βοφό": {
+    "word": "βοφό",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "βοφό",
+    "el_title": "βοφό",
+    "suggestions_en": [
+      "βοός",
+      "βοιός",
+      "βόλος",
+      "Βόλος",
+      "βοοειδή"
+    ],
+    "suggestions_el": [
+      "βορός",
+      "Βογόμιλος",
+      "Βαφόπουλος",
+      "Βογόπουλος",
+      "Βοβόπουλος"
+    ],
+    "status": "close_match",
+    "recommendation": "βοός"
+  },
+  "βύσμα": {
+    "word": "βύσμα",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "βύσμα",
+    "el_title": "βύσμα",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "βύσμα"
+  },
+  "γαλιά": {
+    "word": "γαλιά",
+    "en_exists": true,
+    "el_exists": false,
+    "en_title": "γαλιά",
+    "el_title": "γαλιά",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "γαλιά"
+  },
+  "γαρίφανο": {
+    "word": "γαρίφανο",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "γαρίφανο",
+    "el_title": "γαρίφανο",
+    "suggestions_en": [
+      "γαρίφαλο",
+      "γαρύφαλο",
+      "γαρύφαλου",
+      "γαρυφάλου"
+    ],
+    "suggestions_el": [
+      "γαρίφαλο",
+      "Γαργανούρη",
+      "Γαρυφαλογιάννης",
+      "Γαρίφαλος",
+      "Γαργανουράκη"
+    ],
+    "status": "close_match",
+    "recommendation": "γαρίφαλο"
+  },
+  "μύτη": {
+    "word": "μύτη",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "μύτη",
+    "el_title": "μύτη",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "μύτη"
+  },
+  "αλληλοκατηγορητικός": {
+    "word": "αλληλοκατηγορητικός",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αλληλοκατηγορητικός",
+    "el_title": "αλληλοκατηγορητικός",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "not_found",
+    "recommendation": null
+  },
+  "αλληλοσπαραγμός": {
+    "word": "αλληλοσπαραγμός",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "αλληλοσπαραγμός",
+    "el_title": "αλληλοσπαραγμός",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "αλληλοσπαραγμός"
+  },
+  "αναψηλάφηση": {
+    "word": "αναψηλάφηση",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "αναψηλάφηση",
+    "el_title": "αναψηλάφηση",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "αναψηλάφηση"
+  },
+  "αντίκρισμα": {
+    "word": "αντίκρισμα",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "αντίκρισμα",
+    "el_title": "αντίκρισμα",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "αντίκρισμα"
+  },
+  "αντιπαιδαγωγικός": {
+    "word": "αντιπαιδαγωγικός",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "αντιπαιδαγωγικός",
+    "el_title": "αντιπαιδαγωγικός",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "αντιπαιδαγωγικός"
+  },
+  "αξιολογικός": {
+    "word": "αξιολογικός",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "αξιολογικός",
+    "el_title": "αξιολογικός",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "αξιολογικός"
+  },
+  "ΑΠΕ": {
+    "word": "ΑΠΕ",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "ΑΠΕ",
+    "el_title": "ΑΠΕ",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "ΑΠΕ"
+  },
+  "αποικιοκράτης": {
+    "word": "αποικιοκράτης",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "αποικιοκράτης",
+    "el_title": "αποικιοκράτης",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "αποικιοκράτης"
+  },
+  "αυτοθαυμασμός": {
+    "word": "αυτοθαυμασμός",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "αυτοθαυμασμός",
+    "el_title": "αυτοθαυμασμός",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "αυτοθαυμασμός"
+  },
+  "αυτοκρασικός": {
+    "word": "αυτοκρασικός",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αυτοκρασικός",
+    "el_title": "αυτοκρασικός",
+    "suggestions_en": [],
+    "suggestions_el": [
+      "αυτοκριτικός",
+      "αυτογραφικός",
+      "αυτοδραστικός"
+    ],
+    "status": "close_match",
+    "recommendation": "αυτοκριτικός"
+  },
+  "αυτοπαρουσιάζομαι": {
+    "word": "αυτοπαρουσιάζομαι",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "αυτοπαρουσιάζομαι",
+    "el_title": "αυτοπαρουσιάζομαι",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "αυτοπαρουσιάζομαι"
+  },
+  "βίωμα": {
+    "word": "βίωμα",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "βίωμα",
+    "el_title": "βίωμα",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "βίωμα"
+  },
+  "βιωματικός": {
+    "word": "βιωματικός",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "βιωματικός",
+    "el_title": "βιωματικός",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "βιωματικός"
+  },
+  "γενέτειρα": {
+    "word": "γενέτειρα",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "γενέτειρα",
+    "el_title": "γενέτειρα",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "γενέτειρα"
+  },
+  "δια": {
+    "word": "δια",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "δια",
+    "el_title": "δια",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "δια"
+  },
+  "διακινητός": {
+    "word": "διακινητός",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "διακινητός",
+    "el_title": "διακινητός",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "διακινητός"
+  },
+  "διαμετακομιστικός": {
+    "word": "διαμετακομιστικός",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "διαμετακομιστικός",
+    "el_title": "διαμετακομιστικός",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "διαμετακομιστικός"
+  },
+  "διαστρωμάτωση": {
+    "word": "διαστρωμάτωση",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "διαστρωμάτωση",
+    "el_title": "διαστρωμάτωση",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "διαστρωμάτωση"
+  },
+  "δουλεμπόριο": {
+    "word": "δουλεμπόριο",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "δουλεμπόριο",
+    "el_title": "δουλεμπόριο",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "δουλεμπόριο"
+  },
+  "δρω": {
+    "word": "δρω",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "δρω",
+    "el_title": "δρω",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "δρω"
+  },
+  "ειδησσογραφικός": {
+    "word": "ειδησσογραφικός",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "ειδησσογραφικός",
+    "el_title": "ειδησσογραφικός",
+    "suggestions_en": [],
+    "suggestions_el": [
+      "ειδησεογραφικός",
+      "ειδησεογραφικό",
+      "ειδησεογραφικές",
+      "ειδησεογραφικής",
+      "ειδησεογραφικοί"
+    ],
+    "status": "close_match",
+    "recommendation": "ειδησεογραφικός"
+  },
+  "ειδυλλιακός": {
+    "word": "ειδυλλιακός",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "ειδυλλιακός",
+    "el_title": "ειδυλλιακός",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "ειδυλλιακός"
+  },
+  "εκδημοκρατισμός": {
+    "word": "εκδημοκρατισμός",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "εκδημοκρατισμός",
+    "el_title": "εκδημοκρατισμός",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "εκδημοκρατισμός"
+  },
+  "εκλογικεύω": {
+    "word": "εκλογικεύω",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "εκλογικεύω",
+    "el_title": "εκλογικεύω",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "εκλογικεύω"
+  },
+  "εμπεριέχομαι": {
+    "word": "εμπεριέχομαι",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "εμπεριέχομαι",
+    "el_title": "εμπεριέχομαι",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "εμπεριέχομαι"
+  },
+  "εμπράκτος": {
+    "word": "εμπράκτος",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "εμπράκτος",
+    "el_title": "εμπράκτος",
+    "suggestions_en": [
+      "έμπρακτος",
+      "εμποράκος",
+      "ἐμπρακτικός",
+      "έμπρακτα"
+    ],
+    "suggestions_el": [
+      "έμπρακτος",
+      "εμπράκτως",
+      "εμποράκος",
+      "Εὔπρακτος",
+      "Εὐπράκτας"
+    ],
+    "status": "close_match",
+    "recommendation": "έμπρακτος"
+  },
+  "εμφάλιος": {
+    "word": "εμφάλιος",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "εμφάλιος",
+    "el_title": "εμφάλιος",
+    "suggestions_en": [
+      "εμφάνιση",
+      "εἰνάλιος",
+      "εμφύλιος",
+      "εμφύλιος πόλεμος",
+      "εμφάνισα"
+    ],
+    "suggestions_el": [
+      "εμφάνιση",
+      "εμφύλιος",
+      "ενάλιος",
+      "Ευλάλιος",
+      "εμφύλιος πόλεμος"
+    ],
+    "status": "close_match",
+    "recommendation": "εμφάνιση"
+  },
+  "εξαγορά": {
+    "word": "εξαγορά",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "εξαγορά",
+    "el_title": "εξαγορά",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "εξαγορά"
+  },
+  "εξόραξη": {
+    "word": "εξόραξη",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "εξόραξη",
+    "el_title": "εξόραξη",
+    "suggestions_en": [],
+    "suggestions_el": [
+      "εξόρμηση",
+      "εξόρυξη",
+      "ενόραση",
+      "εξόριση",
+      "εξόρυξα"
+    ],
+    "status": "close_match",
+    "recommendation": "εξόρμηση"
+  },
+  "επαν": {
+    "word": "επαν",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "επαν",
+    "el_title": "επαν",
+    "suggestions_en": [
+      "επαναλαμβάνω",
+      "επανέρχομαι",
+      "επανάσταση",
+      "επανειλημμένος",
+      "επανόρθωση"
+    ],
+    "suggestions_el": [
+      "επανειλημμένα",
+      "επαναλαμβάνω",
+      "επανδρώνω",
+      "επανάσταση",
+      "επαναπαύομαι"
+    ],
+    "status": "close_match",
+    "recommendation": "επαναλαμβάνω"
+  },
+  "επαναδραστηριοποιώ": {
+    "word": "επαναδραστηριοποιώ",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "επαναδραστηριοποιώ",
+    "el_title": "επαναδραστηριοποιώ",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "επαναδραστηριοποιώ"
+  },
+  "επανδρωμένος": {
+    "word": "επανδρωμένος",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "επανδρωμένος",
+    "el_title": "επανδρωμένος",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "επανδρωμένος"
+  },
+  "επρόκετο": {
+    "word": "επρόκετο",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "επρόκετο",
+    "el_title": "επρόκετο",
+    "suggestions_en": [
+      "επρόκειτο"
+    ],
+    "suggestions_el": [
+      "εμπρόθετος",
+      "εμπρόθετου",
+      "εμπρόθετοι",
+      "εμπρόθετους",
+      "Ερκετόγλου"
+    ],
+    "status": "close_match",
+    "recommendation": "επρόκειτο"
+  },
+  "ΕΡΓΟΣΣ": {
+    "word": "ΕΡΓΟΣΣ",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "ΕΡΓΟΣΣ",
+    "el_title": "ΕΡΓΟΣΣ",
+    "suggestions_en": [
+      "εργασία",
+      "εργοστάσιο",
+      "εργολάβος",
+      "εργαστήριο",
+      "εργοδότης"
+    ],
+    "suggestions_el": [
+      "εργασία",
+      "εργολάβος",
+      "εργονομία",
+      "εργοστάσιο",
+      "εργοδηγός"
+    ],
+    "status": "close_match",
+    "recommendation": "εργασία"
+  },
+  "ΕΣΠΑ": {
+    "word": "ΕΣΠΑ",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "ΕΣΠΑ",
+    "el_title": "Ε.Σ.Π.Α.",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "Ε.Σ.Π.Α."
+  },
+  "ζήτουλας": {
+    "word": "ζήτουλας",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "ζήτουλας",
+    "el_title": "ζήτουλας",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "ζήτουλας"
+  },
+  "ζωάρα": {
+    "word": "ζωάρα",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "ζωάρα",
+    "el_title": "ζωάρα",
+    "suggestions_en": [
+      "ζωγραφία",
+      "ζωγραφική",
+      "ζωγραφίζω",
+      "Ζοάρα",
+      "Ζάραξ"
+    ],
+    "suggestions_el": [
+      "ζωγραφίζω",
+      "ζωγραφική",
+      "ζωγραφικός",
+      "ζωγραφιστός",
+      "ζωγραφιά"
+    ],
+    "status": "close_match",
+    "recommendation": "ζωγραφία"
+  },
+  "θανατοποινίτης": {
+    "word": "θανατοποινίτης",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "θανατοποινίτης",
+    "el_title": "θανατοποινίτης",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "θανατοποινίτης"
+  },
+  "θέαση": {
+    "word": "θέαση",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "θέαση",
+    "el_title": "θέαση",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "θέαση"
+  },
+  "θριαμβολογία": {
+    "word": "θριαμβολογία",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "θριαμβολογία",
+    "el_title": "θριαμβολογία",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "θριαμβολογία"
+  },
+  "θυματοποιώ": {
+    "word": "θυματοποιώ",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "θυματοποιώ",
+    "el_title": "θυματοποιώ",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "θυματοποιώ"
+  },
+  "καθ' υπερβολήν": {
+    "word": "καθ' υπερβολήν",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "καθ' υπερβολήν",
+    "el_title": "καθ' υπερβολήν",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "καθ' υπερβολήν"
+  },
+  "καθησυχάζω": {
+    "word": "καθησυχάζω",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "καθησυχάζω",
+    "el_title": "καθησυχάζω",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "καθησυχάζω"
+  },
+  "καθιστός": {
+    "word": "καθιστός",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "καθιστός",
+    "el_title": "καθιστός",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "καθιστός"
+  },
+  "καινοφανής": {
+    "word": "καινοφανής",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "καινοφανής",
+    "el_title": "καινοφανής",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "καινοφανής"
+  },
+  "ΚΕ": {
+    "word": "ΚΕ",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "ΚΕ",
+    "el_title": "Κ.Ε.",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "ΚΕ"
+  },
+  "κοίτασμα": {
+    "word": "κοίτασμα",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "κοίτασμα",
+    "el_title": "κοίτασμα",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "κοίτασμα"
+  },
+  "κοσμάκης": {
+    "word": "κοσμάκης",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "κοσμάκης",
+    "el_title": "κοσμάκης",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "κοσμάκης"
+  },
+  "κουβικός": {
+    "word": "κουβικός",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "κουβικός",
+    "el_title": "κουβικός",
+    "suggestions_en": [
+      "κυνικός",
+      "κοσμικός",
+      "Κυνικός",
+      "κουβανικός",
+      "Κουβανός"
+    ],
+    "suggestions_el": [
+      "κυνικός",
+      "κοσμικός",
+      "κομβικός",
+      "Κυνικός",
+      "κοπτικός"
+    ],
+    "status": "close_match",
+    "recommendation": "κυνικός"
+  },
+  "κόφτης": {
+    "word": "κόφτης",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "κόφτης",
+    "el_title": "κόφτης",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "κόφτης"
+  },
+  "κρατίδιο": {
+    "word": "κρατίδιο",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "κρατίδιο",
+    "el_title": "κρατίδιο",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "κρατίδιο"
+  },
+  "κρυώνω": {
+    "word": "κρυώνω",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "κρυώνω",
+    "el_title": "κρυώνω",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "κρυώνω"
+  },
+  "κυλάω": {
+    "word": "κυλάω",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "κυλάω",
+    "el_title": "κυλάω",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "κυλάω"
+  },
+  "λενινιστές": {
+    "word": "λενινιστές",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "λενινιστές",
+    "el_title": "λενινιστές",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "λενινιστές"
+  },
+  "λιθογόμωση": {
+    "word": "λιθογόμωση",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "λιθογόμωση",
+    "el_title": "λιθογόμωση",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "λιθογόμωση"
+  },
+  "λιθοστοιρός": {
+    "word": "λιθοστοιρός",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "λιθοστοιρός",
+    "el_title": "λιθοστοιρός",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "not_found",
+    "recommendation": null
+  },
+  "λιμοκτονώ": {
+    "word": "λιμοκτονώ",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "λιμοκτονώ",
+    "el_title": "λιμοκτονώ",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "λιμοκτονώ"
+  },
+  "λυχνίτης": {
+    "word": "λυχνίτης",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "λυχνίτης",
+    "el_title": "λυχνίτης",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "λυχνίτης"
+  },
+  "μετατίεμαι": {
+    "word": "μετατίεμαι",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "μετατίεμαι",
+    "el_title": "μετατίεμαι",
+    "suggestions_en": [
+      "μετριέμαι",
+      "μελετιέμαι"
+    ],
+    "suggestions_el": [
+      "μετατίθεμαι",
+      "μετριέμαι",
+      "μελετιέμαι"
+    ],
+    "status": "close_match",
+    "recommendation": "μετριέμαι"
+  },
+  "μικρομεγαλισμό": {
+    "word": "μικρομεγαλισμό",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "μικρομεγαλισμό",
+    "el_title": "μικρομεγαλισμό",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "not_found",
+    "recommendation": null
+  },
+  "μπιχλιμπίδι": {
+    "word": "μπιχλιμπίδι",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "μπιχλιμπίδι",
+    "el_title": "μπιχλιμπίδι",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "μπιχλιμπίδι"
+  },
+  "ναδίρ": {
+    "word": "ναδίρ",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "ναδίρ",
+    "el_title": "ναδίρ",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "ναδίρ"
+  },
+  "νεοφιλελεάθερος": {
+    "word": "νεοφιλελεάθερος",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "νεοφιλελεάθερος",
+    "el_title": "νεοφιλελεάθερος",
+    "suggestions_en": [],
+    "suggestions_el": [
+      "νεοφιλελευθερισμός",
+      "νεοφιλελεύθερος",
+      "νεοφιλελευθερισμών",
+      "νεοφιλελευθερισμοί",
+      "νεοφιλελεύθερες"
+    ],
+    "status": "close_match",
+    "recommendation": "νεοφιλελευθερισμός"
+  },
+  "ξεθωριάζω": {
+    "word": "ξεθωριάζω",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "ξεθωριάζω",
+    "el_title": "ξεθωριάζω",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "ξεθωριάζω"
+  },
+  "ξέσπασμα": {
+    "word": "ξέσπασμα",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "ξέσπασμα",
+    "el_title": "ξέσπασμα",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "ξέσπασμα"
+  },
+  "ξεχόντρισμα": {
+    "word": "ξεχόντρισμα",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "ξεχόντρισμα",
+    "el_title": "ξεχόντρισμα",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "ξεχόντρισμα"
+  },
+  "ογκόλιθος": {
+    "word": "ογκόλιθος",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "ογκόλιθος",
+    "el_title": "ογκόλιθος",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "ογκόλιθος"
+  },
+  "οικονομοτεχνικός": {
+    "word": "οικονομοτεχνικός",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "οικονομοτεχνικός",
+    "el_title": "οικονομοτεχνικός",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "οικονομοτεχνικός"
+  },
+  "ΟΝΕ": {
+    "word": "ΟΝΕ",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "ΟΝΕ",
+    "el_title": "ΟΝΕ",
+    "suggestions_en": [
+      "ονειροπολώ",
+      "ονειρεύομαι",
+      "ονειρεμένα",
+      "ονειρομάντης",
+      "ονειρολόγος"
+    ],
+    "suggestions_el": [
+      "ονειρεύομαι",
+      "ονειροπολώ",
+      "ονειδίζω",
+      "ονειροπόλος",
+      "ονειροπαρμένος"
+    ],
+    "status": "close_match",
+    "recommendation": "ονειροπολώ"
+  },
+  "παγώνω": {
+    "word": "παγώνω",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "παγώνω",
+    "el_title": "παγώνω",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "παγώνω"
+  },
+  "πανανθρώπινος": {
+    "word": "πανανθρώπινος",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "πανανθρώπινος",
+    "el_title": "πανανθρώπινος",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "πανανθρώπινος"
+  },
+  "παρακινώ": {
+    "word": "παρακινώ",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "παρακινώ",
+    "el_title": "παρακινώ",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "παρακινώ"
+  },
+  "παραχωρησιούχος": {
+    "word": "παραχωρησιούχος",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "παραχωρησιούχος",
+    "el_title": "παραχωρησιούχος",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "παραχωρησιούχος"
+  },
+  "παραχωρίο": {
+    "word": "παραχωρίο",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "παραχωρίο",
+    "el_title": "παραχωρίο",
+    "suggestions_en": [
+      "παραχωρώ",
+      "παραχώρηση",
+      "παραχώρησε"
+    ],
+    "suggestions_el": [
+      "παραχωρώ",
+      "παραχωρησιούχος",
+      "παραχωρητός",
+      "παραχωρητήριος",
+      "παραχωρητήριο"
+    ],
+    "status": "close_match",
+    "recommendation": "παραχωρώ"
+  },
+  "πολυτάρχη": {
+    "word": "πολυτάρχη",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "πολυτάρχη",
+    "el_title": "πολυτάρχη",
+    "suggestions_en": [
+      "πλωτάρχης",
+      "πολιτάρχης",
+      "πολυτάραχος",
+      "Πλουτάρχου",
+      "πολυτάραχη"
+    ],
+    "suggestions_el": [
+      "Πολυτάρχη",
+      "Πολυτάρχης",
+      "πολυτάραχος",
+      "πλωτάρχης",
+      "πολεμάρχης"
+    ],
+    "status": "close_match",
+    "recommendation": "πλωτάρχης"
+  },
+  "προασπιακός": {
+    "word": "προασπιακός",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "προασπιακός",
+    "el_title": "προασπιακός",
+    "suggestions_en": [
+      "προαστιακός"
+    ],
+    "suggestions_el": [
+      "προαστιακός",
+      "προτασιακός λογισμός",
+      "προτασιακός",
+      "προαστιακό",
+      "προαστιακές"
+    ],
+    "status": "close_match",
+    "recommendation": "προαστιακός"
+  },
+  "προβάδισμα": {
+    "word": "προβάδισμα",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "προβάδισμα",
+    "el_title": "προβάδισμα",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "προβάδισμα"
+  },
+  "προϊδεάζω": {
+    "word": "προϊδεάζω",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "προϊδεάζω",
+    "el_title": "προϊδεάζω",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "προϊδεάζω"
+  },
+  "προτρέχω": {
+    "word": "προτρέχω",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "προτρέχω",
+    "el_title": "προτρέχω",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "προτρέχω"
+  },
+  "προύχοντας": {
+    "word": "προύχοντας",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "προύχοντας",
+    "el_title": "προύχοντας",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "προύχοντας"
+  },
+  "πρωτόγνωρος": {
+    "word": "πρωτόγνωρος",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "πρωτόγνωρος",
+    "el_title": "πρωτόγνωρος",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "πρωτόγνωρος"
+  },
+  "πρωτολογία": {
+    "word": "πρωτολογία",
+    "en_exists": true,
+    "el_exists": false,
+    "en_title": "πρωτολογία",
+    "el_title": "πρωτολογία",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "πρωτολογία"
+  },
+  "πρωτοφανής": {
+    "word": "πρωτοφανής",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "πρωτοφανής",
+    "el_title": "πρωτοφανής",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "πρωτοφανής"
+  },
+  "πυρινικός": {
+    "word": "πυρινικός",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "πυρινικός",
+    "el_title": "πυρινικός",
+    "suggestions_en": [
+      "πυρηνικός",
+      "ποινικός",
+      "πορνικός",
+      "παροινικός",
+      "πυρηνικός αντιδραστήρας"
+    ],
+    "suggestions_el": [
+      "πυρετικός",
+      "πυρωτικός",
+      "ποινικός",
+      "πυρηνικός",
+      "πορνικός"
+    ],
+    "status": "close_match",
+    "recommendation": "πυρηνικός"
+  },
+  "ΣΕΒ": {
+    "word": "ΣΕΒ",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "ΣΕΒ",
+    "el_title": "ΣΕΒ",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "ΣΕΒ"
+  },
+  "σιγοντάρω": {
+    "word": "σιγοντάρω",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "σιγοντάρω",
+    "el_title": "σιγοντάρω",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "σιγοντάρω"
+  },
+  "σιμπίπτω": {
+    "word": "σιμπίπτω",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "σιμπίπτω",
+    "el_title": "σιμπίπτω",
+    "suggestions_en": [
+      "συμπίπτω"
+    ],
+    "suggestions_el": [
+      "συμπίπτω",
+      "συμπίπτων"
+    ],
+    "status": "close_match",
+    "recommendation": "συμπίπτω"
+  },
+  "σκαλιομένος": {
+    "word": "σκαλιομένος",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "σκαλιομένος",
+    "el_title": "σκαλιομένος",
+    "suggestions_en": [
+      "σκαλισμένος"
+    ],
+    "suggestions_el": [
+      "Σαλιμένος",
+      "σκαλισμένος",
+      "σκαλωμένος",
+      "σφαλισμένος",
+      "σκαλισμένο"
+    ],
+    "status": "close_match",
+    "recommendation": "σκαλισμένος"
+  },
+  "σκαπακός": {
+    "word": "σκαπακός",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "σκαπακός",
+    "el_title": "σκαπακός",
+    "suggestions_en": [
+      "σαβακός",
+      "σκαπτός",
+      "Σαρακοστή",
+      "σκᾶπος",
+      "σκέπανος"
+    ],
+    "suggestions_el": [
+      "σκαπτικός",
+      "σκαπτός",
+      "σαβακός",
+      "σπανακόσουπα",
+      "Σκαρανκός"
+    ],
+    "status": "close_match",
+    "recommendation": "σαβακός"
+  },
+  "στελεχικός": {
+    "word": "στελεχικός",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "στελεχικός",
+    "el_title": "στελεχικός",
+    "suggestions_en": [
+      "στέλεχος"
+    ],
+    "suggestions_el": [
+      "σκελετικός",
+      "στέλεχος",
+      "σελέμικος",
+      "Στέλικος"
+    ],
+    "status": "close_match",
+    "recommendation": "στέλεχος"
+  },
+  "συγκρίσιμος": {
+    "word": "συγκρίσιμος",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "συγκρίσιμος",
+    "el_title": "συγκρίσιμος",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "συγκρίσιμος"
+  },
+  "συνοδεύομαι": {
+    "word": "συνοδεύομαι",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "συνοδεύομαι",
+    "el_title": "συνοδεύομαι",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "συνοδεύομαι"
+  },
+  "συριζαϊκός": {
+    "word": "συριζαϊκός",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "συριζαϊκός",
+    "el_title": "συριζαϊκός",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "συριζαϊκός"
+  },
+  "τζίρος": {
+    "word": "τζίρος",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "τζίρος",
+    "el_title": "τζίρος",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "τζίρος"
+  },
+  "τολμηλός": {
+    "word": "τολμηλός",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "τολμηλός",
+    "el_title": "τολμηλός",
+    "suggestions_en": [
+      "τολμηρός",
+      "τολμητής",
+      "τολμηρότατος",
+      "τολμηρές",
+      "τολμηρό"
+    ],
+    "suggestions_el": [
+      "τολμηρός",
+      "τολμηρότητα",
+      "τολμηρότης",
+      "Τελμησός",
+      "τολμηρό"
+    ],
+    "status": "close_match",
+    "recommendation": "τολμηρός"
+  },
+  "τραγελαφικός": {
+    "word": "τραγελαφικός",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "τραγελαφικός",
+    "el_title": "τραγελαφικός",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "τραγελαφικός"
+  },
+  "τρολάρω": {
+    "word": "τρολάρω",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "τρολάρω",
+    "el_title": "τρολάρω",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "τρολάρω"
+  },
+  "τυχωδιώκτης": {
+    "word": "τυχωδιώκτης",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "τυχωδιώκτης",
+    "el_title": "τυχωδιώκτης",
+    "suggestions_en": [
+      "τυχοδιώκτης",
+      "τυχοδιώκτες",
+      "τυχοδιώκτη"
+    ],
+    "suggestions_el": [
+      "τυχοδιώκτης",
+      "τυχοδιώχτης",
+      "τυχοδιωκτισμός",
+      "τυχοδιωκτισμοί",
+      "τυχοδιωκτισμών"
+    ],
+    "status": "close_match",
+    "recommendation": "τυχοδιώκτης"
+  },
+  "υπερκέρδος": {
+    "word": "υπερκέρδος",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "υπερκέρδος",
+    "el_title": "υπερκέρδος",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "υπερκέρδος"
+  },
+  "υπερξουσία": {
+    "word": "υπερξουσία",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "υπερξουσία",
+    "el_title": "υπερξουσία",
+    "suggestions_en": [
+      "ὑπάρξουσι",
+      "ὑπάρξουσιν",
+      "ὑπάρξουσα"
+    ],
+    "suggestions_el": [
+      "υπερεξουσία",
+      "υπερακουσία",
+      "υπερακουσίας",
+      "υπερούσιος",
+      "υπεξούσιος"
+    ],
+    "status": "close_match",
+    "recommendation": "ὑπάρξουσι"
+  },
+  "υπολειτουργώ": {
+    "word": "υπολειτουργώ",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "υπολειτουργώ",
+    "el_title": "υπολειτουργώ",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "υπολειτουργώ"
+  },
+  "ΦΗΑ": {
+    "word": "ΦΗΑ",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "ΦΗΑ",
+    "el_title": "ΦΗΑ",
+    "suggestions_en": [
+      "φημί",
+      "φαίνω",
+      "φανερός",
+      "φαντασία",
+      "φαρμακεία"
+    ],
+    "suggestions_el": [
+      "φαίνω",
+      "φαίνομαι",
+      "φαλακρός",
+      "φανός",
+      "φαιδρός"
+    ],
+    "status": "close_match",
+    "recommendation": "φημί"
+  },
+  "φιλοτεχνώ": {
+    "word": "φιλοτεχνώ",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "φιλοτεχνώ",
+    "el_title": "φιλοτεχνώ",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "φιλοτεχνώ"
+  },
+  "χασομερώ": {
+    "word": "χασομερώ",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "χασομερώ",
+    "el_title": "χασομερώ",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "χασομερώ"
+  },
+  "χειρόφρενο": {
+    "word": "χειρόφρενο",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "χειρόφρενο",
+    "el_title": "χειρόφρενο",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "χειρόφρενο"
+  },
+  "χοροπηδητό": {
+    "word": "χοροπηδητό",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "χοροπηδητό",
+    "el_title": "χοροπηδητό",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "χοροπηδητό"
+  },
+  "χωριουδάκι": {
+    "word": "χωριουδάκι",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "χωριουδάκι",
+    "el_title": "χωριουδάκι",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "χωριουδάκι"
+  },
+  "ψιθυριστά": {
+    "word": "ψιθυριστά",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "ψιθυριστά",
+    "el_title": "ψιθυριστά",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "ψιθυριστά"
+  },
+  "πλασάρω": {
+    "word": "πλασάρω",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "πλασάρω",
+    "el_title": "πλασάρω",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "πλασάρω"
+  },
+  "στολεύω": {
+    "word": "στολεύω",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "στολεύω",
+    "el_title": "στολεύω",
+    "suggestions_en": [
+      "σαλεύω",
+      "σκυλεύω",
+      "στολίζω",
+      "σκοπεύω",
+      "στερεύω"
+    ],
+    "suggestions_el": [
+      "στολίζω",
+      "σαλεύω",
+      "σμιλεύω",
+      "σκυλεύω",
+      "σκοπεύω"
+    ],
+    "status": "close_match",
+    "recommendation": "σαλεύω"
+  },
+  "ισότημα": {
+    "word": "ισότημα",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "ισότημα",
+    "el_title": "ισότημα",
+    "suggestions_en": [
+      "ισότητα",
+      "ισότητας",
+      "ισότητες",
+      "ἵστημι",
+      "ἵσταμαι"
+    ],
+    "suggestions_el": [
+      "ισότιμος",
+      "ισότητα",
+      "ισότιμα",
+      "Ισταματίδης",
+      "ιστόρημα"
+    ],
+    "status": "close_match",
+    "recommendation": "ισότητα"
+  },
+  "απολυταρχισμός": {
+    "word": "απολυταρχισμός",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "απολυταρχισμός",
+    "el_title": "απολυταρχισμός",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "απολυταρχισμός"
+  },
+  "αλογο": {
+    "word": "αλογο",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αλογο",
+    "el_title": "αλογο",
+    "suggestions_en": [
+      "αλογοουρά",
+      "αλογοσούρτης",
+      "αλογοπάζαρο",
+      "αλογοσύρτης",
+      "αλογονουρά"
+    ],
+    "suggestions_el": [
+      "αλογολάτης",
+      "αλογο-",
+      "αλογομούρης",
+      "αλογοουρά",
+      "αλογοσύρτης"
+    ],
+    "status": "close_match",
+    "recommendation": "αλογοουρά"
+  },
+  "ανάβασμα": {
+    "word": "ανάβασμα",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "ανάβασμα",
+    "el_title": "ανάβασμα",
+    "suggestions_en": [
+      "ανάβαση",
+      "ανέβασμα",
+      "ανάβρυσμα",
+      "ανάβομαι",
+      "ανεβασμάτων"
+    ],
+    "suggestions_el": [
+      "ανάβαθα",
+      "ανάβαση",
+      "Ανάκασα",
+      "ανέβασμα",
+      "ανάβρυσμα"
+    ],
+    "status": "close_match",
+    "recommendation": "ανάβαση"
+  },
+  "ανάγνωστρα": {
+    "word": "ανάγνωστρα",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "ανάγνωστρα",
+    "el_title": "ανάγνωστρα",
+    "suggestions_en": [
+      "ανάγνωσμα",
+      "αναγνωστριών",
+      "αναγνώστης",
+      "αναγνώστρια",
+      "αναγνωστήριο"
+    ],
+    "suggestions_el": [
+      "ανάγνωσμα",
+      "Αναγνωσταράς",
+      "Αναγνωσταλάκης",
+      "Αναγνωστέα",
+      "Αναγνωστέας"
+    ],
+    "status": "close_match",
+    "recommendation": "ανάγνωσμα"
+  },
+  "αναδηλώνω": {
+    "word": "αναδηλώνω",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αναδηλώνω",
+    "el_title": "αναδηλώνω",
+    "suggestions_en": [
+      "αναλώνω",
+      "αναδιπλώνω",
+      "αναστηλώνω",
+      "ανασηκώνω",
+      "αναδασώνω"
+    ],
+    "suggestions_el": [
+      "αναστηλώνω",
+      "αναλώνω",
+      "ανασηκώνω",
+      "αναδιπλώνω",
+      "αναδασώνω"
+    ],
+    "status": "close_match",
+    "recommendation": "αναλώνω"
+  },
+  "αναδιπλάσιος": {
+    "word": "αναδιπλάσιος",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αναδιπλάσιος",
+    "el_title": "αναδιπλάσιος",
+    "suggestions_en": [
+      "αναδιπλασιασμός",
+      "αναδιπλασιασμό",
+      "αναδιπλασιασμού",
+      "αναδιπλασιασμών",
+      "αναδιπλασιασμοί"
+    ],
+    "suggestions_el": [
+      "αναδιπλασιασμός",
+      "αναδιπλασιασμένος",
+      "αναδιπλασιασμένο",
+      "αναδιπλασιασμό",
+      "αναδιπλασιασμένη"
+    ],
+    "status": "close_match",
+    "recommendation": "αναδιπλασιασμός"
+  },
+  "αορατικός": {
+    "word": "αορατικός",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αορατικός",
+    "el_title": "αορατικός",
+    "suggestions_en": [
+      "αἱρετικός",
+      "αιρετικός",
+      "αρκτικός",
+      "ακριτικός",
+      "αγροτικός"
+    ],
+    "suggestions_el": [
+      "αρκτικός",
+      "αιρετικός",
+      "αποφατικός",
+      "αγροτικός",
+      "αραβικός"
+    ],
+    "status": "close_match",
+    "recommendation": "αἱρετικός"
+  },
+  "απάστακτος": {
+    "word": "απάστακτος",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "απάστακτος",
+    "el_title": "απάστακτος",
+    "suggestions_en": [
+      "αβάσταχτος",
+      "αδίστακτος",
+      "απότακτος",
+      "ανάστατος",
+      "ανύστακτος"
+    ],
+    "suggestions_el": [
+      "αβάσταχτος",
+      "αδίστακτος",
+      "αβάστακτος",
+      "Αβάστακτος",
+      "απότακτος"
+    ],
+    "status": "close_match",
+    "recommendation": "αβάσταχτος"
+  },
+  "αποβάσμα": {
+    "word": "αποβάσμα",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αποβάσμα",
+    "el_title": "αποβάσμα",
+    "suggestions_en": [
+      "αποβάθρα",
+      "αποβδόμαδα",
+      "αποσπάσματα",
+      "ανεβάσματα",
+      "ανεβάσματος"
+    ],
+    "suggestions_el": [
+      "αποβάθρα",
+      "αποβδόμαδα",
+      "αποξύσματα",
+      "αποβάλαμε",
+      "αποβγάλματος"
+    ],
+    "status": "close_match",
+    "recommendation": "αποβάθρα"
+  },
+  "αποβίωτος": {
+    "word": "αποβίωτος",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αποβίωτος",
+    "el_title": "αποβίωτος",
+    "suggestions_en": [
+      "αβίωτος",
+      "αποίητος",
+      "απόβλητος",
+      "απότιστος",
+      "απάλιωτος"
+    ],
+    "suggestions_el": [
+      "αβίωτος",
+      "αποβίωση",
+      "αποίητος",
+      "αποβίωσε",
+      "αποβίωσαν"
+    ],
+    "status": "close_match",
+    "recommendation": "αβίωτος"
+  },
+  "αποβιάζω": {
+    "word": "αποβιάζω",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αποβιάζω",
+    "el_title": "αποβιάζω",
+    "suggestions_en": [
+      "αποστάζω",
+      "αποφράζω",
+      "αποβιβάζω",
+      "αποτινάζω",
+      "απουσιάζω"
+    ],
+    "suggestions_el": [
+      "αποτάζω",
+      "αποβιώνω",
+      "απουσιάζω",
+      "αποστάζω",
+      "αποβιβάζω"
+    ],
+    "status": "close_match",
+    "recommendation": "αποστάζω"
+  },
+  "αποβιοθανάτωση": {
+    "word": "αποβιοθανάτωση",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αποβιοθανάτωση",
+    "el_title": "αποβιοθανάτωση",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "not_found",
+    "recommendation": null
+  },
+  "αποβλήττω": {
+    "word": "αποβλήττω",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αποβλήττω",
+    "el_title": "αποβλήττω",
+    "suggestions_en": [
+      "αποβλήτων",
+      "απόβλητα",
+      "απόβλητος",
+      "απόβλητων",
+      "απόβλητο"
+    ],
+    "suggestions_el": [
+      "αποβλήτων",
+      "αποβλήτου",
+      "απόβλητο",
+      "απόβλιττο",
+      "ἀποβλητέος"
+    ],
+    "status": "close_match",
+    "recommendation": "αποβλήτων"
+  },
+  "αποβλήτω": {
+    "word": "αποβλήτω",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αποβλήτω",
+    "el_title": "αποβλήτω",
+    "suggestions_en": [
+      "αποβλήτων",
+      "απόβλητων",
+      "αποβλέπω",
+      "απολήγω",
+      "απολύτως"
+    ],
+    "suggestions_el": [
+      "αποβλήτων",
+      "απόβλητων",
+      "αποβλέπω",
+      "απολύτως",
+      "απολήγω"
+    ],
+    "status": "close_match",
+    "recommendation": "αποβλήτων"
+  },
+  "αποβοάω": {
+    "word": "αποβοάω",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αποβοάω",
+    "el_title": "αποβοάω",
+    "suggestions_en": [
+      "αποβάθρα",
+      "αποβάλλω",
+      "απομονωμένος",
+      "αποβολή",
+      "αποκτάω"
+    ],
+    "suggestions_el": [
+      "αποβολή",
+      "αποβάλλω",
+      "αποσβολωμένος",
+      "αποβίωση",
+      "αποβάθρα"
+    ],
+    "status": "close_match",
+    "recommendation": "αποβάθρα"
+  },
+  "αποβολιμαία": {
+    "word": "αποβολιμαία",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "αποβολιμαία",
+    "el_title": "αποβολιμαία",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "αποβολιμαία"
+  },
+  "αράδιασμα": {
+    "word": "αράδιασμα",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "αράδιασμα",
+    "el_title": "αράδιασμα",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "αράδιασμα"
+  },
+  "αργύρω": {
+    "word": "αργύρω",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αργύρω",
+    "el_title": "αργύρω",
+    "suggestions_en": [
+      "αργυρώνητος",
+      "αργυρωρυχείο",
+      "Αργυρώ",
+      "ἀργύρῳ",
+      "ἀργύρω"
+    ],
+    "suggestions_el": [
+      "Αργύρω",
+      "αργύρων",
+      "αργυρώνητος",
+      "Αργυρώ",
+      "ἀργυρώνητος"
+    ],
+    "status": "close_match",
+    "recommendation": "αργυρώνητος"
+  },
+  "αριάδνη": {
+    "word": "αριάδνη",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αριάδνη",
+    "el_title": "αριάδνη",
+    "suggestions_en": [
+      "Ἀριάδνη",
+      "αράχνη",
+      "αράχνης",
+      "ἀράχνη",
+      "ἀράχνης"
+    ],
+    "suggestions_el": [
+      "Αριάδνη",
+      "Ἀριάδνη",
+      "αράχνη",
+      "Αριάνα",
+      "αγιάνης"
+    ],
+    "status": "close_match",
+    "recommendation": "Ἀριάδνη"
+  },
+  "αριστοτέλης": {
+    "word": "αριστοτέλης",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αριστοτέλης",
+    "el_title": "αριστοτέλης",
+    "suggestions_en": [
+      "Αριστοτέλης",
+      "Ἀριστοτέλης",
+      "Αριστοτέλη",
+      "αριστοτέχνης",
+      "αριστοτελισμός"
+    ],
+    "suggestions_el": [
+      "Αριστοτέλης",
+      "Ἀριστοτέλης",
+      "αριστοτέχνης",
+      "αριστοτέλειος",
+      "Αριστοτέλειο"
+    ],
+    "status": "close_match",
+    "recommendation": "Αριστοτέλης"
+  },
+  "αρκαδία": {
+    "word": "αρκαδία",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αρκαδία",
+    "el_title": "αρκαδία",
+    "suggestions_en": [
+      "Αρκαδία",
+      "Αρκαδίας",
+      "Ἀρκαδία",
+      "Ἀρκαδίας",
+      "αρχαία"
+    ],
+    "suggestions_el": [
+      "Αρκαδία",
+      "Αρκαδίας",
+      "Ἀρκαδία",
+      "Αρκαδιανός",
+      "Αρκαδιανή"
+    ],
+    "status": "close_match",
+    "recommendation": "Αρκαδία"
+  },
+  "αρκευμαι": {
+    "word": "αρκευμαι",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αρκευμαι",
+    "el_title": "αρκευμαι",
+    "suggestions_en": [
+      "αρκούμαι",
+      "ἀρνέομαι",
+      "αρνούμαι",
+      "ἄρνυμαι",
+      "ἀρκεύθινος"
+    ],
+    "suggestions_el": [
+      "αρκούμαι",
+      "Αρκουμανέας",
+      "αρκιέμαι",
+      "Αρκουμανέα",
+      "αρνούμαι"
+    ],
+    "status": "close_match",
+    "recommendation": "αρκούμαι"
+  },
+  "αρμενία": {
+    "word": "αρμενία",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "αρμενία",
+    "el_title": "Αρμενία",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "Αρμενία"
+  },
+  "αρναίστρια": {
+    "word": "αρναίστρια",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αρναίστρια",
+    "el_title": "αρναίστρια",
+    "suggestions_en": [
+      "αρπίστρια",
+      "αρχαΐστρια",
+      "αριβίστρια",
+      "αριβίστριας",
+      "αρχαΐστριας"
+    ],
+    "suggestions_el": [
+      "αριβίστρια",
+      "αρπίστρια",
+      "αυνανίστρια",
+      "αρχαΐστρια",
+      "αριβίστριας"
+    ],
+    "status": "close_match",
+    "recommendation": "αρπίστρια"
+  },
+  "αρναιστής": {
+    "word": "αρναιστής",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αρναιστής",
+    "el_title": "αρναιστής",
+    "suggestions_en": [
+      "αυνανιστής",
+      "αριβιστής",
+      "αρπιστής",
+      "αρχαϊστής",
+      "ἀναισθησία"
+    ],
+    "suggestions_el": [
+      "αραβιστής",
+      "αρπιστής",
+      "αφανιστής",
+      "αρματιστής",
+      "αυνανιστής"
+    ],
+    "status": "close_match",
+    "recommendation": "αυνανιστής"
+  },
+  "αρναϊκός": {
+    "word": "αρναϊκός",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αρναϊκός",
+    "el_title": "αρναϊκός",
+    "suggestions_en": [
+      "αρχαϊκός",
+      "αθηναϊκός",
+      "αλκαϊκός",
+      "αχαϊκός",
+      "ανοϊκός"
+    ],
+    "suggestions_el": [
+      "ανοϊκός",
+      "αρχαϊκός",
+      "αλταϊκός",
+      "αθηναϊκός",
+      "αρεταϊκός"
+    ],
+    "status": "close_match",
+    "recommendation": "αρχαϊκός"
+  },
+  "αταξιακός": {
+    "word": "αταξιακός",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αταξιακός",
+    "el_title": "αταξιακός",
+    "suggestions_en": [
+      "αταξικός",
+      "ατοξικός",
+      "αταξίας"
+    ],
+    "suggestions_el": [
+      "αταβικός",
+      "αξιακός",
+      "ατοξικός",
+      "αταξικός",
+      "αταξικό"
+    ],
+    "status": "close_match",
+    "recommendation": "αταξικός"
+  },
+  "γανώματα": {
+    "word": "γανώματα",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "γανώματα",
+    "el_title": "γανώματα",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "γανώματα"
+  },
+  "γεν": {
+    "word": "γεν",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "γεν",
+    "el_title": "γεν",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "γεν"
+  },
+  "γενειάδα": {
+    "word": "γενειάδα",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "γενειάδα",
+    "el_title": "γενειάδα",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "γενειάδα"
+  },
+  "αναβαπτισμός": {
+    "word": "αναβαπτισμός",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "αναβαπτισμός",
+    "el_title": "αναβαπτισμός",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "αναβαπτισμός"
+  },
+  "αναδιπλώνομαι": {
+    "word": "αναδιπλώνομαι",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "αναδιπλώνομαι",
+    "el_title": "αναδιπλώνομαι",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "αναδιπλώνομαι"
+  },
+  "ανυπομονώ": {
+    "word": "ανυπομονώ",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "ανυπομονώ",
+    "el_title": "ανυπομονώ",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "ανυπομονώ"
+  },
+  "αξιολίγιση": {
+    "word": "αξιολίγιση",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αξιολίγιση",
+    "el_title": "αξιολίγιση",
+    "suggestions_en": [
+      "αξιολόγηση",
+      "αξιολόγησης"
+    ],
+    "suggestions_el": [
+      "αξιολόγηση",
+      "αξιολόγησης",
+      "αξιολογική",
+      "αξιολογικής"
+    ],
+    "status": "close_match",
+    "recommendation": "αξιολόγηση"
+  },
+  "αποκαλόκαιρο": {
+    "word": "αποκαλόκαιρο",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "αποκαλόκαιρο",
+    "el_title": "αποκαλόκαιρο",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "αποκαλόκαιρο"
+  },
+  "απολώρηση": {
+    "word": "απολώρηση",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "απολώρηση",
+    "el_title": "απολώρηση",
+    "suggestions_en": [
+      "αποχώρηση",
+      "αποχώρησης",
+      "αποχώρησα",
+      "αποχωρητήριο",
+      "αποχωρήσεις"
+    ],
+    "suggestions_el": [
+      "αποχώρηση",
+      "αποφώνηση",
+      "αποχώρησης",
+      "αποφώνησης",
+      "αποχωρητήριο"
+    ],
+    "status": "close_match",
+    "recommendation": "αποχώρηση"
+  },
+  "ατόπημα": {
+    "word": "ατόπημα",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "ατόπημα",
+    "el_title": "ατόπημα",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "ατόπημα"
+  },
+  "αχνοφαίνομαι": {
+    "word": "αχνοφαίνομαι",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "αχνοφαίνομαι",
+    "el_title": "αχνοφαίνομαι",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "αχνοφαίνομαι"
+  },
+  "διαγενεακός": {
+    "word": "διαγενεακός",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "διαγενεακός",
+    "el_title": "διαγενεακός",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "διαγενεακός"
+  },
+  "διασκόπτομαι": {
+    "word": "διασκόπτομαι",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "διασκόπτομαι",
+    "el_title": "διασκόπτομαι",
+    "suggestions_en": [
+      "διασκέπτομαι",
+      "διακόπτομαι"
+    ],
+    "suggestions_el": [
+      "διακόπτομαι",
+      "διασκέπτομαι"
+    ],
+    "status": "close_match",
+    "recommendation": "διασκέπτομαι"
+  },
+  "διαύγεια": {
+    "word": "διαύγεια",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "διαύγεια",
+    "el_title": "διαύγεια",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "διαύγεια"
+  },
+  "διεξοδοκικός": {
+    "word": "διεξοδοκικός",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "διεξοδοκικός",
+    "el_title": "διεξοδοκικός",
+    "suggestions_en": [],
+    "suggestions_el": [
+      "διεξοδικός"
+    ],
+    "status": "close_match",
+    "recommendation": "διεξοδικός"
+  },
+  "δυνητικός": {
+    "word": "δυνητικός",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "δυνητικός",
+    "el_title": "δυνητικός",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "δυνητικός"
+  },
+  "δωσιλογισμός": {
+    "word": "δωσιλογισμός",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "δωσιλογισμός",
+    "el_title": "δωσιλογισμός",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "δωσιλογισμός"
+  },
+  "ΕΔ": {
+    "word": "ΕΔ",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "ΕΔ",
+    "el_title": "ΕΔ",
+    "suggestions_en": [
+      "εδώ",
+      "εδαφικός",
+      "εδώ ο κόσμος καίγεται και το μουνί χτενίζεται",
+      "εδώδιμος",
+      "εδώ που τα λέμε"
+    ],
+    "suggestions_el": [
+      "εδώδιμος",
+      "εδράζω",
+      "εδραιώνω",
+      "εδώ",
+      "εδώλιο"
+    ],
+    "status": "close_match",
+    "recommendation": "εδώ"
+  },
+  "εκκωφαντικός": {
+    "word": "εκκωφαντικός",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "εκκωφαντικός",
+    "el_title": "εκκωφαντικός",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "εκκωφαντικός"
+  },
+  "εκφασισμός": {
+    "word": "εκφασισμός",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "εκφασισμός",
+    "el_title": "εκφασισμός",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "εκφασισμός"
+  },
+  "ελιγμός": {
+    "word": "ελιγμός",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "ελιγμός",
+    "el_title": "ελιγμός",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "ελιγμός"
+  },
+  "επιμολύνω": {
+    "word": "επιμολύνω",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "επιμολύνω",
+    "el_title": "επιμολύνω",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "επιμολύνω"
+  },
+  "επιτάκιο": {
+    "word": "επιτάκιο",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "επιτάκιο",
+    "el_title": "επιτάκιο",
+    "suggestions_en": [
+      "επιτόκιο",
+      "επιτάφιος",
+      "Επιτάλιο",
+      "ἐπιτάφιος",
+      "ἑπτακόσιοι"
+    ],
+    "suggestions_el": [
+      "Επιτάκιος",
+      "επιτόκιο",
+      "επιτάφιος",
+      "επιτίμιο",
+      "επινίκιος"
+    ],
+    "status": "close_match",
+    "recommendation": "επιτόκιο"
+  },
+  "ευοδώνω": {
+    "word": "ευοδώνω",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "ευοδώνω",
+    "el_title": "ευοδώνω",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "ευοδώνω"
+  },
+  "ημίεργα": {
+    "word": "ημίεργα",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "ημίεργα",
+    "el_title": "ημίεργα",
+    "suggestions_en": [
+      "ημεραργία",
+      "ημεραργιών",
+      "ημεραργίες",
+      "ημεραργίας",
+      "ἡμέρα"
+    ],
+    "suggestions_el": [
+      "ημεραλωπία",
+      "ημεραργία",
+      "ημεραλωπιών",
+      "ημεραργίας",
+      "ημεραργίες"
+    ],
+    "status": "close_match",
+    "recommendation": "ημεραργία"
+  },
+  "κακοφορμίζω": {
+    "word": "κακοφορμίζω",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "κακοφορμίζω",
+    "el_title": "κακοφορμίζω",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "κακοφορμίζω"
+  },
+  "καρατόμηση": {
+    "word": "καρατόμηση",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "καρατόμηση",
+    "el_title": "καρατόμηση",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "καρατόμηση"
+  },
+  "καρατομώ": {
+    "word": "καρατομώ",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "καρατομώ",
+    "el_title": "καρατομώ",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "καρατομώ"
+  },
+  "κορυφώνομαι": {
+    "word": "κορυφώνομαι",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "κορυφώνομαι",
+    "el_title": "κορυφώνομαι",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "κορυφώνομαι"
+  },
+  "λάτρωση": {
+    "word": "λάτρωση",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "λάτρωση",
+    "el_title": "λάτρωση",
+    "suggestions_en": [
+      "λάτρις",
+      "-λάτρης",
+      "λύτρωσις",
+      "λάτρης",
+      "λύτρωση"
+    ],
+    "suggestions_el": [
+      "λύτρωση",
+      "λάτρης",
+      "λάτρις",
+      "λύτρωσις",
+      "Λάτρων"
+    ],
+    "status": "close_match",
+    "recommendation": "λάτρις"
+  },
+  "μεγαλεπήβολος": {
+    "word": "μεγαλεπήβολος",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "μεγαλεπήβολος",
+    "el_title": "μεγαλεπήβολος",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "μεγαλεπήβολος"
+  },
+  "μεταλόσχυμος": {
+    "word": "μεταλόσχυμος",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "μεταλόσχυμος",
+    "el_title": "μεταλόσχυμος",
+    "suggestions_en": [],
+    "suggestions_el": [
+      "μεγαλόσχημος"
+    ],
+    "status": "close_match",
+    "recommendation": "μεγαλόσχημος"
+  },
+  "ξεκίνημα": {
+    "word": "ξεκίνημα",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "ξεκίνημα",
+    "el_title": "ξεκίνημα",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "ξεκίνημα"
+  },
+  "οικτρός": {
+    "word": "οικτρός",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "οικτρός",
+    "el_title": "οικτρός",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "οικτρός"
+  },
+  "π.χ.": {
+    "word": "π.χ.",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "π.χ.",
+    "el_title": "π.χ.",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "π.χ."
+  },
+  "παράρτητα": {
+    "word": "παράρτητα",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "παράρτητα",
+    "el_title": "παράρτητα",
+    "suggestions_en": [
+      "παράρτημα",
+      "παράκλητα",
+      "παράτησα",
+      "παρατεταμένος",
+      "παραρτήματα"
+    ],
+    "suggestions_el": [
+      "παράρτημα",
+      "παράστημα",
+      "παράτημα",
+      "παράτησα",
+      "παράτησαν"
+    ],
+    "status": "close_match",
+    "recommendation": "παράρτημα"
+  },
+  "παρευρίσκομαι": {
+    "word": "παρευρίσκομαι",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "παρευρίσκομαι",
+    "el_title": "παρευρίσκομαι",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "παρευρίσκομαι"
+  },
+  "παροχολογία": {
+    "word": "παροχολογία",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "παροχολογία",
+    "el_title": "παροχολογία",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "παροχολογία"
+  },
+  "προεδοποιώ": {
+    "word": "προεδοποιώ",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "προεδοποιώ",
+    "el_title": "προεδοποιώ",
+    "suggestions_en": [
+      "προειδοποιώ",
+      "προειδοποιημένος",
+      "προειδοποιητικός",
+      "προειδοποιούμαι",
+      "προειδοποιήσεις"
+    ],
+    "suggestions_el": [
+      "προειδοποιώ",
+      "προειδοποιητικός",
+      "προειδοποιητικά",
+      "προειδοποιημένος",
+      "προειδοποιούμαι"
+    ],
+    "status": "close_match",
+    "recommendation": "προειδοποιώ"
+  },
+  "προμετωπίδα": {
+    "word": "προμετωπίδα",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "προμετωπίδα",
+    "el_title": "προμετωπίδα",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "προμετωπίδα"
+  },
+  "προσατιακός": {
+    "word": "προσατιακός",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "προσατιακός",
+    "el_title": "προσατιακός",
+    "suggestions_en": [
+      "προαστιακός"
+    ],
+    "suggestions_el": [
+      "προστατικός",
+      "προτασιακός",
+      "προσηλιακός",
+      "προβατικός",
+      "προτασιακός λογισμός"
+    ],
+    "status": "close_match",
+    "recommendation": "προαστιακός"
+  },
+  "πρωτοκλασάτος": {
+    "word": "πρωτοκλασάτος",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "πρωτοκλασάτος",
+    "el_title": "πρωτοκλασάτος",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "πρωτοκλασάτος"
+  },
+  "στόχαστρο": {
+    "word": "στόχαστρο",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "στόχαστρο",
+    "el_title": "στόχαστρο",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "στόχαστρο"
+  },
+  "συγκυριακός": {
+    "word": "συγκυριακός",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "συγκυριακός",
+    "el_title": "συγκυριακός",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "συγκυριακός"
+  },
+  "συνθηκολογώ": {
+    "word": "συνθηκολογώ",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "συνθηκολογώ",
+    "el_title": "συνθηκολογώ",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "συνθηκολογώ"
+  },
+  "συνονθύλευμα": {
+    "word": "συνονθύλευμα",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "συνονθύλευμα",
+    "el_title": "συνονθύλευμα",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "συνονθύλευμα"
+  },
+  "συνωμοσιολογία": {
+    "word": "συνωμοσιολογία",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "συνωμοσιολογία",
+    "el_title": "συνωμοσιολογία",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "συνωμοσιολογία"
+  },
+  "υπαργορεύω": {
+    "word": "υπαργορεύω",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "υπαργορεύω",
+    "el_title": "υπαργορεύω",
+    "suggestions_en": [
+      "υπαγορεύω",
+      "υπαγορεύτηκα",
+      "υπαγορεύθηκα",
+      "υπαγορεύομε",
+      "υπαγορεύομαι"
+    ],
+    "suggestions_el": [
+      "υπαγορεύω",
+      "υπαγορεύομαι",
+      "υπαγορεύσεις",
+      "υπαγορεύσει",
+      "υπαγορεύστε"
+    ],
+    "status": "close_match",
+    "recommendation": "υπαγορεύω"
+  },
+  "χαρκοκρατία": {
+    "word": "χαρκοκρατία",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "χαρκοκρατία",
+    "el_title": "χαρκοκρατία",
+    "suggestions_en": [],
+    "suggestions_el": [
+      "χαλκοκρατία",
+      "χαλκοκρατίας",
+      "χαλκοκρατιών"
+    ],
+    "status": "close_match",
+    "recommendation": "χαλκοκρατία"
+  },
+  "αδήριτος": {
+    "word": "αδήριτος",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "αδήριτος",
+    "el_title": "αδήριτος",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "αδήριτος"
+  },
+  "μοιροράτρης": {
+    "word": "μοιροράτρης",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "μοιροράτρης",
+    "el_title": "μοιροράτρης",
+    "suggestions_en": [],
+    "suggestions_el": [
+      "μοιρολάτρης",
+      "μοιρολάτρις",
+      "μοιρολάτρισσα",
+      "μοιρολάτρισσες",
+      "μοιρολάτρισσας"
+    ],
+    "status": "close_match",
+    "recommendation": "μοιρολάτρης"
+  },
+  "αβγά": {
+    "word": "αβγά",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "αβγά",
+    "el_title": "αβγά",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "αβγά"
+  },
+  "ανάγριος": {
+    "word": "ανάγριος",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "ανάγριος",
+    "el_title": "ανάγριος",
+    "suggestions_en": [
+      "ανάξιος",
+      "αγριοσυκιά",
+      "ανάριος",
+      "ανάγωγος",
+      "ανάκριση"
+    ],
+    "suggestions_el": [
+      "ανάριος",
+      "ανάγωγος",
+      "ανάξιος",
+      "ανώγειος",
+      "ανάρμοστος"
+    ],
+    "status": "close_match",
+    "recommendation": "ανάξιος"
+  },
+  "αναέρευς": {
+    "word": "αναέρευς",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αναέρευς",
+    "el_title": "αναέρευς",
+    "suggestions_en": [
+      "αναίρεση",
+      "αναγόρευση",
+      "αντέρεισμα",
+      "αναπνευστήρας",
+      "αναπνευστικός"
+    ],
+    "suggestions_el": [
+      "αντέρεισμα",
+      "αναίρεση",
+      "αναιρεσίβλητος",
+      "αναγόρευση",
+      "αναιρεσείων"
+    ],
+    "status": "close_match",
+    "recommendation": "αναίρεση"
+  },
+  "αναέρευτος": {
+    "word": "αναέρευτος",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αναέρευτος",
+    "el_title": "αναέρευτος",
+    "suggestions_en": [
+      "αστέρευτος",
+      "αχαΐρευτος",
+      "ανημέρευτος",
+      "αναθρεφτός",
+      "αθάρρευτος"
+    ],
+    "suggestions_el": [
+      "αχαΐρευτος",
+      "αναίρετος",
+      "αστέρευτος",
+      "ανημέρευτος",
+      "αμέρευτος"
+    ],
+    "status": "close_match",
+    "recommendation": "αστέρευτος"
+  },
+  "αναδόχευση": {
+    "word": "αναδόχευση",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αναδόχευση",
+    "el_title": "αναδόχευση",
+    "suggestions_en": [
+      "αναγόρευση",
+      "αναμόχλευση",
+      "αναδόχους",
+      "αναγόρευσης",
+      "αναμόχλευσης"
+    ],
+    "suggestions_el": [
+      "αναμόχλευση",
+      "αναγόρευση",
+      "αναγόρευσης",
+      "αναμόχλευσης",
+      "αναδόχους"
+    ],
+    "status": "close_match",
+    "recommendation": "αναγόρευση"
+  },
+  "αναδόχευτρα": {
+    "word": "αναδόχευτρα",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αναδόχευτρα",
+    "el_title": "αναδόχευτρα",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "not_found",
+    "recommendation": null
+  },
+  "αποβάσκανος": {
+    "word": "αποβάσκανος",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αποβάσκανος",
+    "el_title": "αποβάσκανος",
+    "suggestions_en": [],
+    "suggestions_el": [
+      "αποβαλκανοποίηση",
+      "ἀβάσκανος"
+    ],
+    "status": "close_match",
+    "recommendation": "αποβαλκανοποίηση"
+  },
+  "αποβολιμαίος": {
+    "word": "αποβολιμαίος",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "αποβολιμαίος",
+    "el_title": "αποβολιμαίος",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "αποβολιμαίος"
+  },
+  "αρμενιστρια": {
+    "word": "αρμενιστρια",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αρμενιστρια",
+    "el_title": "αρμενιστρια",
+    "suggestions_en": [],
+    "suggestions_el": [
+      "αρμενιστί",
+      "Ἀρμενιστί"
+    ],
+    "status": "close_match",
+    "recommendation": "αρμενιστί"
+  },
+  "αρμολογία": {
+    "word": "αρμολογία",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "αρμολογία",
+    "el_title": "αρμολογία",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "αρμολογία"
+  },
+  "αβαθής": {
+    "word": "αβαθής",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "αβαθής",
+    "el_title": "αβαθής",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "αβαθής"
+  },
+  "αδιέξοδος": {
+    "word": "αδιέξοδος",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "αδιέξοδος",
+    "el_title": "αδιέξοδος",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "αδιέξοδος"
+  },
+  "ανασχηματισμός": {
+    "word": "ανασχηματισμός",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "ανασχηματισμός",
+    "el_title": "ανασχηματισμός",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "ανασχηματισμός"
+  },
+  "αντίκυπτος": {
+    "word": "αντίκυπτος",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αντίκυπτος",
+    "el_title": "αντίκυπτος",
+    "suggestions_en": [
+      "αντίκτυπος",
+      "αντίκλητος",
+      "αντιληπτός"
+    ],
+    "suggestions_el": [
+      "αντίκτυπος",
+      "αντίκλητος",
+      "Αντίκριτος",
+      "αντιληπτός",
+      "Ἀντίκριτος"
+    ],
+    "status": "close_match",
+    "recommendation": "αντίκτυπος"
+  },
+  "αρραγής": {
+    "word": "αρραγής",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "αρραγής",
+    "el_title": "αρραγής",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "αρραγής"
+  },
+  "άτμητος": {
+    "word": "άτμητος",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "άτμητος",
+    "el_title": "άτμητος",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "άτμητος"
+  },
+  "διακατέχω": {
+    "word": "διακατέχω",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "διακατέχω",
+    "el_title": "διακατέχω",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "διακατέχω"
+  },
+  "διάπλοκος": {
+    "word": "διάπλοκος",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "διάπλοκος",
+    "el_title": "διάπλοκος",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "διάπλοκος"
+  },
+  "εκ": {
+    "word": "εκ",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "εκ",
+    "el_title": "εκ",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "εκ"
+  },
+  "εν γένει": {
+    "word": "εν γένει",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "εν γένει",
+    "el_title": "εν γένει",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "εν γένει"
+  },
+  "εν ενεργεία": {
+    "word": "εν ενεργεία",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "εν ενεργεία",
+    "el_title": "εν ενεργεία",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "εν ενεργεία"
+  },
+  "εν τέλει": {
+    "word": "εν τέλει",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "εν τέλει",
+    "el_title": "εν τέλει",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "εν τέλει"
+  },
+  "εξευρίσκω": {
+    "word": "εξευρίσκω",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "εξευρίσκω",
+    "el_title": "εξευρίσκω",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "εξευρίσκω"
+  },
+  "επαύριον": {
+    "word": "επαύριον",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "επαύριον",
+    "el_title": "επαύριον",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "επαύριον"
+  },
+  "επικλινής": {
+    "word": "επικλινής",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "επικλινής",
+    "el_title": "επικλινής",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "επικλινής"
+  },
+  "επιπλέω": {
+    "word": "επιπλέω",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "επιπλέω",
+    "el_title": "επιπλέω",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "επιπλέω"
+  },
+  "επιστεύδων": {
+    "word": "επιστεύδων",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "επιστεύδων",
+    "el_title": "επιστεύδων",
+    "suggestions_en": [
+      "ἐπιστέλλων",
+      "επισκευών"
+    ],
+    "suggestions_el": [
+      "επισπεύδω",
+      "επισπεύδων",
+      "επίστεγων",
+      "επιστέψεων"
+    ],
+    "status": "close_match",
+    "recommendation": "ἐπιστέλλων"
+  },
+  "επο αόριστον": {
+    "word": "επο αόριστον",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "επο αόριστον",
+    "el_title": "επο αόριστον",
+    "suggestions_en": [],
+    "suggestions_el": [
+      "επ' αόριστον",
+      "ἐπ' ἀόριστον"
+    ],
+    "status": "close_match",
+    "recommendation": "επ' αόριστον"
+  },
+  "εποικός": {
+    "word": "εποικός",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "εποικός",
+    "el_title": "εποικός",
+    "suggestions_en": [
+      "ενικός",
+      "εθνικός",
+      "ειδικός",
+      "επτακόσια",
+      "επικός"
+    ],
+    "suggestions_el": [
+      "έποικος",
+      "ἔποικος",
+      "ενικός",
+      "εποικοδομητικός",
+      "ειδικός"
+    ],
+    "status": "close_match",
+    "recommendation": "ενικός"
+  },
+  "κραταιός": {
+    "word": "κραταιός",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "κραταιός",
+    "el_title": "κραταιός",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "κραταιός"
+  },
+  "λειψός": {
+    "word": "λειψός",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "λειψός",
+    "el_title": "λειψός",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "λειψός"
+  },
+  "νεκρώσιμος": {
+    "word": "νεκρώσιμος",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "νεκρώσιμος",
+    "el_title": "νεκρώσιμος",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "νεκρώσιμος"
+  },
+  "ΠΑΘΕ": {
+    "word": "ΠΑΘΕ",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "ΠΑΘΕ",
+    "el_title": "ΠΑΘΕ",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "ΠΑΘΕ"
+  },
+  "παρυφή": {
+    "word": "παρυφή",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "παρυφή",
+    "el_title": "παρυφή",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "παρυφή"
+  },
+  "πατάσσω": {
+    "word": "πατάσσω",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "πατάσσω",
+    "el_title": "πατάσσω",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "πατάσσω"
+  },
+  "συμπαιγνία": {
+    "word": "συμπαιγνία",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "συμπαιγνία",
+    "el_title": "συμπαιγνία",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "συμπαιγνία"
+  },
+  "τεθνεώς": {
+    "word": "τεθνεώς",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "τεθνεώς",
+    "el_title": "τεθνεώς",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "τεθνεώς"
+  },
+  "χάσκω": {
+    "word": "χάσκω",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "χάσκω",
+    "el_title": "χάσκω",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "χάσκω"
+  },
+  "μεγαλόπνοος": {
+    "word": "μεγαλόπνοος",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "μεγαλόπνοος",
+    "el_title": "μεγαλόπνοος",
+    "suggestions_en": [],
+    "suggestions_el": [
+      "μεγαλόπνευστος",
+      "μεγαλόπνευστη",
+      "μεγαλόπνευστων",
+      "μεγαλόπνευστους",
+      "μεγαλόπνευστο"
+    ],
+    "status": "close_match",
+    "recommendation": "μεγαλόπνευστος"
+  },
+  "αμφίπλουρος": {
+    "word": "αμφίπλουρος",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αμφίπλουρος",
+    "el_title": "αμφίπλουρος",
+    "suggestions_en": [
+      "αμφίπλευρος"
+    ],
+    "suggestions_el": [
+      "αμφίπλευρος",
+      "αμφίπλευρο",
+      "αμφίπλευρης",
+      "αμφίπλευρες",
+      "Αμφίπυρος"
+    ],
+    "status": "close_match",
+    "recommendation": "αμφίπλευρος"
+  },
+  "αναδόχευτος": {
+    "word": "αναδόχευτος",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αναδόχευτος",
+    "el_title": "αναδόχευτος",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "not_found",
+    "recommendation": null
+  },
+  "αποβάσκανση": {
+    "word": "αποβάσκανση",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αποβάσκανση",
+    "el_title": "αποβάσκανση",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "not_found",
+    "recommendation": null
+  },
+  "αποβίβασις": {
+    "word": "αποβίβασις",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αποβίβασις",
+    "el_title": "αποβίβασις",
+    "suggestions_en": [
+      "αποβίβαση",
+      "αποβίβασα",
+      "αποβίβασης",
+      "ἀπόβασις",
+      "αποβιβαστικός"
+    ],
+    "suggestions_el": [
+      "ἀποβίβασις",
+      "αποβίβαση",
+      "αποβίβασης",
+      "αποβίβασαν",
+      "αποβίβασα"
+    ],
+    "status": "close_match",
+    "recommendation": "αποβίβαση"
+  },
+  "αποβατήριον": {
+    "word": "αποβατήριον",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αποβατήριον",
+    "el_title": "αποβατήριον",
+    "suggestions_en": [],
+    "suggestions_el": [
+      "ἀποβατήριος",
+      "ἀποβατήρια"
+    ],
+    "status": "close_match",
+    "recommendation": "ἀποβατήριος"
+  },
+  "αποβοή": {
+    "word": "αποβοή",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αποβοή",
+    "el_title": "αποβοή",
+    "suggestions_en": [
+      "αποθήκη",
+      "απολογούμαι",
+      "αποβλέπω",
+      "αποδοχή",
+      "αποθνήσκω"
+    ],
+    "suggestions_el": [
+      "αποβάλλω",
+      "αποθνήσκω",
+      "αποβλέπω",
+      "αποδομώ",
+      "αποκομίζω"
+    ],
+    "status": "close_match",
+    "recommendation": "αποθήκη"
+  },
+  "αποβουλή": {
+    "word": "αποβουλή",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αποβουλή",
+    "el_title": "αποβουλή",
+    "suggestions_en": [
+      "αποβολή",
+      "Απουλήιος",
+      "αποβουτύρωση",
+      "αποβουτυρώνω",
+      "αποβλήτων"
+    ],
+    "suggestions_el": [
+      "αποβολή",
+      "Απουλήιος",
+      "αποβουτυρώνω",
+      "αποβολιμαίος",
+      "αποβολιμαίους"
+    ],
+    "status": "close_match",
+    "recommendation": "αποβολή"
+  },
+  "αποβουλία": {
+    "word": "αποβουλία",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αποβουλία",
+    "el_title": "αποβουλία",
+    "suggestions_en": [
+      "αβουλία",
+      "αυτοβουλία",
+      "αβουλίας",
+      "ἀβουλία",
+      "Ἀπουλία"
+    ],
+    "suggestions_el": [
+      "αβουλία",
+      "αυτοβουλία",
+      "Απουλία",
+      "αβουλίας",
+      "Αποδουλιανάκης"
+    ],
+    "status": "close_match",
+    "recommendation": "αβουλία"
+  },
+  "αρβυλη": {
+    "word": "αρβυλη",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αρβυλη",
+    "el_title": "αρβυλη",
+    "suggestions_en": [
+      "ἀρβύλη",
+      "αρβύλα",
+      "αυλητής",
+      "αβουλησία",
+      "αρχιληστής"
+    ],
+    "suggestions_el": [
+      "ἀρβύλη",
+      "Ἀρβύλη",
+      "Ἀρβύλης",
+      "αρβύλα",
+      "αυλητής"
+    ],
+    "status": "close_match",
+    "recommendation": "ἀρβύλη"
+  },
+  "αρμένιος": {
+    "word": "αρμένιος",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αρμένιος",
+    "el_title": "αρμένιος",
+    "suggestions_en": [
+      "Αρμένιος",
+      "Ἀρμένιος",
+      "αρμόδιος",
+      "ασημένιος",
+      "Αρμένισσα"
+    ],
+    "suggestions_el": [
+      "Αρμένιος",
+      "Ἀρμένιος",
+      "αρμόδιος",
+      "αρμένικος",
+      "ασημένιος"
+    ],
+    "status": "close_match",
+    "recommendation": "Αρμένιος"
+  },
+  "αρμόνησις": {
+    "word": "αρμόνησις",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αρμόνησις",
+    "el_title": "αρμόνησις",
+    "suggestions_en": [],
+    "suggestions_el": [
+      "Αρμόνης",
+      "αρμονίστας",
+      "ἀτόνησις",
+      "Ἁρμιήσις",
+      "Ἁρμούσις"
+    ],
+    "status": "close_match",
+    "recommendation": "Αρμόνης"
+  },
+  "αρναίος": {
+    "word": "αρναίος",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αρναίος",
+    "el_title": "αρναίος",
+    "suggestions_en": [
+      "αρχαίος",
+      "Αθηναίος",
+      "αναίσθητος",
+      "αέναος",
+      "αναβοσβήνω"
+    ],
+    "suggestions_el": [
+      "Αρναίος",
+      "Ἀρναῖος",
+      "αέναος",
+      "ακμαίος",
+      "αναίσθητος"
+    ],
+    "status": "close_match",
+    "recommendation": "αρχαίος"
+  },
+  "αψίμαχος": {
+    "word": "αψίμαχος",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αψίμαχος",
+    "el_title": "αψίμαχος",
+    "suggestions_en": [
+      "απόμαχος",
+      "αίματος",
+      "αντίμαχος",
+      "Ἀντίμαχος",
+      "ἄμαχος"
+    ],
+    "suggestions_el": [
+      "απόμαχος",
+      "αλίμαχτος",
+      "αντίμαχος",
+      "Απόμαχος",
+      "Αντίμαχος"
+    ],
+    "status": "close_match",
+    "recommendation": "απόμαχος"
+  },
+  "αδιευκρίνιστος": {
+    "word": "αδιευκρίνιστος",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "αδιευκρίνιστος",
+    "el_title": "αδιευκρίνιστος",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "αδιευκρίνιστος"
+  },
+  "ανδρεϊκός": {
+    "word": "ανδρεϊκός",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "ανδρεϊκός",
+    "el_title": "ανδρεϊκός",
+    "suggestions_en": [
+      "ανδρικός",
+      "ἀνδρεῖος",
+      "Ἀνδρόνικος",
+      "ανδρείος",
+      "αντρικός"
+    ],
+    "suggestions_el": [
+      "Ανδρεΐκος",
+      "ανδρικός",
+      "Ανδρεάκος",
+      "Ανδρακός",
+      "Ανδρικός"
+    ],
+    "status": "close_match",
+    "recommendation": "ανδρικός"
+  },
+  "αυθαίροτος": {
+    "word": "αυθαίροτος",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αυθαίροτος",
+    "el_title": "αυθαίροτος",
+    "suggestions_en": [
+      "αὐθαίρετος",
+      "αυθαίρετος",
+      "αυθαίρετο",
+      "αυθαιρέτησα"
+    ],
+    "suggestions_el": [
+      "αυθαίρετος",
+      "αυθαίρετο",
+      "αυθαίρετου",
+      "αυθαίρετους",
+      "αὐθαίρετος"
+    ],
+    "status": "close_match",
+    "recommendation": "αὐθαίρετος"
+  },
+  "αυτονόητος": {
+    "word": "αυτονόητος",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "αυτονόητος",
+    "el_title": "αυτονόητος",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "αυτονόητος"
+  },
+  "αφενός": {
+    "word": "αφενός",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "αφενός",
+    "el_title": "αφενός",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "αφενός"
+  },
+  "αφήνομαι": {
+    "word": "αφήνομαι",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "αφήνομαι",
+    "el_title": "αφήνομαι",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "αφήνομαι"
+  },
+  "ειπώθηκαν": {
+    "word": "ειπώθηκαν",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "ειπώθηκαν",
+    "el_title": "ειπώθηκαν",
+    "suggestions_en": [
+      "ειπώθηκα",
+      "ειπώθηκε",
+      "ειδώθηκα"
+    ],
+    "suggestions_el": [
+      "ειδώθηκα",
+      "ενώθηκαν",
+      "ειδώθηκαν",
+      "ειδωθήκατε",
+      "ειδωθήκαμε"
+    ],
+    "status": "close_match",
+    "recommendation": "ειπώθηκα"
+  },
+  "εμόψει": {
+    "word": "εμόψει",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "εμόψει",
+    "el_title": "εμόψει",
+    "suggestions_en": [
+      "εμπειρία",
+      "εν όψει",
+      "εμπειρισμός",
+      "εμπειρογνώμων",
+      "ενόψει"
+    ],
+    "suggestions_el": [
+      "εμπειρία",
+      "εν όψει",
+      "εμπειρογνώμονας",
+      "ενόψει",
+      "εμπειρογνώμων"
+    ],
+    "status": "close_match",
+    "recommendation": "εμπειρία"
+  },
+  "εμπιστοσήνη": {
+    "word": "εμπιστοσήνη",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "εμπιστοσήνη",
+    "el_title": "εμπιστοσήνη",
+    "suggestions_en": [
+      "εμπιστοσύνη",
+      "εμπιστοσύνης"
+    ],
+    "suggestions_el": [
+      "εμπιστοσύνη",
+      "εμπιστοσύνης"
+    ],
+    "status": "close_match",
+    "recommendation": "εμπιστοσύνη"
+  },
+  "εξεδήλω": {
+    "word": "εξεδήλω",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "εξεδήλω",
+    "el_title": "εξεδήλω",
+    "suggestions_en": [
+      "εκδήλωση",
+      "εκδηλώνω",
+      "εκδηλωτικός",
+      "εκδηλώσεις",
+      "ἐδηλώσαμεν"
+    ],
+    "suggestions_el": [
+      "εκδήλωση",
+      "εκδήλως",
+      "εξεδίωξα",
+      "εκδήλωσε",
+      "εκδήλωσαν"
+    ],
+    "status": "close_match",
+    "recommendation": "εκδήλωση"
+  },
+  "εφόσαν": {
+    "word": "εφόσαν",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "εφόσαν",
+    "el_title": "εφόσαν",
+    "suggestions_en": [
+      "εἰσαναβαίνω",
+      "εφόσον",
+      "εἴησαν",
+      "εἷσαν",
+      "εἰσανέβαινον"
+    ],
+    "suggestions_el": [
+      "εφόσον",
+      "εφτανησιώτικος",
+      "εφτανησιώτικα",
+      "εφ' όσον",
+      "Εφτανησιώτης"
+    ],
+    "status": "close_match",
+    "recommendation": "εἰσαναβαίνω"
+  },
+  "καίριος": {
+    "word": "καίριος",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "καίριος",
+    "el_title": "καίριος",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "καίριος"
+  },
+  "νεολαίος": {
+    "word": "νεολαίος",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "νεολαίος",
+    "el_title": "νεολαίος",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "νεολαίος"
+  },
+  "ξεκαθ΄θρισμα": {
+    "word": "ξεκαθ΄θρισμα",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "ξεκαθ΄θρισμα",
+    "el_title": "ξεκαθ΄θρισμα",
+    "suggestions_en": [],
+    "suggestions_el": [
+      "ξεκαθαρισμάτων",
+      "ξεκαθάρισμα",
+      "ξεκαθαρισμένος",
+      "ξεκαθαρισμένων",
+      "ξεκαθαρισμένη"
+    ],
+    "status": "close_match",
+    "recommendation": "ξεκαθαρισμάτων"
+  },
+  "περίφημα": {
+    "word": "περίφημα",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "περίφημα",
+    "el_title": "περίφημα",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "περίφημα"
+  },
+  "πεταχτός": {
+    "word": "πεταχτός",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "πεταχτός",
+    "el_title": "πεταχτός",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "πεταχτός"
+  },
+  "φυλλάδο": {
+    "word": "φυλλάδο",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "φυλλάδο",
+    "el_title": "φυλλάδο",
+    "suggestions_en": [
+      "φυλλομετρώ",
+      "φυλλώδης",
+      "φυλάγομαι",
+      "φυλλάδιο",
+      "φυλλομετρημένος"
+    ],
+    "suggestions_el": [
+      "φυλλορροώ",
+      "φυλλάδιο",
+      "φυλλοβόλος",
+      "φυλλοκάρδι",
+      "φυλλομετρητής"
+    ],
+    "status": "close_match",
+    "recommendation": "φυλλομετρώ"
+  },
+  "ψευδώς": {
+    "word": "ψευδώς",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "ψευδώς",
+    "el_title": "ψευδώς",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "ψευδώς"
+  },
+  "φυλ'η": {
+    "word": "φυλ'η",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "φυλ'η",
+    "el_title": "φυλ'η",
+    "suggestions_en": [
+      "φυλή",
+      "Φυλή",
+      "φυλής"
+    ],
+    "suggestions_el": [
+      "Φυληίς",
+      "φυλή",
+      "Φυλή",
+      "Φύλλης",
+      "Φύλη"
+    ],
+    "status": "close_match",
+    "recommendation": "φυλή"
+  },
+  "μάταιο": {
+    "word": "μάταιο",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "μάταιο",
+    "el_title": "μάταιο",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "μάταιο"
+  },
+  "αμεληθώ": {
+    "word": "αμεληθώ",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αμεληθώ",
+    "el_title": "αμεληθώ",
+    "suggestions_en": [
+      "αληθώς",
+      "αληθώς ανέστη",
+      "αμελητέος",
+      "αμελώ",
+      "αλληθώρισμα"
+    ],
+    "suggestions_el": [
+      "αμελητέος",
+      "αμελώ",
+      "αληθώς ανέστη",
+      "αμελώδητος",
+      "αμελητί"
+    ],
+    "status": "close_match",
+    "recommendation": "αληθώς"
+  },
+  "ανάδυτα": {
+    "word": "ανάδυτα",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "ανάδυτα",
+    "el_title": "ανάδυτα",
+    "suggestions_en": [
+      "ανάκατα",
+      "ανάσταση",
+      "Ανάσταση",
+      "ανάταση",
+      "ανάδυση"
+    ],
+    "suggestions_el": [
+      "ανάδυση",
+      "ανώδυνα",
+      "ανάσταση",
+      "ανάταση",
+      "ανάδραση"
+    ],
+    "status": "close_match",
+    "recommendation": "ανάκατα"
+  },
+  "αναέργαστος": {
+    "word": "αναέργαστος",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αναέργαστος",
+    "el_title": "αναέργαστος",
+    "suggestions_en": [
+      "ακατέργαστος",
+      "ανέραστος",
+      "ἀκατέργαστος",
+      "ανάρπαστος"
+    ],
+    "suggestions_el": [
+      "ακατέργαστος",
+      "ανέραστος",
+      "ανάρπαστος",
+      "ἀνέργαστος",
+      "αναβραστός"
+    ],
+    "status": "close_match",
+    "recommendation": "ακατέργαστος"
+  },
+  "αποβίωσις": {
+    "word": "αποβίωσις",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αποβίωσις",
+    "el_title": "αποβίωσις",
+    "suggestions_en": [
+      "ἀποθέωσις",
+      "ἀπόπτωσις",
+      "ἀπόβασις"
+    ],
+    "suggestions_el": [
+      "αποβίωση",
+      "αποβίωσε",
+      "αποβίωσαν",
+      "αποβίωσα",
+      "αναβίωσις"
+    ],
+    "status": "close_match",
+    "recommendation": "ἀποθέωσις"
+  },
+  "απόμακρος": {
+    "word": "απόμακρος",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "απόμακρος",
+    "el_title": "απόμακρος",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "απόμακρος"
+  },
+  "αρμόνι": {
+    "word": "αρμόνι",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "αρμόνι",
+    "el_title": "αρμόνι",
+    "suggestions_en": [
+      "αρμόνιο",
+      "αρμόνικα",
+      "αρμόνικες",
+      "αρμόνιου",
+      "αρμόνικας"
+    ],
+    "suggestions_el": [
+      "αρμόνιο",
+      "αρμόνικα",
+      "αρμόνικες",
+      "Αρμόνιος",
+      "αρμόνιος"
+    ],
+    "status": "close_match",
+    "recommendation": "αρμόνιο"
+  },
+  "ξέχνω": {
+    "word": "ξέχνω",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "ξέχνω",
+    "el_title": "ξέχνω",
+    "suggestions_en": [
+      "ξεχνώ",
+      "ξένων",
+      "ξένω",
+      "ξένῳ",
+      "ξεχνάω"
+    ],
+    "suggestions_el": [
+      "ξεχνώ",
+      "ξένωσις",
+      "ξέχωρος",
+      "ξένων",
+      "ξέχωρες"
+    ],
+    "status": "close_match",
+    "recommendation": "ξεχνώ"
+  },
+  "εκ μέρους": {
+    "word": "εκ μέρους",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "εκ μέρους",
+    "el_title": "εκ μέρους",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "εκ μέρους"
+  },
+  "εκ νέου": {
+    "word": "εκ νέου",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "εκ νέου",
+    "el_title": "εκ νέου",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "εκ νέου"
+  },
+  "Εμποροβιομυχανικό Επιμελητήριο": {
+    "word": "Εμποροβιομυχανικό Επιμελητήριο",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "Εμποροβιομυχανικό Επιμελητήριο",
+    "el_title": "Εμποροβιομυχανικό Επιμελητήριο",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "not_found",
+    "recommendation": null
+  },
+  "εν όψει": {
+    "word": "εν όψει",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "εν όψει",
+    "el_title": "εν όψει",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "εν όψει"
+  },
+  "κάθε τρεις και λίγο": {
+    "word": "κάθε τρεις και λίγο",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "κάθε τρεις και λίγο",
+    "el_title": "κάθε τρεις και λίγο",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "κάθε τρεις και λίγο"
+  },
+  "καθεαυτού": {
+    "word": "καθεαυτού",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "καθεαυτού",
+    "el_title": "καθεαυτού",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "καθεαυτού"
+  },
+  "λίγο πολύ": {
+    "word": "λίγο πολύ",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "λίγο πολύ",
+    "el_title": "λίγο πολύ",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "λίγο πολύ"
+  },
+  "μια και": {
+    "word": "μια και",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "μια και",
+    "el_title": "μια και",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "μια και"
+  },
+  "παρά της": {
+    "word": "παρά της",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "παρά της",
+    "el_title": "παρά της",
+    "suggestions_en": [
+      "παρατήσεις",
+      "παράτησα",
+      "παράκλησις",
+      "παραίτησις",
+      "παράταση"
+    ],
+    "suggestions_el": [
+      "παράτησα",
+      "παράτησε",
+      "παρατήσεις",
+      "παράτησες",
+      "παρατήσει"
+    ],
+    "status": "close_match",
+    "recommendation": "παρατήσεις"
+  },
+  "τέλος πάντων": {
+    "word": "τέλος πάντων",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "τέλος πάντων",
+    "el_title": "τέλος πάντων",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "τέλος πάντων"
+  },
+  "ανεβοκατέβασμα": {
+    "word": "ανεβοκατέβασμα",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "ανεβοκατέβασμα",
+    "el_title": "ανεβοκατέβασμα",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "ανεβοκατέβασμα"
+  },
+  "χρησοπόδαρος": {
+    "word": "χρησοπόδαρος",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "χρησοπόδαρος",
+    "el_title": "χρησοπόδαρος",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "not_found",
+    "recommendation": null
+  },
+  "κόλπο": {
+    "word": "κόλπο",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "κόλπο",
+    "el_title": "κόλπο",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "κόλπο"
+  },
+  "αφισοκολλητών": {
+    "word": "αφισοκολλητών",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "αφισοκολλητών",
+    "el_title": "αφισοκολλητών",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "αφισοκολλητών"
+  },
+  "άχτι": {
+    "word": "άχτι",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "άχτι",
+    "el_title": "άχτι",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "άχτι"
+  },
+  "σάνορο": {
+    "word": "σάνορο",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "σάνορο",
+    "el_title": "σάνορο",
+    "suggestions_en": [
+      "σύνοδος",
+      "σάτυρος",
+      "συνδρομή",
+      "σύνορος",
+      "σύνορο"
+    ],
+    "suggestions_el": [
+      "σύνοδος",
+      "σύντροφος",
+      "συνοδοιπόρος",
+      "σύνολο",
+      "συνδρομή"
+    ],
+    "status": "close_match",
+    "recommendation": "σύνοδος"
+  },
+  "οσονούπω": {
+    "word": "οσονούπω",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "οσονούπω",
+    "el_title": "οσονούπω",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "οσονούπω"
+  },
+  "φυλολία": {
+    "word": "φυλολία",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "φυλολία",
+    "el_title": "φυλολία",
+    "suggestions_en": [
+      "φυλλίς",
+      "φυλία",
+      "φύλλα",
+      "φύλοπις",
+      "φασολιά"
+    ],
+    "suggestions_el": [
+      "φυλλίτης",
+      "φιλολακωνικός",
+      "φυλλοταξία",
+      "φυλλίζω",
+      "Φυρομία"
+    ],
+    "status": "close_match",
+    "recommendation": "φυλλίς"
+  },
+  "ξεχαρβάλωμα": {
+    "word": "ξεχαρβάλωμα",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "ξεχαρβάλωμα",
+    "el_title": "ξεχαρβάλωμα",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "ξεχαρβάλωμα"
+  },
+  "ΟΣΕ": {
+    "word": "ΟΣΕ",
+    "en_exists": false,
+    "el_exists": true,
+    "en_title": "ΟΣΕ",
+    "el_title": "ΟΣΕ",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "ΟΣΕ"
+  },
+  "πλακώνομαι": {
+    "word": "πλακώνομαι",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "πλακώνομαι",
+    "el_title": "πλακώνομαι",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "πλακώνομαι"
+  },
+  "άσχετα": {
+    "word": "άσχετα",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "άσχετα",
+    "el_title": "άσχετα",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "άσχετα"
+  },
+  "ψρεσκοπώ": {
+    "word": "ψρεσκοπώ",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "ψρεσκοπώ",
+    "el_title": "ψρεσκοπώ",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "not_found",
+    "recommendation": null
+  },
+  "ξεμπέρδεμα": {
+    "word": "ξεμπέρδεμα",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "ξεμπέρδεμα",
+    "el_title": "ξεμπέρδεμα",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "ξεμπέρδεμα"
+  },
+  "θυρακίζω": {
+    "word": "θυρακίζω",
+    "en_exists": false,
+    "el_exists": false,
+    "en_title": "θυρακίζω",
+    "el_title": "θυρακίζω",
+    "suggestions_en": [
+      "θωρακίζω"
+    ],
+    "suggestions_el": [
+      "θωρακίζω",
+      "Θρακίων",
+      "θωρακίων",
+      "θωρακίσω",
+      "θυλακίων"
+    ],
+    "status": "close_match",
+    "recommendation": "θωρακίζω"
+  },
+  "ΜΜΕ": {
+    "word": "ΜΜΕ",
+    "en_exists": true,
+    "el_exists": true,
+    "en_title": "ΜΜΕ",
+    "el_title": "ΜΜΕ",
+    "suggestions_en": [],
+    "suggestions_el": [],
+    "status": "found",
+    "recommendation": "ΜΜΕ"
+  }
+}

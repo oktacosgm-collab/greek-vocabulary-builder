@@ -1,0 +1,30 @@
+# Large data files
+elwiktionary-latest-pages-articles.xml
+audio/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Streamlit secrets (R2 credentials go here — never commit this)
+.streamlit/secrets.toml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+data/srs_progress.json

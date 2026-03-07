@@ -1,0 +1,12 @@
+[
+  {"word": "πολιτισμός", "transliteration": "politismós", "translation": "civilization / culture", "example": "Ο ελληνικός πολιτισμός είναι αρχαίος.", "example_translation": "Greek civilization is ancient.", "part_of_speech": "noun"},
+  {"word": "ιστορία", "transliteration": "istoría", "translation": "history", "example": "Η ιστορία της Ελλάδας είναι πλούσια.", "example_translation": "The history of Greece is rich.", "part_of_speech": "noun"},
+  {"word": "μουσική", "transliteration": "mousikí", "translation": "music", "example": "Αγαπώ την ελληνική μουσική.", "example_translation": "I love Greek music.", "part_of_speech": "noun"},
+  {"word": "φιλοσοφία", "transliteration": "filosofía", "translation": "philosophy", "example": "Η φιλοσοφία γεννήθηκε στην Ελλάδα.", "example_translation": "Philosophy was born in Greece.", "part_of_speech": "noun"},
+  {"word": "θέατρο", "transliteration": "théatro", "translation": "theater", "example": "Πάμε στο θέατρο απόψε.", "example_translation": "Let's go to the theater tonight.", "part_of_speech": "noun"},
+  {"word": "γλώσσα", "transliteration": "glósa", "translation": "language", "example": "Η ελληνική γλώσσα είναι αρχαία.", "example_translation": "The Greek language is ancient.", "part_of_speech": "noun"},
+  {"word": "παράδοση", "transliteration": "parádosi", "translation": "tradition", "example": "Οι παραδόσεις μας είναι σημαντικές.", "example_translation": "Our traditions are important.", "part_of_speech": "noun"},
+  {"word": "εορτή", "transliteration": "eortí", "translation": "celebration / feast", "example": "Η εορτή του Πάσχα είναι μεγάλη.", "example_translation": "The Easter celebration is big.", "part_of_speech": "noun"},
+  {"word": "τέχνη", "transliteration": "téchni", "translation": "art", "example": "Η αρχαία τέχνη είναι εκπληκτική.", "example_translation": "Ancient art is amazing.", "part_of_speech": "noun"},
+  {"word": "αρχαιολογία", "transliteration": "archeología", "translation": "archaeology", "example": "Η αρχαιολογία αποκαλύπτει το παρελθόν.", "example_translation": "Archaeology reveals the past.", "part_of_speech": "noun"}
+]

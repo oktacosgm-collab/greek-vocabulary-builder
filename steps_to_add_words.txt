@@ -1,0 +1,34 @@
+Adding new words to the app
+
+Step 1 — Add words to CSV
+Open data/greek_words_to_import.csv and add one word per line at the bottom. Save.
+
+Step 2 — Enrich new words (calls Claude API for translation, definition, example, conjugation)
+"C:\Users\oktac\OneDrive\Documents\python codes\greek_vocabulary_builder\python enrich_words.py"
+Skips words already in cache — only processes new ones. ~0.5s per word.
+
+Step 3 — Generate audio (creates 3 MP3 files per word)
+fix_empty_audio_edge.py
+Detects and generates only missing audio files. No rate limits.
+
+Step 4 — Verify
+check_audio.py
+Confirms all words have complete audio.
+
+Step 5 — Launch app
+bashstreamlit run app.py
+
+Other useful commands:
+Fix a specific word's audio
+python word_manager.py --recreate "someword"
+
+Delete a wrong word completely
+python word_manager.py --delete "someword"
+
+Inspect a word's data and audio status
+python word_manager.py --inspect "someword"
+
+Add conjugation data to new words after enrichment
+python enrich_words.py --update-conjugation
+
+API key reminder: Already hardcoded in enrich_words.py so no need to pass it each time.
