@@ -13,6 +13,16 @@ from modules.grammar     import get_gender_info, render_conjugation, render_decl
 from modules.i18n        import t, render_language_selector
 from modules import srs as SRS
 
+def loc(data: dict, field: str, fallback: str = "--") -> str:
+    """Return language-aware field, falling back to English."""
+    from modules.i18n import get_lang_code
+    lang = get_lang_code()
+    if lang != "en":
+        val = data.get(f"{field}_{lang}")
+        if val:
+            return val
+    return data.get(field, fallback)
+
 st.set_page_config(page_title="Greek Flashcards", page_icon="🇬🇷",
                    layout="wide", initial_sidebar_state="expanded")
 
@@ -225,14 +235,14 @@ with tab1:
     word    = filtered[st.session_state.shuffled[pos_raw]]
     data    = all_words[word]
     ex      = data.get("example_greek","")
-    ex_en   = data.get("example_english","")
+    ex_en   = loc(data, "example_english", "")
     st.markdown(f"<p class='progress-text'>{t('card_progress', current=pos_raw+1, total=total, filter=sel_diff)}</p>", unsafe_allow_html=True)
     st.progress((pos_raw+1)/total)
     gender, article = get_gender_info(data)
     gender_html = f'<span class="gender-badge">{article} ({gender})</span>' if gender else ""
     w_safe=_html.escape(word); pos_safe=_html.escape(data.get("part_of_speech","--"))
     dif_safe=_html.escape(data.get("difficulty","?")); tra_safe=_html.escape(data.get("transliteration","--"))
-    tr_safe=_html.escape(data.get("translation","--")); df_safe=_html.escape(data.get("definition","--"))
+    tr_safe=_html.escape(loc(data, "translation")); df_safe=_html.escape(loc(data, "definition"))
     ex_safe=_html.escape(ex) if ex else "--"; exen_safe=_html.escape(ex_en) if ex_en else ""
     if not st.session_state.flipped:
         card_html = ('<div class="card">'+f'<span class="pos-badge">{pos_safe}</span>'+f'<span class="diff-badge">{dif_safe}</span>'+f'{gender_html}'+f'<div class="greek-word">{w_safe}</div>'+f'<div class="transliteration">[ {tra_safe} ]</div>'+'<hr class="example-divider">'+f'<div class="example-greek"><span style="font-size:0.8rem;opacity:0.6;">Παράδειγμα</span><br>{ex_safe}</div>'+f'<div class="flip-hint">{t("flip_hint")}</div>'+'</div>')
@@ -309,8 +319,8 @@ with tab2:
         else: srs_label=t("srs_mature_label", n=reps)
         sw_safe=_html.escape(srs_word); str_safe=_html.escape(srs_data_w.get("transliteration","--"))
         str_pos=_html.escape(srs_data_w.get("part_of_speech","--")); str_dif=_html.escape(srs_data_w.get("difficulty","?"))
-        srs_ex=_html.escape(srs_data_w.get("example_greek","")); srs_exen=_html.escape(srs_data_w.get("example_english",""))
-        srs_tr=_html.escape(srs_data_w.get("translation","--")); srs_df=_html.escape(srs_data_w.get("definition","--"))
+        srs_ex=_html.escape(srs_data_w.get("example_greek","")); srs_exen=_html.escape(loc(srs_data_w, "example_english", ""))
+        srs_tr=_html.escape(loc(srs_data_w, "translation")); srs_df=_html.escape(loc(srs_data_w, "definition"))
         sg,sa=get_gender_info(srs_data_w); sgender_html=f'<span class="gender-badge">{sa} ({sg})</span>' if sg else ""
         if not revealed:
             ch=('<div class="card card-srs">'+f'<span class="pos-badge">{str_pos}</span>'+f'<span class="diff-badge">{str_dif}</span>'+f'<span class="srs-badge">{srs_label}</span>'+f'<div class="greek-word">{sw_safe}</div>'+f'<div class="transliteration">[ {str_safe} ]</div>'+(f'<hr class="example-divider"><div class="example-greek"><span style="font-size:0.8rem;opacity:0.6;">{t("example_label")}</span><br>{srs_ex}</div>' if srs_ex else '')+f'<div class="flip-hint">{t("srs_reveal_hint")}</div></div>')
@@ -344,13 +354,13 @@ with tab3:
     st.markdown(t("n_words", n=len(display)))
     for i,w in enumerate(display[:200]):
         d=all_words[w]
-        with st.expander(f"**{w}** — {d.get('translation','--')}  {'✅' if w in cache else '⬜'}"):
+        with st.expander(f"**{w}** — {loc(d, 'translation')}  {'✅' if w in cache else '⬜'}"):
             c1,c2=st.columns([3,1])
             with c1:
                 if w in cache:
                     card=SRS.get_card(srs_data,w); due_str=card.get("due","--")
                     st.markdown(f"*{d.get('transliteration','--')}* · {d.get('part_of_speech','--')} · {d.get('difficulty','?')} · {t('next_review', date=due_str)}")
-                    st.markdown(f"{t('label_definition')} {d.get('definition','--')}"); st.markdown(f"{t('label_example_gr')} *{d.get('example_greek','--')}*"); st.markdown(f"{t('label_example_en')} {d.get('example_english','--')}")
+                    st.markdown(f"{t('label_definition')} {loc(d, 'definition')}"); st.markdown(f"{t('label_example_gr')} *{d.get('example_greek','--')}*"); st.markdown(f"{t('label_example_en')} {loc(d, 'example_english')}")
                 else: st.info(t("not_yet_enriched"))
             with c2:
                 if st.button("🔊", key=f"b_{i}"): play_sequence(d,w)
@@ -374,8 +384,8 @@ with tab4:
     st.markdown(t("n_words", n=len(pool)))
     for w in pool[:100]:
         d=cache[w]
-        with st.expander(f"**{w}** — {d.get('translation','--')}  ·  *{d.get('part_of_speech','')}*"):
-            st.markdown(f"*[ {d.get('transliteration','--')} ]*  ·  {d.get('difficulty','?')}"); st.markdown(f"{d.get('definition','')}"); st.markdown("")
+        with st.expander(f"**{w}** — {loc(d, 'translation')}  ·  *{d.get('part_of_speech','')}*"):
+            st.markdown(f"*[ {d.get('transliteration','--')} ]*  ·  {d.get('difficulty','?')}"); st.markdown(f"{loc(d, 'definition', '')}"); st.markdown("")
             if d.get("conjugation"): st.markdown(t("conjugation")); render_conjugation(w,d)
             if d.get("declension"): st.markdown(t("declension")); render_declension(w,d)
     if len(pool)>100: st.info(t("showing_100", n=len(pool)))
@@ -423,14 +433,18 @@ with tab5:
         return "wrong", f"Incorrect"
 
     def _ensure_audio(word, data):
-        """Ensure word and example audio exist, generate if missing."""
-        from modules.audio import safe_fn, gen_gtts, read_audio
+        """Return audio paths — generate locally if available, otherwise R2 is used."""
+        from modules.audio import safe_fn
         safe = safe_fn(word)
         w_p = AUDIO_DIR / f"{safe}_word.mp3"
         e_p = AUDIO_DIR / f"{safe}_example.mp3"
-        ex  = data.get("example_greek", "")
-        if not w_p.exists(): gen_gtts(word, "el", w_p)
-        if ex and not e_p.exists(): gen_gtts(ex, "el", e_p)
+        try:
+            from modules.audio import gen_gtts
+            ex = data.get("example_greek", "")
+            if not w_p.exists(): gen_gtts(word, "el", w_p)
+            if ex and not e_p.exists(): gen_gtts(ex, "el", e_p)
+        except ImportError:
+            pass  # Cloud environment — audio served from R2
         return w_p, e_p
 
     st.markdown(t("test_title"))
@@ -447,7 +461,7 @@ with tab5:
 
     # ── Level filter (independent of sidebar) ────────────────────────────────
     all_levels = ["A1","A2","B1","B2","C1","C2"]
-    sel_levels = st.multiselect(t("difficulty_levels"), all_levels, default=all_levels,
+    sel_levels = st.multiselect(t("difficulty_levels"), all_levels, default=[],
                                 key="quiz_levels", label_visibility="visible")
     quiz_pool = [w for w in filtered if w in cache and cache[w].get("translation")
                  and (not sel_levels or cache[w].get("difficulty","") in sel_levels)]
@@ -481,7 +495,7 @@ with tab5:
             failed=st.session_state.quiz_failed
             if failed:
                 st.markdown(t("words_to_review", n=len(failed)))
-                for fw in failed: fd=cache.get(fw,{}); st.markdown(f"- **{fw}** — {fd.get('translation','--')}")
+                for fw in failed: fd=cache.get(fw,{}); st.markdown(f"- **{fw}** — {loc(fd, 'translation')}")
                 st.markdown("---")
                 if st.button(t("btn_export_failed"), use_container_width=True):
                     with st.spinner(t("building_doc")):
@@ -491,7 +505,7 @@ with tab5:
         elif st.session_state.quiz_words:
             qi=st.session_state.quiz_index; qwords=st.session_state.quiz_words
             if qi>=len(qwords): st.session_state.quiz_done=True; st.rerun()
-            qword=qwords[qi]; qdata=cache[qword]; correct_tr=qdata.get("translation","--")
+            qword=qwords[qi]; qdata=cache[qword]; correct_tr=loc(qdata, "translation")
             choice_key=f"quiz_choices_{qi}"
             if choice_key not in st.session_state:
                 qpos=qdata.get("part_of_speech","")
@@ -501,7 +515,7 @@ with tab5:
                 random.shuffle(wrong_pool)
                 wrong_translations=[]
                 for ww in wrong_pool:
-                    tr=cache[ww].get("translation","--")
+                    tr=loc(cache[ww], "translation")
                     if tr!=correct_tr and tr not in wrong_translations:
                         wrong_translations.append(tr)
                     if len(wrong_translations)==3: break
@@ -513,12 +527,14 @@ with tab5:
             st.markdown(f"<p class='progress-text'>{t('question_progress', current=qi+1, total=len(qwords))}</p>", unsafe_allow_html=True); st.progress(qi/len(qwords))
             answered=st.session_state.quiz_answer
             qw_safe=_html.escape(qword); qex=_html.escape(qdata.get("example_greek",""))
-            qex_en=_html.escape(qdata.get("example_english",""))
+            qex_en=_html.escape(loc(qdata, "example_english", ""))
             if answered is None:
                 q_html=('<div class="card" style="min-height:200px;">'+f'<div class="greek-word">{qw_safe}</div>'+f'<div class="transliteration">[ {_html.escape(qdata.get("transliteration","--"))} ]</div>'+(f'<hr class="example-divider"><div class="example-greek"><span style="font-size:0.8rem;opacity:0.6;">Παράδειγμα</span><br>{qex}</div>' if qex else '')+'</div>')
             else:
                 qpos_s=_html.escape(qdata.get("part_of_speech","--")); qdif_s=_html.escape(qdata.get("difficulty","?"))
-                q_html=('<div class="card" style="min-height:200px;">'+f'<span class="pos-badge">{qpos_s}</span>'+f'<span class="diff-badge">{qdif_s}</span>'+f'<div class="greek-word">{qw_safe}</div>'+f'<div class="transliteration">[ {_html.escape(qdata.get("transliteration","--"))} ]</div>'+(f'<hr class="example-divider"><div class="example-greek"><span style="font-size:0.8rem;opacity:0.6;">Παράδειγμα</span><br>{qex}</div><div class="example-en" style="display:block;margin-top:6px;">{qex_en}</div>' if qex else '')+'</div>')
+                qg, qa = get_gender_info(qdata)
+                qgender_html = f'<span class="gender-badge">{qa} ({qg})</span>' if qg else ""
+                q_html=('<div class="card" style="min-height:200px;">'+f'<span class="pos-badge">{qpos_s}</span>'+f'<span class="diff-badge">{qdif_s}</span>'+f'{qgender_html}'+f'<div class="greek-word">{qw_safe}</div>'+f'<div class="transliteration">[ {_html.escape(qdata.get("transliteration","--"))} ]</div>')
             st.markdown(q_html, unsafe_allow_html=True); st.markdown("<br>", unsafe_allow_html=True)
             if answered is None:
                 st.markdown(t("choose_translation")); cols=st.columns(2); labels=["A","B","C","D"]
@@ -596,7 +612,7 @@ with tab5:
                 st.markdown(t("words_to_review", n=len(failed)))
                 for fw in failed:
                     fd = cache.get(fw, {})
-                    st.markdown(f"- **{fw}** — {fd.get('translation','--')}")
+                    st.markdown(f"- **{fw}** — {loc(fd, 'translation')}")
                 if st.button(t("btn_export_failed"), use_container_width=True, key="lt_export"):
                     with st.spinner(t("building_doc")):
                         buf = build_word_doc(failed, all_words,
@@ -677,7 +693,7 @@ with tab5:
                 result, msg       = st.session_state.get(f"lt_res_{li}", ("wrong",""))
                 pos  = ldata.get("part_of_speech","--")
                 diff = ldata.get("difficulty","?")
-                tr   = ldata.get("translation","--")
+                tr   = loc(ldata, "translation")
 
                 if result == "correct":
                     st.success(t("answer_correct", msg=msg, word=correct_text))
@@ -694,7 +710,7 @@ with tab5:
                 ldif_safe = _html.escape(diff)
                 ltrans_safe = _html.escape(ldata.get("transliteration","--"))
                 lex = _html.escape(ldata.get("example_greek",""))
-                lexen = _html.escape(ldata.get("example_english",""))
+                lexen = _html.escape(loc(ldata, "example_english", ""))
                 reveal_html = (
                     '<div class="card card-back" style="min-height:160px;margin-top:12px;">'
                     f'<span class="pos-badge">{lpos_safe}</span>'
