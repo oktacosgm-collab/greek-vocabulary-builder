@@ -48,7 +48,6 @@ def t(key: str, **kwargs) -> str:
 def render_language_selector():
     """Render language dropdown in sidebar."""
     lang_code = get_lang_code()
-    # Find current language display name
     current_name = next((k for k, v in LANGUAGES.items() if v == lang_code), "English")
     lang_names = list(LANGUAGES.keys())
     selected = st.selectbox(
@@ -61,4 +60,20 @@ def render_language_selector():
     if new_code != lang_code:
         st.session_state["lang"] = new_code
         st.query_params["lang"] = new_code
+        # Reset quiz state so choices are regenerated in new language
+        for key in list(st.session_state.keys()):
+            if key.startswith("quiz_choices_") or key.startswith("lt_ans_") or key.startswith("lt_res_"):
+                del st.session_state[key]
+        st.session_state["quiz_answer"] = None
+        st.session_state["quiz_done"] = False
+        st.session_state["quiz_index"] = 0
+        st.session_state["quiz_score"] = {"correct": 0, "wrong": 0}
+        st.session_state["quiz_failed"] = []
+        st.session_state["quiz_words"] = []
+        st.session_state["lt_submitted"] = False
+        st.session_state["lt_index"] = 0
+        st.session_state["lt_score"] = {"correct": 0, "wrong": 0}
+        st.session_state["lt_failed"] = []
+        st.session_state["lt_words"] = []
+        st.session_state["lt_done"] = False
         st.rerun()
