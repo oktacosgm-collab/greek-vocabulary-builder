@@ -10,7 +10,7 @@ from modules.data_loader import load_cache, load_raw_words, build_word_map
 from modules.audio       import play_sequence
 from modules.word_export import build_word_doc
 from modules.grammar     import get_gender_info, render_conjugation, render_declension
-from modules.i18n        import t, render_language_selector, get_lang_code
+from modules.i18n        import t, render_language_selector, get_lang_code, cat_label
 from modules import srs as SRS
 
 def loc(data: dict, field: str, fallback: str = "--") -> str:
@@ -141,15 +141,23 @@ with st.sidebar:
     st.markdown(f"### {t('filters')}")
     diff_levels = ["A1","A2","B1","B2","C1","C2"]
     sel_diffs = st.multiselect(t("difficulty"), diff_levels, placeholder=t("all_levels"), label_visibility="collapsed")
+    from modules.i18n import ALL_CATEGORIES, cat_label
+    cat_labels = [cat_label(c) for c in ALL_CATEGORIES]
+    sel_cat_labels = st.multiselect(t("category_filter"), cat_labels, placeholder=t("all_categories"), label_visibility="collapsed")
+    sel_cats = [ALL_CATEGORIES[cat_labels.index(l)] for l in sel_cat_labels]
     prev = st.session_state.get("filter_diffs", [])
-    if sel_diffs != prev:
+    prev_cats = st.session_state.get("filter_cats", [])
+    if sel_diffs != prev or sel_cats != prev_cats:
         st.session_state["filter_diffs"] = sel_diffs
+        st.session_state["filter_cats"] = sel_cats
         st.session_state.card_index = 0
         st.session_state.flipped    = False
         st.session_state.shuffled   = []
     sel_diff = ", ".join(sel_diffs) if sel_diffs else "All"
     shuffle = st.checkbox(t("shuffle_cards"), value=True)
-    filtered = [w for w in word_list if not sel_diffs or all_words[w].get("difficulty","") in sel_diffs]
+    filtered = [w for w in word_list if
+                (not sel_diffs or all_words[w].get("difficulty","") in sel_diffs) and
+                (not sel_cats or any(c in all_words[w].get("categories",[]) for c in sel_cats))]
     if not st.session_state.shuffled or len(st.session_state.shuffled) != len(filtered):
         idx = list(range(len(filtered)))
         if shuffle: random.shuffle(idx)
@@ -243,11 +251,13 @@ with tab1:
     w_safe=_html.escape(word); pos_safe=_html.escape(data.get("part_of_speech","--"))
     dif_safe=_html.escape(data.get("difficulty","?")); tra_safe=_html.escape(data.get("transliteration","--"))
     tr_safe=_html.escape(loc(data, "translation")); df_safe=_html.escape(loc(data, "definition"))
+    cats = data.get("categories", [])
+    cats_html = " ".join(f'<span style="background:rgba(99,179,237,0.15);color:#90cdf4;border:1px solid rgba(99,179,237,0.3);border-radius:12px;padding:2px 10px;font-size:0.72rem;margin:2px;">{cat_label(c)}</span>' for c in cats) if cats else ""
     ex_safe=_html.escape(ex) if ex else "--"; exen_safe=_html.escape(ex_en) if ex_en else ""
     if not st.session_state.flipped:
         card_html = ('<div class="card">'+f'<span class="pos-badge">{pos_safe}</span>'+f'<span class="diff-badge">{dif_safe}</span>'+f'{gender_html}'+f'<div class="greek-word">{w_safe}</div>'+f'<div class="transliteration">[ {tra_safe} ]</div>'+'<hr class="example-divider">'+f'<div class="example-greek"><span style="font-size:0.8rem;opacity:0.6;">Παράδειγμα</span><br>{ex_safe}</div>'+f'<div class="flip-hint">{t("flip_hint")}</div>'+'</div>')
     else:
-        card_html = ('<div class="card card-back">'+f'<div class="greek-word" style="font-size:2rem;">{w_safe}</div>'+f'{gender_html}'+f'<div class="translation">{tr_safe}</div>'+f'<div class="definition">{df_safe}</div>'+'<hr class="example-divider">'+f'<div class="example-greek"><span style="font-size:0.8rem;opacity:0.6;">Παράδειγμα</span><br>{ex_safe}</div>'+f'<div class="example-en" style="display:block;margin-top:6px;">{exen_safe}</div>'+'</div>')
+        card_html = ('<div class="card card-back">'+f'<div class="greek-word" style="font-size:2rem;">{w_safe}</div>'+f'{gender_html}'+f'<div class="translation">{tr_safe}</div>'+f'<div class="definition">{df_safe}</div>'+f'<div style="margin-top:8px;">{cats_html}</div>'+'<hr class="example-divider">'+f'<div class="example-greek"><span style="font-size:0.8rem;opacity:0.6;">Παράδειγμα</span><br>{ex_safe}</div>'+f'<div class="example-en" style="display:block;margin-top:6px;">{exen_safe}</div>'+'</div>')
     st.markdown(card_html, unsafe_allow_html=True)
     st.markdown("<br>", unsafe_allow_html=True)
     b1,b2,b3,b4,b5 = st.columns([1.2,1.5,1.6,1.2,1.2])

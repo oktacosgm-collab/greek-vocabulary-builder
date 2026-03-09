@@ -181,6 +181,23 @@ Respond ONLY with a valid JSON object — no markdown, no backticks.
   "example_english_ja": "Japanese translation of the provided English example sentence"
 }"""
 
+CATEGORY_PROMPT = """You are a Greek language expert. Given a Modern Greek word with its English data,
+assign 1-3 categories from the fixed list below that best describe when/where this word is used.
+Respond ONLY with a valid JSON object — no markdown, no backticks.
+
+Fixed category list:
+everyday_life, food_drink, travel, nature, science, technology,
+politics, economy, culture_arts, religion, education, health,
+law, philosophy, emotions, family, work, sports, other
+
+Rules:
+- Assign 1 to 3 categories maximum
+- Use "other" only if no category fits
+- Return categories as a JSON array
+
+Format:
+{"categories": ["category1", "category2"]}"""
+
 FILL_GAPS_PROMPT = """You are a Greek language expert. Given a Modern Greek word and its English translation,
 fill in the missing fields. Respond ONLY with a valid JSON object — no markdown, no backticks.
 
@@ -347,6 +364,19 @@ def needs_japanese(word: str, cache: dict) -> bool:
     entry = cache.get(word, {})
     return bool(entry) and not entry.get("translation_ja")
 
+def add_category(word: str, existing: dict, api_key: str) -> dict | None:
+    msg = (
+        f"Greek word: {word}\n"
+        f"English translation: {existing.get('translation','')}\n"
+        f"English definition: {existing.get('definition','')}\n"
+        f"Part of speech: {existing.get('part_of_speech','')}\n"
+    )
+    return call_api(CATEGORY_PROMPT, msg, api_key, max_tokens=100)
+
+def needs_category(word: str, cache: dict) -> bool:
+    entry = cache.get(word, {})
+    return bool(entry) and not entry.get("categories")
+
 def needs_update(word: str, cache: dict) -> bool:
     d = cache[word]
     if d.get("conjugation") is None and d.get("declension") is None:
@@ -429,6 +459,8 @@ def main():
                         help="Add past_continuous, future_continuous, present_perfect, past_perfect, imperative to verbs")
     parser.add_argument("--add-japanese", action="store_true",
                         help="Add Japanese translation/definition to cached words")
+    parser.add_argument("--add-category", action="store_true",
+                        help="Assign categories to cached words")
     args = parser.parse_args()
 
     if not args.api_key:
@@ -505,6 +537,47 @@ def main():
 
         save_cache(cache)
         print(f"\n✅  Done! Added Japanese for {len(todo) - errors} words. Errors: {errors}")
+        return
+    
+    # ── Mode: add categories ───────────────────────────────────────────────────
+    if args.add_category:
+        todo = [w for w in cache if needs_category(w, cache)]
+
+        if args.limit:
+            todo = todo[:args.limit]
+
+        print(f"🏷️  Adding categories for {len(todo)} words")
+        if not todo:
+            print("All words already have categories!")
+            return
+
+        errors = 0
+        for i, word in enumerate(todo, 1):
+            print(f"[{i:4}/{len(todo)}] {word:<30}", end="", flush=True)
+
+            result = add_category(word, cache[word], args.api_key)
+            if result and "categories" in result:
+                cats = result["categories"]
+                # Validate against allowed list
+                allowed = {"everyday_life","food_drink","travel","nature","science",
+                           "technology","politics","economy","culture_arts","religion",
+                           "education","health","law","philosophy","emotions",
+                           "family","work","sports","other"}
+                cats = [c for c in cats if c in allowed] or ["other"]
+                cache[word]["categories"] = cats
+                print(f"  ✓ {', '.join(cats)}")
+            else:
+                errors += 1
+                print("  ✗ failed")
+
+            if i % 25 == 0:
+                save_cache(cache)
+                print(f"   💾 Checkpoint ({i} updated)")
+
+            time.sleep(args.delay)
+
+        save_cache(cache)
+        print(f"\n✅  Done! Categorized {len(todo) - errors} words. Errors: {errors}")
         return
 
     # ── Mode: update conjugation/declension ───────────────────────────────────

@@ -1,4 +1,4 @@
-"""modules/grammar.py — conjugation/declension rendering and gender helpers"""
+"""modules/grammar.py – conjugation/declension rendering and gender helpers"""
 import streamlit as st
 from .config import ARTICLE
 
@@ -34,17 +34,30 @@ def _fmt(article: str, form: str) -> str:
     return f"{article} {form}" if article and article != "—" else form
 
 
-def _make_table(rows: list) -> str:
+def _make_table(rows: list, accent_color: str = "#90cdf4") -> str:
     html = "<table style='width:100%;border-collapse:collapse;margin-bottom:16px;font-size:0.95rem;'>"
     for r_i, row in enumerate(rows):
         bg = "#1e2a3a" if r_i == 0 else ("#16213e" if r_i % 2 == 0 else "#1a1a2e")
         fw = "bold" if r_i == 0 else "normal"
         html += f"<tr style='background:{bg};'>"
         for c_i, cell in enumerate(row):
-            color = "#90cdf4" if r_i == 0 or c_i == 0 else "#e2e8f0"
+            color = accent_color if r_i == 0 or c_i == 0 else "#e2e8f0"
             html += f"<td style='padding:8px 12px;border:1px solid #2d3748;color:{color};font-weight:{fw};'>{cell}</td>"
         html += "</tr>"
     return html + "</table>"
+
+
+# Accent color and bullet per tense group
+TENSE_STYLE = {
+    "present":          ("🟢", "#68d391"),  # green
+    "past_simple":      ("🟠", "#f6ad55"),  # orange
+    "past_continuous":  ("🟤", "#c6a070"),  # brown
+    "past_perfect":     ("🔴", "#fc8181"),  # red
+    "future_simple":    ("🔵", "#63b3ed"),  # blue
+    "future_continuous":("🔷", "#76e4f7"),  # cyan
+    "present_perfect":  ("🟣", "#b794f4"),  # purple
+    "imperative":       ("🔺", "#f687b3"),  # pink
+}
 
 
 def render_conjugation(word: str, data: dict):
@@ -52,27 +65,61 @@ def render_conjugation(word: str, data: dict):
     if not conj:
         st.info("No conjugation data for this word.")
         return
+
     voice = conj.get("voice", "")
     if voice:
         st.markdown(f"**Voice:** {voice}")
     st.markdown("")
-    tenses = {
-        "present":      "🟢 Present",
-        "past_simple":  "🟤 Past Simple",
-        "future_simple":"🔵 Future Simple"
-    }
-    for key, label in tenses.items():
-        t = conj.get(key)
-        if not t:
+
+    # Tenses grouped by category for clarity
+    tense_groups = [
+        ("", [
+            ("present", "Present (Simple / Continuous)"),
+        ]),
+        ("", [
+            ("past_simple",     "Past Simple (Αόριστος)"),
+            ("past_continuous", "Past Continuous (Παρατατικός)"),
+            ("past_perfect",    "Past Perfect (Υπερσυντέλικος)"),
+        ]),
+        ("", [
+            ("future_simple",     "Future Simple (Perfective)"),
+            ("future_continuous", "Future Continuous (Imperfective)"),
+        ]),
+        ("", [
+            ("present_perfect", "Present Perfect (Παρακείμενος)"),
+        ]),
+    ]
+
+    for group_label, tenses in tense_groups:
+        group_tenses = [(key, label) for key, label in tenses if conj.get(key)]
+        if not group_tenses:
             continue
-        st.markdown(f"##### {label}")
+
+        for key, label in group_tenses:
+            t = conj.get(key)
+            if not t:
+                continue
+            bullet, accent = TENSE_STYLE.get(key, ("▪️", "#90cdf4"))
+            st.markdown(f"##### {bullet} {label}")
+            rows = [
+                ["Person", "Singular", "Plural"],
+                ["1st", t.get("sg1", "—"), t.get("pl1", "—")],
+                ["2nd", t.get("sg2", "—"), t.get("pl2", "—")],
+                ["3rd", t.get("sg3", "—"), t.get("pl3", "—")],
+            ]
+            st.markdown(_make_table(rows, accent_color=accent), unsafe_allow_html=True)
+
+    # Imperative — special layout (only sg/pl, no person rows)
+    imp = conj.get("imperative")
+    if imp:
+        bullet, accent = TENSE_STYLE.get("imperative", ("🔺", "#f687b3"))
+        st.markdown(f"#### {bullet} Imperative (Προστακτική)")
         rows = [
-            ["Person", "Singular", "Plural"],
-            ["1st", t.get("sg1","—"), t.get("pl1","—")],
-            ["2nd", t.get("sg2","—"), t.get("pl2","—")],
-            ["3rd", t.get("sg3","—"), t.get("pl3","—")],
+            ["", "Form"],
+            ["Singular", imp.get("sg", "—")],
+            ["Plural",   imp.get("pl", "—")],
         ]
-        st.markdown(_make_table(rows), unsafe_allow_html=True)
+        st.markdown(_make_table(rows, accent_color=accent), unsafe_allow_html=True)
 
 
 def render_declension(word: str, data: dict):

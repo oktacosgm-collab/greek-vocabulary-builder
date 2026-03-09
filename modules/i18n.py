@@ -77,3 +77,13 @@ def render_language_selector():
         st.session_state["lt_words"] = []
         st.session_state["lt_done"] = False
         st.rerun()
+
+ALL_CATEGORIES = [
+    "everyday_life","food_drink","travel","nature","science","technology",
+    "politics","economy","culture_arts","religion","education","health",
+    "law","philosophy","emotions","family","work","sports","other"
+]
+
+def cat_label(cat_key: str) -> str:
+    """Return translated display label for a category key."""
+    return t(f"cat_{cat_key}")
