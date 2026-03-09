@@ -23,12 +23,15 @@ def load_translations(lang_code: str) -> dict:
 
 def get_lang_code() -> str:
     """Get current language code from session state or URL param."""
-    # Check URL query param first
+    # Session state takes priority
+    if "lang" in st.session_state and st.session_state["lang"] in LANGUAGES.values():
+        return st.session_state["lang"]
+    # Fall back to URL param
     params = st.query_params
     if "lang" in params and params["lang"] in LANGUAGES.values():
-        if st.session_state.get("lang") != params["lang"]:
-            st.session_state["lang"] = params["lang"]
-    return st.session_state.get("lang", "en")
+        st.session_state["lang"] = params["lang"]
+        return params["lang"]
+    return "en"
 
 def t(key: str, **kwargs) -> str:
     """Translate a key with optional format arguments."""

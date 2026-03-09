@@ -10,7 +10,7 @@ from modules.data_loader import load_cache, load_raw_words, build_word_map
 from modules.audio       import play_sequence
 from modules.word_export import build_word_doc
 from modules.grammar     import get_gender_info, render_conjugation, render_declension
-from modules.i18n        import t, render_language_selector
+from modules.i18n        import t, render_language_selector, get_lang_code
 from modules import srs as SRS
 
 def loc(data: dict, field: str, fallback: str = "--") -> str:
@@ -506,7 +506,7 @@ with tab5:
             qi=st.session_state.quiz_index; qwords=st.session_state.quiz_words
             if qi>=len(qwords): st.session_state.quiz_done=True; st.rerun()
             qword=qwords[qi]; qdata=cache[qword]; correct_tr=loc(qdata, "translation")
-            choice_key=f"quiz_choices_{qi}"
+            choice_key=f"quiz_choices_{qi}_{get_lang_code()}"
             if choice_key not in st.session_state:
                 qpos=qdata.get("part_of_speech","")
                 same_pos=[w for w in quiz_pool if w!=qword and cache[w].get("part_of_speech","")==qpos]
