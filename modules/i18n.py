@@ -1,89 +1,159 @@
-"""modules/i18n.py — translation helper"""
-import json
+"""
+modules/i18n.py  — Internationalisation helper
+Supports: English (en), Japanese (ja), Greek (el)
+
+Usage:
+    from modules.i18n import t, loc, cat_label, render_language_selector, ALL_CATEGORIES
+
+    t("tab_flashcard")          → UI string in current language
+    loc(word_data, "translation") → word field, language-aware (_ja / _el suffix)
+    cat_label("food_drink")     → translated category label
+"""
+
 import streamlit as st
-from pathlib import Path
+import json
+import os
 
-TRANSLATIONS_DIR = Path(__file__).parent.parent / "translations"
-
+# ── Supported languages ───────────────────────────────────────────────────────
 LANGUAGES = {
-    "English": "en",
-    "日本語": "ja",
+    "en": {"label": "English",    "flag": "🇬🇧"},
+    "ja": {"label": "日本語",      "flag": "🇯🇵"},
+    "el": {"label": "Ελληνικά",   "flag": "🇬🇷"},
 }
 
-@st.cache_data
-def load_translations(lang_code: str) -> dict:
-    path = TRANSLATIONS_DIR / f"{lang_code}.json"
-    if path.exists():
-        with open(path, encoding="utf-8") as f:
-            return json.load(f)
-    # Fallback to English
-    fallback = TRANSLATIONS_DIR / "en.json"
-    with open(fallback, encoding="utf-8") as f:
-        return json.load(f)
+# Language → word-data field suffix  (English has no suffix)
+LANG_SUFFIX = {
+    "en": "",
+    "ja": "_ja",
+    "el": "_el",
+}
+
+# ── Translation cache ─────────────────────────────────────────────────────────
+_cache: dict[str, dict] = {}
+
+def _load(lang: str) -> dict:
+    if lang not in _cache:
+        path = os.path.join(
+            os.path.dirname(os.path.dirname(__file__)),
+            "translations", f"{lang}.json"
+        )
+        try:
+            with open(path, encoding="utf-8") as f:
+                _cache[lang] = json.load(f)
+        except FileNotFoundError:
+            _cache[lang] = {}
+    return _cache[lang]
+
+
+def _current_lang() -> str:
+    return st.session_state.get("ui_language", "en")
 
 def get_lang_code() -> str:
-    """Get current language code from session state or URL param."""
-    # Session state takes priority
-    if "lang" in st.session_state and st.session_state["lang"] in LANGUAGES.values():
-        return st.session_state["lang"]
-    # Fall back to URL param
-    params = st.query_params
-    if "lang" in params and params["lang"] in LANGUAGES.values():
-        st.session_state["lang"] = params["lang"]
-        return params["lang"]
-    return "en"
+    """Public alias — returns active language code: 'en', 'ja', or 'el'."""
+    return _current_lang()
+
+
+# ── Public API ────────────────────────────────────────────────────────────────
 
 def t(key: str, **kwargs) -> str:
-    """Translate a key with optional format arguments."""
-    lang_code = get_lang_code()
-    translations = load_translations(lang_code)
-    text = translations.get(key, key)  # fallback to key if missing
-    if kwargs:
-        try:
-            text = text.format(**kwargs)
-        except (KeyError, ValueError):
-            pass
-    return text
+    """Return UI string for key in the current language.
+    Falls back to English if key is missing from the active language file.
+    Supports .format()-style substitutions: t("srs_streak", n=5)
+    """
+    lang = _current_lang()
+    strings = _load(lang)
+    en_strings = _load("en")
 
-def render_language_selector():
-    """Render language dropdown in sidebar."""
-    lang_code = get_lang_code()
-    current_name = next((k for k, v in LANGUAGES.items() if v == lang_code), "English")
-    lang_names = list(LANGUAGES.keys())
-    selected = st.selectbox(
-        t("language_selector"),
-        lang_names,
-        index=lang_names.index(current_name),
-        key="lang_selector"
+    raw = strings.get(key) or en_strings.get(key) or key
+    try:
+        return raw.format(**kwargs) if kwargs else raw
+    except KeyError:
+        return raw
+
+
+def loc(data: dict, field: str) -> str:
+    """Return the language-aware value for a word-data field.
+
+    Priority:
+      1. field + lang_suffix  (e.g. "translation_el")
+      2. field                (English fallback)
+      3. ""
+
+    Args:
+        data:  word dict from enriched_cache.json
+        field: base field name, e.g. "translation", "definition", "example_sentence"
+    """
+    lang   = _current_lang()
+    suffix = LANG_SUFFIX.get(lang, "")
+
+    if suffix:
+        value = data.get(f"{field}{suffix}", "")
+        if value:
+            return value
+
+    return data.get(field, "")
+
+
+def cat_label(category_key: str) -> str:
+    """Return the translated label for a category key.
+    e.g. cat_label("food_drink") → "Φαγητό & Ποτό"  (when lang=el)
+    Falls back to the raw key if no translation exists.
+    """
+    return t(f"cat_{category_key}", ) or category_key.replace("_", " ").title()
+
+
+def render_language_selector() -> None:
+    """Render the language selector widget in the sidebar.
+    Writes selected language to st.session_state["ui_language"].
+    Triggers a quiz reset on language switch.
+    """
+    current = _current_lang()
+
+    options = list(LANGUAGES.keys())
+    labels  = [f"{LANGUAGES[l]['flag']} {LANGUAGES[l]['label']}" for l in options]
+
+    current_idx = options.index(current) if current in options else 0
+
+    selected_label = st.sidebar.selectbox(
+        t("sidebar_language"),
+        labels,
+        index=current_idx,
+        key="lang_selector_widget",
     )
-    new_code = LANGUAGES[selected]
-    if new_code != lang_code:
-        st.session_state["lang"] = new_code
-        st.query_params["lang"] = new_code
-        # Reset quiz state so choices are regenerated in new language
-        for key in list(st.session_state.keys()):
-            if key.startswith("quiz_choices_") or key.startswith("lt_ans_") or key.startswith("lt_res_"):
-                del st.session_state[key]
-        st.session_state["quiz_answer"] = None
-        st.session_state["quiz_done"] = False
-        st.session_state["quiz_index"] = 0
-        st.session_state["quiz_score"] = {"correct": 0, "wrong": 0}
-        st.session_state["quiz_failed"] = []
-        st.session_state["quiz_words"] = []
-        st.session_state["lt_submitted"] = False
-        st.session_state["lt_index"] = 0
-        st.session_state["lt_score"] = {"correct": 0, "wrong": 0}
-        st.session_state["lt_failed"] = []
-        st.session_state["lt_words"] = []
-        st.session_state["lt_done"] = False
+
+    selected_lang = options[labels.index(selected_label)]
+
+    if selected_lang != current:
+        st.session_state["ui_language"] = selected_lang
+        # Reset quiz state on language change
+        for key in ["quiz_words", "quiz_index", "quiz_score",
+                    "listen_words", "listen_index", "listen_score"]:
+            st.session_state.pop(key, None)
         st.rerun()
+    else:
+        st.session_state["ui_language"] = selected_lang
 
+
+# ── Category list ─────────────────────────────────────────────────────────────
+# Raw keys — use cat_label() for display
 ALL_CATEGORIES = [
-    "everyday_life","food_drink","travel","nature","science","technology",
-    "politics","economy","culture_arts","religion","education","health",
-    "law","philosophy","emotions","family","work","sports","other"
+    "food_drink",
+    "travel",
+    "family",
+    "body",
+    "home",
+    "work",
+    "nature",
+    "time",
+    "numbers",
+    "colors",
+    "emotions",
+    "health",
+    "education",
+    "transport",
+    "shopping",
+    "weather",
+    "sports",
+    "arts",
+    "technology",
 ]
-
-def cat_label(cat_key: str) -> str:
-    """Return translated display label for a category key."""
-    return t(f"cat_{cat_key}")

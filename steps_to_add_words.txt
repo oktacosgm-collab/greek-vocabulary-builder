@@ -1,34 +1,119 @@
-Adding new words to the app
+Adding New Words to the Greek Vocabulary Builder App
+=====================================================
 
-Step 1 — Add words to CSV
+STEP 1 — Add words to CSV
+--------------------------
 Open data/greek_words_to_import.csv and add one word per line at the bottom. Save.
 
-Step 2 — Enrich new words (calls Claude API for translation, definition, example, conjugation)
-"C:\Users\oktac\OneDrive\Documents\python codes\greek_vocabulary_builder\python enrich_words.py"
+
+STEP 2 — Enrich new words
+--------------------------
+Calls Claude API for translation, definition, example, conjugation.
 Skips words already in cache — only processes new ones. ~0.5s per word.
 
-Step 3 — Generate audio (creates 3 MP3 files per word)
-fix_empty_audio_edge.py
-Detects and generates only missing audio files. No rate limits.
+  python enrich_words.py
 
-Step 4 — Verify
-check_audio.py
+Then add verb tenses (past/future continuous, present/past perfect, imperative):
+
+  python enrich_words.py --update-tenses
+
+Then add conjugation/declension data:
+
+  python enrich_words.py --update-conjugation
+
+
+STEP 3 — Cross-check with Wiktionary
+--------------------------------------
+Validates enriched words against Wiktionary. Flags suspicious entries.
+
+  python wiktionary_check.py
+
+Review the output — words flagged as INVALID or UNCERTAIN will be written to:
+  data/invalid_words.json
+
+To review and fix flagged words:
+  - Open data/invalid_words.json
+  - For each flagged word, inspect it:
+      python word_manager.py --inspect "someword"
+  - If the word is genuinely wrong, delete it:
+      python word_manager.py --delete "someword"
+  - If the enrichment data is wrong but the word is valid, re-enrich it:
+      python word_manager.py --recreate "someword"
+  - After fixes, re-run wiktionary_check.py to confirm no remaining flags
+
+
+STEP 4 — Add Japanese translations
+------------------------------------
+Translates new words only — skips words already having translation_ja.
+
+  python enrich_words.py --add-japanese
+
+
+STEP 5 — Add categories
+-------------------------
+Assigns 1-3 topic categories per word (everyday_life, science, politics, etc.)
+Skips words already categorized.
+
+  python enrich_words.py --add-category
+
+
+STEP 6 — Generate audio
+-------------------------
+Detects and generates only missing audio files (3 MP3s per word).
+No rate limits.
+
+  python fix_empty_audio_edge.py
+
+
+STEP 7 — Verify audio
+-----------------------
 Confirms all words have complete audio.
 
-Step 5 — Launch app
-bashstreamlit run app.py
+  python check_audio.py
 
-Other useful commands:
-Fix a specific word's audio
-python word_manager.py --recreate "someword"
 
-Delete a wrong word completely
-python word_manager.py --delete "someword"
+STEP 8 — Publish to GitHub and R2
+-----------------------------------
+Uploads new audio to Cloudflare R2, commits all changes, and pushes to GitHub.
+Streamlit Cloud will auto-redeploy within ~1 minute.
 
-Inspect a word's data and audio status
-python word_manager.py --inspect "someword"
+  .\publish_update.ps1 "Add new words: [describe what you added]"
 
-Add conjugation data to new words after enrichment
-python enrich_words.py --update-conjugation
 
-API key reminder: Already hardcoded in enrich_words.py so no need to pass it each time.
+STEP 9 — Verify on app
+------------------------
+- Open https://greek-vocabulary-builder-wuz3u4p82vmts6wvybryrc.streamlit.app/
+- Switch to Japanese and confirm translations appear
+- Check the new words appear in Browse All tab
+- Confirm category filter works for new words
+
+
+=====================================================
+OTHER USEFUL COMMANDS
+=====================================================
+
+Inspect a word's data and audio status:
+  python word_manager.py --inspect "someword"
+
+Delete a wrong word completely:
+  python word_manager.py --delete "someword"
+
+Fix a specific word's audio:
+  python word_manager.py --recreate "someword"
+
+Check how many words have Japanese translations:
+  python -c "
+  import json
+  data = json.load(open('data/enriched_cache.json', encoding='utf-8'))
+  has_ja = sum(1 for v in data.values() if v.get('translation_ja'))
+  has_cat = sum(1 for v in data.values() if v.get('categories'))
+  print(f'Japanese: {has_ja}/{len(data)}')
+  print(f'Categories: {has_cat}/{len(data)}')
+  "
+
+Launch app locally:
+  streamlit run app.py
+
+API key reminder:
+  Already set as Windows System Environment Variable ANTHROPIC_API_KEY.
+  No need to pass it manually.

@@ -181,6 +181,24 @@ Respond ONLY with a valid JSON object — no markdown, no backticks.
   "example_english_ja": "Japanese translation of the provided English example sentence"
 }"""
 
+GREEK_SYSTEM_PROMPT = """
+You are a Greek language expert. Given a Greek word and its English translation,
+return a JSON object with the following fields:
+
+{
+  "translation_el": "<Modern Greek equivalent or brief synonym — 1–4 words>",
+  "definition_el":  "<Short Greek definition of the word, as if in a learner's dictionary — 1–2 sentences>",
+  "example_sentence_el": "<A natural Greek sentence using the word — suitable for A2/B1 level learner>"
+}
+
+Rules:
+- Use Modern Greek (Standard Modern Greek / Κοινή Νεοελληνική) throughout.
+- Keep definitions simple and clear — written FOR Greek learners, not native speakers.
+- Do not repeat the headword verbatim in the translation_el field.
+- Example sentences should be short (8–15 words) and contextually natural.
+- Respond with ONLY the JSON object. No preamble, no markdown fences.
+""".strip()
+
 CATEGORY_PROMPT = """You are a Greek language expert. Given a Modern Greek word with its English data,
 assign 1-3 categories from the fixed list below that best describe when/where this word is used.
 Respond ONLY with a valid JSON object — no markdown, no backticks.
@@ -377,6 +395,24 @@ def needs_category(word: str, cache: dict) -> bool:
     entry = cache.get(word, {})
     return bool(entry) and not entry.get("categories")
 
+
+def add_greek(word: str, existing: dict, api_key: str) -> dict | None:
+    msg = (
+        f"Greek word: {word}\n"
+        f"English translation: {existing.get('translation','')}\n"
+        f"English definition: {existing.get('definition','')}\n"
+        f"Part of speech: {existing.get('part_of_speech','')}\n"
+    )
+    return call_api(GREEK_SYSTEM_PROMPT, msg, api_key, max_tokens=350)
+
+def needs_greek(word: str, cache: dict, overwrite: bool = False) -> bool:
+    entry = cache.get(word, {})
+    if not entry:
+        return False
+    if overwrite:
+        return True
+    return not entry.get("translation_el")
+
 def needs_update(word: str, cache: dict) -> bool:
     d = cache[word]
     if d.get("conjugation") is None and d.get("declension") is None:
@@ -461,6 +497,11 @@ def main():
                         help="Add Japanese translation/definition to cached words")
     parser.add_argument("--add-category", action="store_true",
                         help="Assign categories to cached words")
+    parser.add_argument("--add-greek", action="store_true",
+                        help="Enrich words with Greek translation, definition, and example sentence")
+    parser.add_argument("--overwrite",action="store_true",
+                        help="Re-enrich words that already have the target field (use with --add-greek etc.)"
+)
     args = parser.parse_args()
 
     if not args.api_key:
@@ -539,6 +580,40 @@ def main():
         print(f"\n✅  Done! Added Japanese for {len(todo) - errors} words. Errors: {errors}")
         return
     
+    # ── Mode: add Greek ─────────────────────────────────────────────────────
+    if args.add_greek:
+        todo = [w for w in cache if needs_greek(w, cache, args.overwrite)]
+
+        if args.limit:
+            todo = todo[:args.limit]
+
+        print(f"🇬🇷  Adding Greek enrichment for {len(todo)} words")
+        if not todo:
+            print("All words already have Greek enrichment!")
+            return
+
+        errors = 0
+        for i, word in enumerate(todo, 1):
+            print(f"[{i:4}/{len(todo)}] {word:<30}", end="", flush=True)
+
+            result = add_greek(word, cache[word], args.api_key)
+            if result:
+                cache[word].update(result)
+                print(f"  ✓ {result.get('translation_el','')}")
+            else:
+                errors += 1
+                print("  ✗ failed")
+
+            if i % 25 == 0:
+                save_cache(cache)
+                print(f"   💾 Checkpoint ({i} updated)")
+
+            time.sleep(args.delay)
+
+        save_cache(cache)
+        print(f"\n✅  Done! Added Greek for {len(todo) - errors} words. Errors: {errors}")
+        return
+
     # ── Mode: add categories ───────────────────────────────────────────────────
     if args.add_category:
         todo = [w for w in cache if needs_category(w, cache)]

@@ -3,6 +3,8 @@
 import streamlit as st
 import random
 import html as _html
+import json
+import pathlib
 from datetime import date
 
 from modules.config      import ARTICLE, AUDIO_DIR
@@ -22,6 +24,140 @@ def loc(data: dict, field: str, fallback: str = "--") -> str:
         if val:
             return val
     return data.get(field, fallback)
+
+
+# ── Cache save (for personal notes) ──────────────────────────────────────────
+_CACHE_PATH = pathlib.Path(__file__).parent / "data" / "enriched_cache.json"
+
+def _save_cache(cache_data: dict):
+    with open(_CACHE_PATH, "w", encoding="utf-8") as _f:
+        json.dump(cache_data, _f, ensure_ascii=False, indent=2)
+
+# ── API key helper ─────────────────────────────────────────────────────────────
+def _get_api_key() -> str:
+    try:
+        return st.secrets["ANTHROPIC_API_KEY"]
+    except Exception:
+        import os
+        return os.environ.get("ANTHROPIC_API_KEY", "")
+
+# ── Grammar check via Claude Haiku ────────────────────────────────────────────
+_GRAMMAR_PROMPT = """You are a Modern Greek language teacher reviewing a student's sentence.
+The student is learning Greek and wrote a sentence using a specific target word.
+Respond ONLY with valid JSON — no markdown, no backticks.
+
+{
+  "is_correct": true or false,
+  "corrected": "corrected sentence, or same as input if already correct",
+  "explanation": "1-2 sentences in plain English focused on the specific error",
+  "error_type": "tense / gender / case / word_order / vocabulary / none"
+}
+
+Rules:
+- Be encouraging but precise
+- Focus on the single most important error if multiple exist
+- If correct, say so clearly and set is_correct to true
+- Explanation should suit an A2/B1 learner — avoid jargon""".strip()
+
+def check_grammar(sentence: str, target_word: str) -> dict:
+    import urllib.request, urllib.error
+    api_key = _get_api_key()
+    if not api_key:
+        return {"is_correct": False, "corrected": sentence,
+                "explanation": "API key not configured.", "error_type": "none"}
+    msg = f"Target word the student is practising: «{target_word}»\nStudent's sentence: {sentence}"
+    payload = json.dumps({
+        "model": "claude-haiku-4-5", "max_tokens": 200,
+        "system": _GRAMMAR_PROMPT,
+        "messages": [{"role": "user", "content": msg}]
+    }).encode("utf-8")
+    req = urllib.request.Request(
+        "https://api.anthropic.com/v1/messages", data=payload,
+        headers={"x-api-key": api_key, "anthropic-version": "2023-06-01",
+                 "content-type": "application/json"}, method="POST"
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            raw = json.loads(resp.read())["content"][0]["text"].strip()
+            raw = raw.replace("```json","").replace("```","").strip()
+            return json.loads(raw)
+    except Exception as e:
+        return {"is_correct": False, "corrected": sentence,
+                "explanation": f"Check failed: {e}", "error_type": "none"}
+
+# ── Personal note section (reused across Flashcard, SRS, Browse) ───────────────
+def _render_note_section(word: str, cache: dict, key_prefix: str):
+    word_data    = cache.get(word, {})
+    existing     = word_data.get("user_note", "")
+    feedback_key = f"grammar_fb_{key_prefix}_{word}"
+
+    st.markdown("---")
+    st.markdown(f"**{t('note_section_title')}**")
+
+    if existing:
+        st.markdown(
+            f"<div style='background:rgba(99,179,237,0.1);border:1px solid rgba(99,179,237,0.3);"
+            f"border-radius:8px;padding:10px 14px;color:#90cdf4;font-style:italic;margin-bottom:8px;'>"
+            f"📝 {_html.escape(existing)}</div>", unsafe_allow_html=True
+        )
+
+    new_note = st.text_area(
+        t("note_placeholder"),
+        value=existing,
+        key=f"note_ta_{key_prefix}_{word}",
+        label_visibility="collapsed",
+        placeholder=t("note_placeholder"),
+        height=80
+    )
+
+    nc1, nc2 = st.columns(2)
+    with nc1:
+        if st.button(t("note_save"), key=f"note_save_{key_prefix}_{word}",
+                     use_container_width=True):
+            if word_data:
+                cache[word]["user_note"]         = new_note
+                cache[word]["user_note_updated"] = str(date.today())
+                _save_cache(cache)
+                if new_note.strip() and word not in new_note:
+                    st.warning(f"Tip: try including «{word}» in your sentence")
+                else:
+                    st.success(t("note_saved"))
+    with nc2:
+        if st.button(t("note_check"), key=f"note_check_{key_prefix}_{word}",
+                     use_container_width=True):
+            if not new_note.strip():
+                st.warning(t("note_write_first"))
+            else:
+                with st.spinner(t("note_checking")):
+                    result = check_grammar(new_note, word)
+                    st.session_state[feedback_key] = result
+                st.rerun()
+
+    fb = st.session_state.get(feedback_key)
+    if fb:
+        if fb.get("is_correct"):
+            st.success(f"✓ {t('note_correct')}  «{fb['corrected']}»")
+            if fb.get("explanation"):
+                st.caption(fb["explanation"])
+        else:
+            st.warning(f"{t('note_almost')}  «{fb['corrected']}»")
+            if fb.get("explanation"):
+                st.caption(fb["explanation"])
+            fc1, fc2 = st.columns(2)
+            with fc1:
+                if st.button(t("note_keep_original"),
+                             key=f"note_keep_{key_prefix}_{word}", use_container_width=True):
+                    st.session_state.pop(feedback_key, None)
+                    st.rerun()
+            with fc2:
+                if st.button(t("note_save_corrected"),
+                             key=f"note_sc_{key_prefix}_{word}", use_container_width=True):
+                    if word_data:
+                        cache[word]["user_note"]         = fb["corrected"]
+                        cache[word]["user_note_updated"] = str(date.today())
+                        _save_cache(cache)
+                    st.session_state.pop(feedback_key, None)
+                    st.rerun()
 
 st.set_page_config(page_title="Greek Flashcards", page_icon="🇬🇷",
                    layout="wide", initial_sidebar_state="expanded")
@@ -281,6 +417,8 @@ with tab1:
         with mid:
             if st.button(t("btn_mark_review"), use_container_width=True):
                 st.session_state.score["review"]+=1; st.session_state.card_index+=1; st.session_state.flipped=False; st.rerun()
+    if st.session_state.flipped:
+        _render_note_section(word, cache, "fc")
 
 # ────────────────────────────────────────────────────────────────────────────────
 # TAB 2 — SPACED REPETITION
@@ -352,6 +490,8 @@ with tab2:
         with skip_col:
             if st.button(t("btn_skip"), use_container_width=True):
                 st.session_state.srs_index+=1; st.session_state.srs_revealed=False; st.rerun()
+        if revealed:
+            _render_note_section(srs_word, cache, "srs")
 
 # ────────────────────────────────────────────────────────────────────────────────
 # TAB 3 — BROWSE
@@ -370,7 +510,10 @@ with tab3:
                 if w in cache:
                     card=SRS.get_card(srs_data,w); due_str=card.get("due","--")
                     st.markdown(f"*{d.get('transliteration','--')}* · {d.get('part_of_speech','--')} · {d.get('difficulty','?')} · {t('next_review', date=due_str)}")
-                    st.markdown(f"{t('label_definition')} {loc(d, 'definition')}"); st.markdown(f"{t('label_example_gr')} *{d.get('example_greek','--')}*"); st.markdown(f"{t('label_example_en')} {loc(d, 'example_english')}")
+                    st.markdown(f"{t('label_definition')} {loc(d, 'definition')}")
+                    st.markdown(f"{t('label_example_gr')} *{d.get('example_greek','--')}*")
+                    st.markdown(f"{t('label_example_en')} {loc(d, 'example_english')}")
+                    _render_note_section(w, cache, f"br_{i}")
                 else: st.info(t("not_yet_enriched"))
             with c2:
                 if st.button("🔊", key=f"b_{i}"): play_sequence(d,w)
