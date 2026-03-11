@@ -91,14 +91,9 @@ html, body, [class*="css"] { font-family: 'Inter', sans-serif; }
     background: rgba(104,211,145,0.08); border: 1px solid rgba(104,211,145,0.25);
     border-radius: 12px; padding: 12px 16px; margin: 8px 0 4px 0; text-align: center;
 }
-/* Desktop: show hint inside card, hide external hint box */
-@media (min-width: 768px) {
-    .hint-mobile { display: none !important; }
-}
-/* Mobile: hide hint inside card, show external hint box */
-@media (max-width: 767px) {
-    .hint-desktop { display: none !important; }
-}
+/* JS adds class="is-mobile" to <body> on small screens */
+body:not(.is-mobile) .hint-mobile { display: none !important; }
+body.is-mobile .hint-desktop { display: none !important; }
 section[data-testid="stSidebar"] { background: #0d1117 !important; }
 section[data-testid="stSidebar"] p,
 section[data-testid="stSidebar"] span,
@@ -129,6 +124,25 @@ section[data-testid="stSidebar"] .stMultiSelect * { color: #e2e8f0 !important; b
 </style>
 """
 st.markdown(CSS, unsafe_allow_html=True)
+
+# JS: detect mobile and tag body with is-mobile class
+import streamlit.components.v1 as _stcomp
+_stcomp.html("""
+<script>
+(function() {
+  function setMobile() {
+    var w = 1024;
+    try { w = window.top.innerWidth; } catch(e) { w = window.innerWidth || 1024; }
+    var fn = w < 768 ? 'add' : 'remove';
+    try { window.top.document.body.classList[fn]('is-mobile'); } catch(e) {}
+    document.body.classList[fn]('is-mobile');
+  }
+  setMobile();
+  try { window.top.addEventListener('resize', setMobile); } catch(e) {}
+  window.addEventListener('resize', setMobile);
+})();
+</script>
+""", height=0)
 
 # ── Load data ───────────────────────────────────────────────────────────────────────────────
 cache     = load_cache()
@@ -571,27 +585,29 @@ with tab6:
             qw_safe=_html.escape(qword); qex=_html.escape(qdata.get("example_greek",""))
             qex_en=_html.escape(loc(qdata, "example_english", ""))
             hint_key = f"quiz_hint_{qi}"
-            hint_stage = st.session_state.get(hint_key, 0)  # 0=none 1=synonyms 2=synonyms+example
+            hint_stage = st.session_state.get(hint_key, 0)  # 0=none 1=synonyms 2=+example
             qex_raw  = qdata.get("example_greek", "")
             qsyns    = [s for s in qdata.get("synonyms", []) if s != qword]
             has_syns = bool(qsyns)
             has_ex   = bool(qex_raw)
 
-            # Build shared hint content string (used by both desktop+mobile)
+            # Build hint content
+            # Stage1: synonyms (or example if no synonyms)
+            # Stage2: adds example when synonyms were shown at stage1
             hint_parts = []
             if hint_stage >= 1:
                 if has_syns:
                     syn_str = " · ".join(_html.escape(s) for s in qsyns[:3])
                     hint_parts.append(f'<span style="font-size:0.95rem;color:#68d391;">🔤 {syn_str}</span>')
-                if hint_stage >= 2 and has_ex:
+                if has_ex and (hint_stage >= 2 or not has_syns):
                     hint_parts.append(
-                        f'<span style="font-size:0.75rem;color:#f6ad55;">💡 {t("quiz_hint_label")}</span><br>'
-                        f'<span style="font-size:1rem;color:#fbd38d;font-style:italic;">{_html.escape(qex_raw)}</span>'
+                        f'<span style="font-size:0.75rem;color:#f6ad55;">💡 {t("quiz_hint_label")}</span>'
+                        f'<br><span style="font-size:1rem;color:#fbd38d;font-style:italic;">{_html.escape(qex_raw)}</span>'
                     )
             hint_inner = "<br>".join(hint_parts) if hint_parts else ""
 
             if answered is None:
-                # Desktop: hint inside card (.hint-desktop hidden on mobile)
+                # hint-desktop: inside card, hidden on mobile by JS class
                 desktop_hint = (
                     f'<div class="hint-desktop"><hr class="example-divider">'
                     f'<div style="text-align:center;">{hint_inner}</div></div>'
@@ -608,7 +624,7 @@ with tab6:
                 q_html=('<div class="card" style="min-height:200px;">'+f'<span class="pos-badge">{qpos_s}</span>'+f'<span class="diff-badge">{qdif_s}</span>'+f'{qgender_html}'+f'<div class="greek-word">{qw_safe}</div>'+f'<div class="transliteration">[ {_html.escape(qdata.get("transliteration","--"))} ]</div>'+'</div>')
             st.markdown(q_html, unsafe_allow_html=True)
 
-            # Mobile: hint outside card (.hint-mobile hidden on desktop)
+            # hint-mobile: below card, hidden on desktop by JS class
             if answered is None and hint_inner:
                 st.markdown(
                     f'<div class="hint-mobile hint-box">{hint_inner}</div>',
@@ -627,7 +643,7 @@ with tab6:
                                 st.session_state[hint_key] = 1; st.rerun()
                         else:
                             st.caption(t("quiz_hint_none"))
-                    elif hint_stage == 1 and has_ex:
+                    elif hint_stage == 1 and has_syns and has_ex:
                         if st.button("💡＋", key=f"hint_btn2_{qi}", use_container_width=True,
                                      help=t("quiz_hint_label")):
                             st.session_state[hint_key] = 2; st.rerun()
@@ -856,77 +872,38 @@ with tab6:
 # ────────────────────────────────────────────────────────────────────────────────
 with tab5:
     st.markdown("## 🔤 " + t("tab_synonyms"))
-
     syn_words = [w for w in filtered if w in cache and
                  (cache[w].get("synonyms") or cache[w].get("antonyms"))]
-
     if not syn_words:
         st.info("No synonym/antonym data yet. Run `python enrich_words.py --add-synonyms` to populate.")
     else:
         fc1, fc2 = st.columns([1, 1])
         with fc1:
-            diff_levels = ["A1","A2","B1","B2","C1","C2"]
-            sel_syn_diffs = st.multiselect(t("difficulty"), diff_levels,
+            sel_syn_diffs = st.multiselect(t("difficulty"), ["A1","A2","B1","B2","C1","C2"],
                                            default=[], key="syn_diff_filter")
         with fc2:
-            pos_opts = sorted({cache[w].get("part_of_speech","") for w in syn_words
-                               if cache[w].get("part_of_speech")})
-            sel_syn_pos = st.multiselect(t("filter_pos"), pos_opts,
-                                         default=[], key="syn_pos_filter")
-
+            pos_opts = sorted({cache[w].get("part_of_speech","") for w in syn_words if cache[w].get("part_of_speech")})
+            sel_syn_pos = st.multiselect(t("filter_pos"), pos_opts, default=[], key="syn_pos_filter")
         if sel_syn_diffs:
             syn_words = [w for w in syn_words if cache[w].get("difficulty","") in sel_syn_diffs]
         if sel_syn_pos:
             syn_words = [w for w in syn_words if cache[w].get("part_of_speech","") in sel_syn_pos]
-
         diff_order = {"A1":0,"A2":1,"B1":2,"B2":3,"C1":4,"C2":5,"?":6}
         syn_words.sort(key=lambda w: (diff_order.get(cache[w].get("difficulty","?"), 6), w))
-
-        st.caption(f"{len(syn_words)} words")
-        st.markdown("---")
-
-        def _syn_diff(word):
-            return cache.get(word, {}).get("difficulty", "")
-
-        def _diff_color(d):
-            return {"A1":"#68d391","A2":"#68d391","B1":"#f6ad55","B2":"#f6ad55",
-                    "C1":"#fc8181","C2":"#fc8181"}.get(d, "#a0aec0")
-
+        st.caption(f"{len(syn_words)} words"); st.markdown("---")
+        def _syn_diff(word): return cache.get(word, {}).get("difficulty", "")
+        def _diff_color(d): return {"A1":"#68d391","A2":"#68d391","B1":"#f6ad55","B2":"#f6ad55","C1":"#fc8181","C2":"#fc8181"}.get(d, "#a0aec0")
         for word in syn_words:
-            data  = cache[word]
-            diff  = data.get("difficulty","?")
-            pos   = data.get("part_of_speech","")
-            tr    = loc(data, "translation")
-            syns  = [s for s in data.get("synonyms", []) if s != word]
-            ants  = data.get("antonyms", [])
-            dcolor = _diff_color(diff)
-
-            syn_badges = "".join(
-                f'<span class="syn-badge">{_html.escape(s)}'
-                + (f' <span style="font-size:0.7rem;opacity:0.7;">({_syn_diff(s)})</span>' if _syn_diff(s) else "")
-                + "</span>" for s in syns
-            )
-            ant_badges = "".join(
-                f'<span class="ant-badge">{_html.escape(a)}'
-                + (f' <span style="font-size:0.7rem;opacity:0.7;">({_syn_diff(a)})</span>' if _syn_diff(a) else "")
-                + "</span>" for a in ants
-            )
-
+            data = cache[word]; diff = data.get("difficulty","?"); pos = data.get("part_of_speech","")
+            tr = loc(data, "translation")
+            syns = [s for s in data.get("synonyms", []) if s != word]
+            ants = data.get("antonyms", []); dcolor = _diff_color(diff)
+            syn_badges = "".join(f'<span class="syn-badge">{_html.escape(s)}' + (f' <span style="font-size:0.7rem;opacity:0.7;">({_syn_diff(s)})</span>' if _syn_diff(s) else "") + "</span>" for s in syns)
+            ant_badges = "".join(f'<span class="ant-badge">{_html.escape(a)}' + (f' <span style="font-size:0.7rem;opacity:0.7;">({_syn_diff(a)})</span>' if _syn_diff(a) else "") + "</span>" for a in ants)
             body = ""
-            if syns:
-                body += f'<div style="margin-top:8px;"><span style="font-size:0.78rem;color:#68d391;margin-right:4px;">Synonyms:</span>{syn_badges}</div>'
-            if ants:
-                body += f'<div style="margin-top:6px;"><span style="font-size:0.78rem;color:#fc8181;margin-right:4px;">Antonyms:</span>{ant_badges}</div>'
-
-            st.markdown(
-                f'<div class="syn-row">'
-                f'<span style="font-size:1.15rem;font-weight:700;color:#e8d5b7;">{_html.escape(word)}</span>'
-                f'<span style="font-size:0.85rem;color:#718096;margin-left:8px;">{_html.escape(tr)}</span>'
-                f'<span class="diff-badge" style="color:{dcolor};border-color:{dcolor}40;">{_html.escape(diff)}</span>'
-                + (f'<span class="pos-badge" style="margin-left:6px;">{_html.escape(pos)}</span>' if pos else "")
-                + body + "</div>",
-                unsafe_allow_html=True
-            )
+            if syns: body += f'<div style="margin-top:8px;"><span style="font-size:0.78rem;color:#68d391;margin-right:4px;">Synonyms:</span>{syn_badges}</div>'
+            if ants: body += f'<div style="margin-top:6px;"><span style="font-size:0.78rem;color:#fc8181;margin-right:4px;">Antonyms:</span>{ant_badges}</div>'
+            st.markdown(f'<div class="syn-row"><span style="font-size:1.15rem;font-weight:700;color:#e8d5b7;">{_html.escape(word)}</span><span style="font-size:0.85rem;color:#718096;margin-left:8px;">{_html.escape(tr)}</span><span class="diff-badge" style="color:{dcolor};border-color:{dcolor}40;">{_html.escape(diff)}</span>' + (f'<span class="pos-badge" style="margin-left:6px;">{_html.escape(pos)}</span>' if pos else "") + body + "</div>", unsafe_allow_html=True)
 
 st.markdown("---")
 st.markdown(f"<p style='text-align:center;color:#4a5568;font-size:0.8rem;'>{t('footer')}</p>", unsafe_allow_html=True)
