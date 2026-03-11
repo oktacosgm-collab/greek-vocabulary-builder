@@ -3,8 +3,6 @@
 import streamlit as st
 import random
 import html as _html
-import json
-import pathlib
 from datetime import date
 
 from modules.config      import ARTICLE, AUDIO_DIR
@@ -24,140 +22,6 @@ def loc(data: dict, field: str, fallback: str = "--") -> str:
         if val:
             return val
     return data.get(field, fallback)
-
-
-# ── Cache save (for personal notes) ──────────────────────────────────────────
-_CACHE_PATH = pathlib.Path(__file__).parent / "data" / "enriched_cache.json"
-
-def _save_cache(cache_data: dict):
-    with open(_CACHE_PATH, "w", encoding="utf-8") as _f:
-        json.dump(cache_data, _f, ensure_ascii=False, indent=2)
-
-# ── API key helper ─────────────────────────────────────────────────────────────
-def _get_api_key() -> str:
-    try:
-        return st.secrets["ANTHROPIC_API_KEY"]
-    except Exception:
-        import os
-        return os.environ.get("ANTHROPIC_API_KEY", "")
-
-# ── Grammar check via Claude Haiku ────────────────────────────────────────────
-_GRAMMAR_PROMPT = """You are a Modern Greek language teacher reviewing a student's sentence.
-The student is learning Greek and wrote a sentence using a specific target word.
-Respond ONLY with valid JSON — no markdown, no backticks.
-
-{
-  "is_correct": true or false,
-  "corrected": "corrected sentence, or same as input if already correct",
-  "explanation": "1-2 sentences in plain English focused on the specific error",
-  "error_type": "tense / gender / case / word_order / vocabulary / none"
-}
-
-Rules:
-- Be encouraging but precise
-- Focus on the single most important error if multiple exist
-- If correct, say so clearly and set is_correct to true
-- Explanation should suit an A2/B1 learner — avoid jargon""".strip()
-
-def check_grammar(sentence: str, target_word: str) -> dict:
-    import urllib.request, urllib.error
-    api_key = _get_api_key()
-    if not api_key:
-        return {"is_correct": False, "corrected": sentence,
-                "explanation": "API key not configured.", "error_type": "none"}
-    msg = f"Target word the student is practising: «{target_word}»\nStudent's sentence: {sentence}"
-    payload = json.dumps({
-        "model": "claude-haiku-4-5", "max_tokens": 200,
-        "system": _GRAMMAR_PROMPT,
-        "messages": [{"role": "user", "content": msg}]
-    }).encode("utf-8")
-    req = urllib.request.Request(
-        "https://api.anthropic.com/v1/messages", data=payload,
-        headers={"x-api-key": api_key, "anthropic-version": "2023-06-01",
-                 "content-type": "application/json"}, method="POST"
-    )
-    try:
-        with urllib.request.urlopen(req, timeout=15) as resp:
-            raw = json.loads(resp.read())["content"][0]["text"].strip()
-            raw = raw.replace("```json","").replace("```","").strip()
-            return json.loads(raw)
-    except Exception as e:
-        return {"is_correct": False, "corrected": sentence,
-                "explanation": f"Check failed: {e}", "error_type": "none"}
-
-# ── Personal note section (reused across Flashcard, SRS, Browse) ───────────────
-def _render_note_section(word: str, cache: dict, key_prefix: str):
-    word_data    = cache.get(word, {})
-    existing     = word_data.get("user_note", "")
-    feedback_key = f"grammar_fb_{key_prefix}_{word}"
-
-    st.markdown("---")
-    st.markdown(f"**{t('note_section_title')}**")
-
-    if existing:
-        st.markdown(
-            f"<div style='background:rgba(99,179,237,0.1);border:1px solid rgba(99,179,237,0.3);"
-            f"border-radius:8px;padding:10px 14px;color:#90cdf4;font-style:italic;margin-bottom:8px;'>"
-            f"📝 {_html.escape(existing)}</div>", unsafe_allow_html=True
-        )
-
-    new_note = st.text_area(
-        t("note_placeholder"),
-        value=existing,
-        key=f"note_ta_{key_prefix}_{word}",
-        label_visibility="collapsed",
-        placeholder=t("note_placeholder"),
-        height=80
-    )
-
-    nc1, nc2 = st.columns(2)
-    with nc1:
-        if st.button(t("note_save"), key=f"note_save_{key_prefix}_{word}",
-                     use_container_width=True):
-            if word_data:
-                cache[word]["user_note"]         = new_note
-                cache[word]["user_note_updated"] = str(date.today())
-                _save_cache(cache)
-                if new_note.strip() and word not in new_note:
-                    st.warning(f"Tip: try including «{word}» in your sentence")
-                else:
-                    st.success(t("note_saved"))
-    with nc2:
-        if st.button(t("note_check"), key=f"note_check_{key_prefix}_{word}",
-                     use_container_width=True):
-            if not new_note.strip():
-                st.warning(t("note_write_first"))
-            else:
-                with st.spinner(t("note_checking")):
-                    result = check_grammar(new_note, word)
-                    st.session_state[feedback_key] = result
-                st.rerun()
-
-    fb = st.session_state.get(feedback_key)
-    if fb:
-        if fb.get("is_correct"):
-            st.success(f"✓ {t('note_correct')}  «{fb['corrected']}»")
-            if fb.get("explanation"):
-                st.caption(fb["explanation"])
-        else:
-            st.warning(f"{t('note_almost')}  «{fb['corrected']}»")
-            if fb.get("explanation"):
-                st.caption(fb["explanation"])
-            fc1, fc2 = st.columns(2)
-            with fc1:
-                if st.button(t("note_keep_original"),
-                             key=f"note_keep_{key_prefix}_{word}", use_container_width=True):
-                    st.session_state.pop(feedback_key, None)
-                    st.rerun()
-            with fc2:
-                if st.button(t("note_save_corrected"),
-                             key=f"note_sc_{key_prefix}_{word}", use_container_width=True):
-                    if word_data:
-                        cache[word]["user_note"]         = fb["corrected"]
-                        cache[word]["user_note_updated"] = str(date.today())
-                        _save_cache(cache)
-                    st.session_state.pop(feedback_key, None)
-                    st.rerun()
 
 st.set_page_config(page_title="Greek Flashcards", page_icon="🇬🇷",
                    layout="wide", initial_sidebar_state="expanded")
@@ -209,6 +73,20 @@ html, body, [class*="css"] { font-family: 'Inter', sans-serif; }
 .stat-box { background: #1e2a3a; border-radius: 12px; padding: 12px 16px; text-align: center; border: 1px solid #2d3748; }
 .stat-num  { font-size: 1.8rem; font-weight: 700; }
 .stat-label{ font-size: 0.75rem; color: #a0aec0; }
+.syn-badge {
+    display: inline-block; background: rgba(104,211,145,0.15); color: #68d391;
+    border: 1px solid rgba(104,211,145,0.35); border-radius: 20px;
+    padding: 3px 12px; font-size: 0.82rem; font-weight: 600; margin: 3px 4px;
+}
+.ant-badge {
+    display: inline-block; background: rgba(252,129,129,0.15); color: #fc8181;
+    border: 1px solid rgba(252,129,129,0.35); border-radius: 20px;
+    padding: 3px 12px; font-size: 0.82rem; font-weight: 600; margin: 3px 4px;
+}
+.syn-row {
+    background: #1a2332; border-radius: 12px; padding: 14px 18px;
+    margin-bottom: 10px; border: 1px solid #2d3748;
+}
 section[data-testid="stSidebar"] { background: #0d1117 !important; }
 section[data-testid="stSidebar"] p,
 section[data-testid="stSidebar"] span,
@@ -362,9 +240,9 @@ with st.sidebar:
             use_container_width=True)
 
 # ── Tabs ────────────────────────────────────────────────────────────────────────────────────
-tab1, tab2, tab3, tab4, tab5 = st.tabs([
+tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
     t("tab_flashcard"), t("tab_srs"), t("tab_browse"),
-    t("tab_conjugation"), t("tab_test")
+    t("tab_conjugation"), "🔤 " + t("tab_synonyms"), t("tab_test")
 ])
 
 # ────────────────────────────────────────────────────────────────────────────────
@@ -417,8 +295,6 @@ with tab1:
         with mid:
             if st.button(t("btn_mark_review"), use_container_width=True):
                 st.session_state.score["review"]+=1; st.session_state.card_index+=1; st.session_state.flipped=False; st.rerun()
-    if st.session_state.flipped:
-        _render_note_section(word, cache, "fc")
 
 # ────────────────────────────────────────────────────────────────────────────────
 # TAB 2 — SPACED REPETITION
@@ -490,8 +366,6 @@ with tab2:
         with skip_col:
             if st.button(t("btn_skip"), use_container_width=True):
                 st.session_state.srs_index+=1; st.session_state.srs_revealed=False; st.rerun()
-        if revealed:
-            _render_note_section(srs_word, cache, "srs")
 
 # ────────────────────────────────────────────────────────────────────────────────
 # TAB 3 — BROWSE
@@ -510,10 +384,7 @@ with tab3:
                 if w in cache:
                     card=SRS.get_card(srs_data,w); due_str=card.get("due","--")
                     st.markdown(f"*{d.get('transliteration','--')}* · {d.get('part_of_speech','--')} · {d.get('difficulty','?')} · {t('next_review', date=due_str)}")
-                    st.markdown(f"{t('label_definition')} {loc(d, 'definition')}")
-                    st.markdown(f"{t('label_example_gr')} *{d.get('example_greek','--')}*")
-                    st.markdown(f"{t('label_example_en')} {loc(d, 'example_english')}")
-                    _render_note_section(w, cache, f"br_{i}")
+                    st.markdown(f"{t('label_definition')} {loc(d, 'definition')}"); st.markdown(f"{t('label_example_gr')} *{d.get('example_greek','--')}*"); st.markdown(f"{t('label_example_en')} {loc(d, 'example_english')}")
                 else: st.info(t("not_yet_enriched"))
             with c2:
                 if st.button("🔊", key=f"b_{i}"): play_sequence(d,w)
@@ -544,9 +415,9 @@ with tab4:
     if len(pool)>100: st.info(t("showing_100", n=len(pool)))
 
 # ────────────────────────────────────────────────────────────────────────────────
-# TAB 5 — TEST KNOWLEDGE
+# TAB 6 — TEST KNOWLEDGE
 # ────────────────────────────────────────────────────────────────────────────────
-with tab5:
+with tab6:
     import unicodedata as _ud
 
     def _norm(s):
@@ -633,7 +504,7 @@ with tab5:
                 q_words=quiz_pool.copy(); random.shuffle(q_words)
                 st.session_state.quiz_words=q_words; st.session_state.quiz_index=0
                 st.session_state.quiz_score={"correct":0,"wrong":0}; st.session_state.quiz_failed=[]
-                st.session_state.quiz_answer=None; st.session_state.quiz_done=False; st.rerun()
+                st.session_state.quiz_answer=None; st.session_state.quiz_done=False
         with col_reset:
             total_q=st.session_state.quiz_score["correct"]+st.session_state.quiz_score["wrong"]
             if total_q>0:
@@ -658,18 +529,26 @@ with tab5:
         elif st.session_state.quiz_words:
             qi=st.session_state.quiz_index; qwords=st.session_state.quiz_words
             if qi>=len(qwords): st.session_state.quiz_done=True; st.rerun()
-            qword=qwords[qi]; qdata=cache[qword]; correct_tr=loc(qdata, "translation")
-            choice_key=f"quiz_choices_{qi}_{get_lang_code()}"
+            qword=qwords[qi]; qdata=cache[qword]
+            # In Greek mode: force English answers so quiz tests Greek→English (not trivial Greek→Greek)
+            # In EN/JA mode: use loc() to respect UI language
+            _quiz_lang = get_lang_code()
+            if _quiz_lang == "el":
+                correct_tr = qdata.get("translation", "")
+                def _quiz_tr(d): return d.get("translation", "")
+            else:
+                correct_tr = loc(qdata, "translation")
+                def _quiz_tr(d): return loc(d, "translation")
+            choice_key=f"quiz_choices_{qi}_{_quiz_lang}"
             if choice_key not in st.session_state:
                 qpos=qdata.get("part_of_speech","")
                 same_pos=[w for w in quiz_pool if w!=qword and cache[w].get("part_of_speech","")==qpos]
                 wrong_pool=same_pos if len(same_pos)>=3 else [w for w in quiz_pool if w!=qword]
-                # Shuffle wrong pool and pick distractors, skipping any that share the correct translation
                 random.shuffle(wrong_pool)
                 wrong_translations=[]
                 for ww in wrong_pool:
-                    tr=loc(cache[ww], "translation")
-                    if tr!=correct_tr and tr not in wrong_translations:
+                    tr=_quiz_tr(cache[ww])
+                    if tr and tr!=correct_tr and tr not in wrong_translations:
                         wrong_translations.append(tr)
                     if len(wrong_translations)==3: break
                 choices=wrong_translations[:]
@@ -681,29 +560,86 @@ with tab5:
             answered=st.session_state.quiz_answer
             qw_safe=_html.escape(qword); qex=_html.escape(qdata.get("example_greek",""))
             qex_en=_html.escape(loc(qdata, "example_english", ""))
+            hint_key = f"quiz_hint_{qi}"
+            hint_stage = st.session_state.get(hint_key, 0)  # 0=none 1=synonyms 2=synonyms+example
+            qex_raw  = qdata.get("example_greek", "")
+            qsyns    = [s for s in qdata.get("synonyms", []) if s != qword]
+            has_syns = bool(qsyns)
+            has_ex   = bool(qex_raw)
+
+            hint_html = ""
+            if hint_stage >= 1:
+                parts = []
+                if has_syns:
+                    syn_str = " · ".join(_html.escape(s) for s in qsyns[:3])
+                    parts.append(f'<span style="font-size:0.95rem;color:#68d391;">🔤 {syn_str}</span>')
+                if hint_stage >= 2 and has_ex:
+                    parts.append(
+                        f'<span style="font-size:0.75rem;color:#f6ad55;">💡 {t("quiz_hint_label")}</span><br>'
+                        f'<span style="font-size:1rem;color:#fbd38d;font-style:italic;">{_html.escape(qex_raw)}</span>'
+                    )
+                if parts:
+                    hint_html = (f'<hr class="example-divider">'
+                        f'<div style="text-align:center;">'
+                        + "<br>".join(parts) + "</div>")
+
             if answered is None:
-                q_html=('<div class="card" style="min-height:200px;">'+f'<div class="greek-word">{qw_safe}</div>'+f'<div class="transliteration">[ {_html.escape(qdata.get("transliteration","--"))} ]</div>'+(f'<hr class="example-divider"><div class="example-greek"><span style="font-size:0.8rem;opacity:0.6;">Παράδειγμα</span><br>{qex}</div>' if qex else '')+'</div>')
+                q_html=('<div class="card" style="min-height:200px;">'
+                    +f'<div class="greek-word">{qw_safe}</div>'
+                    +f'<div class="transliteration">[ {_html.escape(qdata.get("transliteration","--"))} ]</div>'
+                    +hint_html+'</div>')
             else:
                 qpos_s=_html.escape(qdata.get("part_of_speech","--")); qdif_s=_html.escape(qdata.get("difficulty","?"))
                 qg, qa = get_gender_info(qdata)
                 qgender_html = f'<span class="gender-badge">{qa} ({qg})</span>' if qg else ""
-                q_html=('<div class="card" style="min-height:200px;">'+f'<span class="pos-badge">{qpos_s}</span>'+f'<span class="diff-badge">{qdif_s}</span>'+f'{qgender_html}'+f'<div class="greek-word">{qw_safe}</div>'+f'<div class="transliteration">[ {_html.escape(qdata.get("transliteration","--"))} ]</div>')
+                q_html=('<div class="card" style="min-height:200px;">'+f'<span class="pos-badge">{qpos_s}</span>'+f'<span class="diff-badge">{qdif_s}</span>'+f'{qgender_html}'+f'<div class="greek-word">{qw_safe}</div>'+f'<div class="transliteration">[ {_html.escape(qdata.get("transliteration","--"))} ]</div>'+'</div>')
             st.markdown(q_html, unsafe_allow_html=True); st.markdown("<br>", unsafe_allow_html=True)
             if answered is None:
-                st.markdown(t("choose_translation")); cols=st.columns(2); labels=["A","B","C","D"]
-                for ci,choice in enumerate(choices):
-                    with cols[ci%2]:
-                        if st.button(f"{labels[ci]})  {choice}", key=f"q_{qi}_{ci}", use_container_width=True):
-                            st.session_state.quiz_answer=choice
-                            if choice==correct_tr: st.session_state.quiz_score["correct"]+=1
-                            else:
-                                st.session_state.quiz_score["wrong"]+=1
-                                if qword not in st.session_state.quiz_failed: st.session_state.quiz_failed.append(qword)
-                            st.rerun()
+                st.markdown(t("choose_translation"))
+                # ── Hint button — two stage ───────────────────────────────
+                _, hcol = st.columns([4, 1])
+                with hcol:
+                    if hint_stage == 0:
+                        if has_syns or has_ex:
+                            if st.button(t("quiz_hint"), key=f"hint_btn_{qi}", use_container_width=True):
+                                st.session_state[hint_key] = 1; st.rerun()
+                        else:
+                            st.caption(t("quiz_hint_none"))
+                    elif hint_stage == 1 and has_ex:
+                        if st.button("💡＋", key=f"hint_btn2_{qi}", use_container_width=True,
+                                     help=t("quiz_hint_label")):
+                            st.session_state[hint_key] = 2; st.rerun()
+                # ── Answer buttons (A+B row, C+D row — correct on mobile) ─
+                labels=["A","B","C","D"]
+                for ci in range(0, len(choices), 2):
+                    row_cols = st.columns(2)
+                    for ri in range(2):
+                        ci2 = ci + ri
+                        if ci2 >= len(choices): break
+                        choice = choices[ci2]
+                        with row_cols[ri]:
+                            if st.button(f"{labels[ci2]})  {choice}", key=f"q_{qi}_{ci2}", use_container_width=True):
+                                st.session_state[hint_key] = 0
+                                st.session_state.quiz_answer=choice
+                                if choice==correct_tr: st.session_state.quiz_score["correct"]+=1
+                                else:
+                                    st.session_state.quiz_score["wrong"]+=1
+                                    if qword not in st.session_state.quiz_failed: st.session_state.quiz_failed.append(qword)
+                                st.rerun()
             else:
                 qpos=qdata.get("part_of_speech","--"); qdif=qdata.get("difficulty","?")
                 if answered==correct_tr: st.success(t("correct_answer", tr=correct_tr, pos=qpos, diff=qdif))
                 else: st.error(t("wrong_answer", chosen=answered)); st.markdown(t("correct_was", tr=correct_tr, pos=qpos, diff=qdif))
+                # Show full card with translation + example
+                _qex = _html.escape(qdata.get("example_greek", ""))
+                _qexen = _html.escape(loc(qdata, "example_english", ""))
+                _qtr = _html.escape(correct_tr)
+                _full_card = ('<div class="card card-back" style="min-height:160px;margin-top:12px;">'
+                    +f'<div class="translation">{_qtr}</div>'
+                    +(f'<hr class="example-divider"><div class="example-greek"><span style="font-size:0.8rem;opacity:0.6;">{t("example_label")}</span><br>{_qex}</div>'
+                      f'<div class="example-en" style="display:block;margin-top:6px;">{_qexen}</div>' if _qex else '')
+                    +'</div>')
+                st.markdown(_full_card, unsafe_allow_html=True)
                 st.markdown("<br>", unsafe_allow_html=True)
                 nb1,nb2=st.columns([2,1])
                 with nb1:
@@ -891,6 +827,84 @@ with tab5:
                         st.session_state.lt_done = True; st.rerun()
         else:
             st.info(t("press_start_listen"))
+
+
+# ────────────────────────────────────────────────────────────────────────────────
+# TAB 5 — SYNONYMS & ANTONYMS
+# ────────────────────────────────────────────────────────────────────────────────
+with tab5:
+    st.markdown("## 🔤 " + t("tab_synonyms"))
+
+    syn_words = [w for w in filtered if w in cache and
+                 (cache[w].get("synonyms") or cache[w].get("antonyms"))]
+
+    if not syn_words:
+        st.info("No synonym/antonym data yet. Run `python enrich_words.py --add-synonyms` to populate.")
+    else:
+        fc1, fc2 = st.columns([1, 1])
+        with fc1:
+            diff_levels = ["A1","A2","B1","B2","C1","C2"]
+            sel_syn_diffs = st.multiselect(t("difficulty"), diff_levels,
+                                           default=[], key="syn_diff_filter")
+        with fc2:
+            pos_opts = sorted({cache[w].get("part_of_speech","") for w in syn_words
+                               if cache[w].get("part_of_speech")})
+            sel_syn_pos = st.multiselect(t("filter_pos"), pos_opts,
+                                         default=[], key="syn_pos_filter")
+
+        if sel_syn_diffs:
+            syn_words = [w for w in syn_words if cache[w].get("difficulty","") in sel_syn_diffs]
+        if sel_syn_pos:
+            syn_words = [w for w in syn_words if cache[w].get("part_of_speech","") in sel_syn_pos]
+
+        diff_order = {"A1":0,"A2":1,"B1":2,"B2":3,"C1":4,"C2":5,"?":6}
+        syn_words.sort(key=lambda w: (diff_order.get(cache[w].get("difficulty","?"), 6), w))
+
+        st.caption(f"{len(syn_words)} words")
+        st.markdown("---")
+
+        def _syn_diff(word):
+            return cache.get(word, {}).get("difficulty", "")
+
+        def _diff_color(d):
+            return {"A1":"#68d391","A2":"#68d391","B1":"#f6ad55","B2":"#f6ad55",
+                    "C1":"#fc8181","C2":"#fc8181"}.get(d, "#a0aec0")
+
+        for word in syn_words:
+            data  = cache[word]
+            diff  = data.get("difficulty","?")
+            pos   = data.get("part_of_speech","")
+            tr    = loc(data, "translation")
+            syns  = [s for s in data.get("synonyms", []) if s != word]
+            ants  = data.get("antonyms", [])
+            dcolor = _diff_color(diff)
+
+            syn_badges = "".join(
+                f'<span class="syn-badge">{_html.escape(s)}'
+                + (f' <span style="font-size:0.7rem;opacity:0.7;">({_syn_diff(s)})</span>' if _syn_diff(s) else "")
+                + "</span>" for s in syns
+            )
+            ant_badges = "".join(
+                f'<span class="ant-badge">{_html.escape(a)}'
+                + (f' <span style="font-size:0.7rem;opacity:0.7;">({_syn_diff(a)})</span>' if _syn_diff(a) else "")
+                + "</span>" for a in ants
+            )
+
+            body = ""
+            if syns:
+                body += f'<div style="margin-top:8px;"><span style="font-size:0.78rem;color:#68d391;margin-right:4px;">Synonyms:</span>{syn_badges}</div>'
+            if ants:
+                body += f'<div style="margin-top:6px;"><span style="font-size:0.78rem;color:#fc8181;margin-right:4px;">Antonyms:</span>{ant_badges}</div>'
+
+            st.markdown(
+                f'<div class="syn-row">'
+                f'<span style="font-size:1.15rem;font-weight:700;color:#e8d5b7;">{_html.escape(word)}</span>'
+                f'<span style="font-size:0.85rem;color:#718096;margin-left:8px;">{_html.escape(tr)}</span>'
+                f'<span class="diff-badge" style="color:{dcolor};border-color:{dcolor}40;">{_html.escape(diff)}</span>'
+                + (f'<span class="pos-badge" style="margin-left:6px;">{_html.escape(pos)}</span>' if pos else "")
+                + body + "</div>",
+                unsafe_allow_html=True
+            )
 
 st.markdown("---")
 st.markdown(f"<p style='text-align:center;color:#4a5568;font-size:0.8rem;'>{t('footer')}</p>", unsafe_allow_html=True)
