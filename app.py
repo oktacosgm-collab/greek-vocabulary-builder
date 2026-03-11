@@ -87,6 +87,18 @@ html, body, [class*="css"] { font-family: 'Inter', sans-serif; }
     background: #1a2332; border-radius: 12px; padding: 14px 18px;
     margin-bottom: 10px; border: 1px solid #2d3748;
 }
+.hint-box {
+    background: rgba(104,211,145,0.08); border: 1px solid rgba(104,211,145,0.25);
+    border-radius: 12px; padding: 12px 16px; margin: 8px 0 4px 0; text-align: center;
+}
+/* Desktop: show hint inside card, hide external hint box */
+@media (min-width: 768px) {
+    .hint-mobile { display: none !important; }
+}
+/* Mobile: hide hint inside card, show external hint box */
+@media (max-width: 767px) {
+    .hint-desktop { display: none !important; }
+}
 section[data-testid="stSidebar"] { background: #0d1117 !important; }
 section[data-testid="stSidebar"] p,
 section[data-testid="stSidebar"] span,
@@ -530,8 +542,6 @@ with tab6:
             qi=st.session_state.quiz_index; qwords=st.session_state.quiz_words
             if qi>=len(qwords): st.session_state.quiz_done=True; st.rerun()
             qword=qwords[qi]; qdata=cache[qword]
-            # In Greek mode: force English answers so quiz tests Greek→English (not trivial Greek→Greek)
-            # In EN/JA mode: use loc() to respect UI language
             _quiz_lang = get_lang_code()
             if _quiz_lang == "el":
                 correct_tr = qdata.get("translation", "")
@@ -567,33 +577,45 @@ with tab6:
             has_syns = bool(qsyns)
             has_ex   = bool(qex_raw)
 
-            hint_html = ""
+            # Build shared hint content string (used by both desktop+mobile)
+            hint_parts = []
             if hint_stage >= 1:
-                parts = []
                 if has_syns:
                     syn_str = " · ".join(_html.escape(s) for s in qsyns[:3])
-                    parts.append(f'<span style="font-size:0.95rem;color:#68d391;">🔤 {syn_str}</span>')
+                    hint_parts.append(f'<span style="font-size:0.95rem;color:#68d391;">🔤 {syn_str}</span>')
                 if hint_stage >= 2 and has_ex:
-                    parts.append(
+                    hint_parts.append(
                         f'<span style="font-size:0.75rem;color:#f6ad55;">💡 {t("quiz_hint_label")}</span><br>'
                         f'<span style="font-size:1rem;color:#fbd38d;font-style:italic;">{_html.escape(qex_raw)}</span>'
                     )
-                if parts:
-                    hint_html = (f'<hr class="example-divider">'
-                        f'<div style="text-align:center;">'
-                        + "<br>".join(parts) + "</div>")
+            hint_inner = "<br>".join(hint_parts) if hint_parts else ""
 
             if answered is None:
+                # Desktop: hint inside card (.hint-desktop hidden on mobile)
+                desktop_hint = (
+                    f'<div class="hint-desktop"><hr class="example-divider">'
+                    f'<div style="text-align:center;">{hint_inner}</div></div>'
+                    if hint_inner else ""
+                )
                 q_html=('<div class="card" style="min-height:200px;">'
                     +f'<div class="greek-word">{qw_safe}</div>'
                     +f'<div class="transliteration">[ {_html.escape(qdata.get("transliteration","--"))} ]</div>'
-                    +hint_html+'</div>')
+                    +desktop_hint+'</div>')
             else:
                 qpos_s=_html.escape(qdata.get("part_of_speech","--")); qdif_s=_html.escape(qdata.get("difficulty","?"))
                 qg, qa = get_gender_info(qdata)
                 qgender_html = f'<span class="gender-badge">{qa} ({qg})</span>' if qg else ""
                 q_html=('<div class="card" style="min-height:200px;">'+f'<span class="pos-badge">{qpos_s}</span>'+f'<span class="diff-badge">{qdif_s}</span>'+f'{qgender_html}'+f'<div class="greek-word">{qw_safe}</div>'+f'<div class="transliteration">[ {_html.escape(qdata.get("transliteration","--"))} ]</div>'+'</div>')
-            st.markdown(q_html, unsafe_allow_html=True); st.markdown("<br>", unsafe_allow_html=True)
+            st.markdown(q_html, unsafe_allow_html=True)
+
+            # Mobile: hint outside card (.hint-mobile hidden on desktop)
+            if answered is None and hint_inner:
+                st.markdown(
+                    f'<div class="hint-mobile hint-box">{hint_inner}</div>',
+                    unsafe_allow_html=True
+                )
+
+            st.markdown("<br>", unsafe_allow_html=True)
             if answered is None:
                 st.markdown(t("choose_translation"))
                 # ── Hint button — two stage ───────────────────────────────
