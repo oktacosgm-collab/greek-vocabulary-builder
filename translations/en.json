@@ -149,16 +149,9 @@
   "cat_work": "Work",
   "cat_sports": "Sports",
   "cat_other": "Other",
-  "note_section_title": "📝 My Sentence",
-  "note_placeholder": "Write a sentence using this word...",
-  "note_save": "💾 Save",
-  "note_check": "🔍 Check Grammar",
-  "note_saved": "Saved!",
-  "note_correct": "Correct!",
-  "note_almost": "Almost — try this:",
-  "note_keep_original": "Keep original",
-  "note_save_corrected": "Save corrected",
-  "note_write_first": "Write a sentence first.",
-  "note_checking": "Checking...",
-  "export_field_note": "My sentence (personal note)"
+  "tab_synonyms": "Synonyms & Antonyms",
+  "quiz_hint": "💡 Hint",
+  "quiz_hint_label": "Example sentence",
+  "quiz_hint_none": "No hint available",
+  "filter_pos": "Filter by part of speech"
 }

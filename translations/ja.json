@@ -149,16 +149,9 @@
   "cat_work": "仕事",
   "cat_sports": "スポーツ",
   "cat_other": "その他",
-  "note_section_title": "📝 マイセンテンス",
-  "note_placeholder": "この単語を使って文を書いてください...",
-  "note_save": "💾 保存",
-  "note_check": "🔍 文法チェック",
-  "note_saved": "保存しました！",
-  "note_correct": "正解！",
-  "note_almost": "惜しい — こう直してみて：",
-  "note_keep_original": "元のまま保存",
-  "note_save_corrected": "修正版を保存",
-  "note_write_first": "先に文を書いてください。",
-  "note_checking": "チェック中...",
-  "export_field_note": "マイセンテンス（個人メモ）"
+  "tab_synonyms": "類義語・反意語",
+  "quiz_hint": "💡 ヒント",
+  "quiz_hint_label": "例文",
+  "quiz_hint_none": "ヒントなし",
+  "filter_pos": "品詞でフィルター"
 }
